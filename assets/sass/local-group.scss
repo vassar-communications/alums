@@ -1,0 +1,154 @@
+
+@import "_mixins";
+@import "compass";
+@import "_config";
+
+
+/* ==============================
+ *	TYPOGRAPHY
+ * ==============================
+ */
+
+/* Elements */
+
+html {
+	font-family: $sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.1;
+	margin-bottom: .4em;
+	padding-top: .8em;
+}
+.u-lContent h1:nth-of-type(1), .u-lAside h1:nth-of-type(1),
+.u-lContent h2:nth-of-type(1), .u-lAside h2:nth-of-type(1),
+.u-lContent h3:nth-of-type(1), .u-lAside h3:nth-of-type(1),
+.u-lContent h4:nth-of-type(1), .u-lAside h4:nth-of-type(1),
+.u-lContent h5:nth-of-type(1), .u-lAside h5:nth-of-type(1),
+.u-lContent h6:nth-of-type(1), .u-lAside h6:nth-of-type(1) {
+	padding-top: 0;
+}
+h1 {
+	font-size: 2.44em;
+}
+h2 {
+	font-size: 1.95em;
+}
+h3 {
+	font-size: 1.43em;
+}
+h4 {
+	font-size: 1.31em;
+}
+h5 {
+	font-size: 1.12em;
+}
+h6 {
+	font-size: 1em;
+}
+.u-lContent {
+	@include v-pixel-fallback ('font-size', 1.195rem);
+	font-family: $sans-serif;
+	font-weight: $fontWeightNormal;
+	line-height: 1.2;
+	margin-bottom: 1.25em;
+}
+p {
+	margin-top: 0;
+}
+h1 + ul, h2 + ul, h3 + ul, h4 + ul, h5 + ul, h6 + ul, h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
+	margin-top: 0;
+}
+th {
+	font-weight: $fontWeightBold;
+}
+
+td {
+	font-weight: $fontWeightNormal;
+}
+
+li {
+	margin: 0 0 0.327em;
+}
+
+/* Main page content */
+
+.u-lMain {
+	font-size: 100%;
+}
+
+.u-pageTitle {
+	margin-top: 0;
+}
+
+/* u-lAside sidebar styles */
+
+.u-lAside {
+
+	h1 {
+		font-size: 1.953em;
+	}
+
+	h2 {
+		font-size: 1.562em;
+	}
+
+	h3 {
+		font-size: 1.25em;
+	}
+
+	h4 {
+		font-size: 1.143em;
+	}
+
+	h5 {
+		font-size: 1.093em;
+	}
+
+	p,
+	ol,
+	ul {
+		font-size: 1.195em;
+		font-weight: $fontWeightNormal;
+	}
+
+	li {
+		margin-bottom: 0.327em;
+		line-height: 1.2;
+	}
+
+}
+
+@media all and (min-width: $tiny) {
+	.u-lMain {
+		font-size: 110%;
+	}
+	p {
+		line-height: 1.3;
+	}
+	.u-lAside {
+		p,
+		ol,
+		ul {
+			font-size: 0.956em;
+		}
+	}
+}
+
+.u-SiteMap__level {
+	 margin: .5em 0;
+}
+.u-Masthead__siteName,
+.u-Masthead__vassar {
+	padding: 0;
+	margin-bottom: 0;
+}
+
+/* ==============================
+ *	LAYOUT
+ * ==============================
+ */
+ 
+/* ==============================
+ *	COLOR
+ * ==============================
+ */

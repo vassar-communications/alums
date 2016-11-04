@@ -1,0 +1,148 @@
+/********** LAYOUT **********/
+@media screen {
+  .footer {
+    background-image: url(../images/css/alumnae-house/footer-top.png);
+  }
+  .footer:before {
+    background-image: url(../images/css/alumnae-house/footer-bg.gif);
+  }
+  .footer-columns > li:nth-child(1) {
+    background-image: none;
+  }
+  .footer-columns > li:nth-child(2),
+  .footer-columns > li:nth-child(3),
+  .footer-columns > li:nth-child(4) {
+    background-image: url(../images/css/alumnae-house/border-horizontal.png);
+  }
+  .header h1 img {
+    margin-top: 35px;
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .footer-columns > li:nth-child(1),
+  .footer-columns > li:nth-child(3) {
+    background-image: url(../images/css/alumnae-house/border-vertical.png);
+  }
+  .footer-columns > li:nth-child(2),
+  .footer-columns > li:nth-child(4) {
+    background-image: none;
+  }
+}
+@media only screen and (min-width: 520px) {
+  body {
+    background-image: url(../images/css/alumnae-house/photobar.jpg);
+  }
+  .aside {
+    border-left: 0;
+  }
+  .content-container {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: solid 1px #8e4a1b;
+    border-bottom: solid 3px #8e4a1b;
+  }
+  .content-container:after {
+    border-right: 1px dashed #cdb8a9;
+  }
+  .main-content {
+    /*
+      background: 0;
+     
+     */
+  
+  }
+}
+@media only screen and (min-width: 650px) {
+  .footer-columns > li:nth-child(2) {
+    background: 0;
+  }
+  .footer-columns > li:nth-child(4) {
+    background-image: url(../images/css/alumnae-house/border-vertical.png);
+  }
+}
+/************* COLOR ******************/
+a {
+  color: #cc3333;
+}
+a:hover {
+  color: #000;
+}
+aside {
+  color: #68544b;
+}
+.content li {
+  list-style-image: url(../images/css/alumnae-house/bullet-alumhouse.gif);
+}
+html {
+  background-image: url(../images/css/alumnae-house/background.gif);
+}
+.footer h3 {
+  color: #ca8c6c;
+  text-shadow: 0 1px 1px #663520;
+}
+.footer a {
+  color: #eaf79d;
+}
+.content-container {
+  background-color: #fff;
+}
+.meta-nav a {
+  color: #880000;
+}
+.meta-nav li {
+  background-image: url(../images/css/alumnae-house/background.gif);
+}
+.meta-nav li a.highlight {
+  color: #000;
+  background: #9c8682;
+  background: rgba(102, 45, 22, 0.2);
+  border-bottom: solid 4px rgba(102, 45, 22, 0.2);
+}
+.meta-nav li a:hover,
+.navigation li a.highlight,
+.navigation li a.opened,
+.navigation li a:hover {
+  color: #000 !important;
+  background: rgba(102, 45, 22, 0.1) !important;
+  /* Revisit */
+
+}
+.temperature,
+.degree {
+  text-shadow: 0 1px 1px #663520;
+}
+.navigation a {
+  color: #aa0000;
+}
+.footer {
+  color: #d59a7b;
+  text-shadow: 0 -1px 1px #220000;
+}
+.footer h3 {
+  text-shadow: 0 1px 1px #440000;
+}
+.footer a:hover {
+  color: #ffa468;
+  background: #713323;
+  background: rgba(0, 0, 0, 0.2);
+}
+b.degree {
+  color: #e1aa8d;
+  -moz-opacity: .20;
+  filter: alpha(opacity=20);
+  opacity: 0.2;
+}
+@media only screen and (min-width: 960px) {
+  .content-container:before {
+    background: #fefdee;
+    border-left: 1px dashed #cdb8a9;
+    border-right: 1px solid #cdb8a9;
+  }
+}
+
+.header {
+    padding-top: 2em !important;
+}
+

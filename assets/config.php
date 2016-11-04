@@ -2,14 +2,20 @@
 return 
 	array(
 	
-	// CMS site ID
-	'siteID' => '47896',//'32864',
-	
-	'dev' => 'new',
+    'siteID' => '25404',
+    
+    // Fonts
+	'typekitID' => 'kxu0vlt',
+    
+    'siteNameHeader' => "
+<b class='u-Masthead__siteName--line1'>Alumnae/i</b>",
+    
+    'siteName' => "Office of Alumnae/i Affairs and Development (OAAD)",
 
-	// Fonts
-	'typekitID' => '',//'xib8icl',
-	
+    'layoutHeaderPost' => 'gallery:embed:homepage',
+    
+    'vassarCollegeID' => "Vassar",
+
 	//'useLocalNav' => true,
 		
 	//'phpErrorReporting' => E_ALL,

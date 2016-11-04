@@ -1,0 +1,335 @@
+/********** TYPOGRAPHY **********/
+.navigation a {
+  font: 300 0.85em/1.6 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+/********** LAYOUT **********/
+@media screen {
+  th {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  td:last-child {
+    white-space: nowrap;
+  }
+  td:first-child {
+    width: 35%;
+  }
+  tbody tbody tr {
+    padding-left: 1em;
+  }
+  .aside {
+    margin-left: 0;
+    font-size: 1em;
+    float: left;
+    background: none;
+    border: 0;
+    padding: 1em 2% 0 2%;
+    width: auto;
+  }
+  .aside img {
+    /* overriding the style in Hub that adds spacing between images in the news sidebar */
+  
+    margin: 0;
+  }
+  .content-body {
+    float: right;
+    background: #fff;
+    padding: 1em 2%;
+    position: relative;
+    -webkit-box-shadow: 0 0 0.25em 0.1em rgba(179, 174, 164, 0.5);
+    -moz-box-shadow: 0 0 0.25em 0.1em rgba(179, 174, 164, 0.5);
+    box-shadow: 0 0 0.25em 0.1em rgba(179, 174, 164, 0.5);
+    float: right;
+    margin: 0 0 3em 0;
+    width: auto;
+  }
+  .content-body:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: .35em;
+    left: .35em;
+    right: .35em;
+    bottom: .35em;
+    border: .1em solid #e3effb;
+    z-index: 0;
+  }
+  .content-body h3 {
+    white-space: normal;
+    font-weight: bold;
+  }
+  .content-body h3 a {
+    border-bottom: 0;
+  }
+  .footer {
+    background-image: url(../images/oaad/footer-skyline.png);
+  }
+  .footer::before {
+    background: #8f4a2d url(../images/oaad/footer-bg.png) center 0 repeat;
+  }
+  .footer-columns {
+    background: #8f4a2d;
+  }
+  .footer-columns > li:nth-child(1),
+  .footer-columns > li:nth-child(2),
+  .footer-columns > li:nth-child(3),
+  .footer-columns > li:nth-child(4) {
+    background-image: none;
+  }
+  .header {
+    padding-top: 4.5em;
+    border-bottom: none !important;
+    z-index: 0;
+    /* to override global-home.css style on OAAD homepage */
+  }
+  .header img {
+    float: none;
+    margin: 0 auto;
+  }
+  .introduction {
+    color: #000;
+    font: 500 1em/1.5 adelle, serif;
+    margin-bottom: 2em;
+  }
+  .main-content {
+    background: none;
+    overflow: visible;
+    border: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .content-container {
+    /* margin: 1em 0 0 0; */
+  
+    margin-top: 0;
+    border: 0;
+    overflow: hidden;
+  }
+  .navigation {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    left: 38%;
+    top: 3.25em;
+  }
+  .navigation a {
+    background: url(https://alums.vassar.edu/assets/images/oaad/tab-pattern-inactive.gif) 0 0 repeat;
+    -moz-border-radius-topleft: .5em;
+    -moz-border-radius-topright: .5em;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-radius: .5em .5emx 0 0;
+    border-radius: .5em .5em 0 0;
+    -webkit-box-shadow: 0 0 0.25em 0.1em rgba(179, 174, 164, 0.5);
+    -moz-box-shadow: 0 0 0.25em 0.1em rgba(179, 174, 164, 0.5);
+    box-shadow: 0 0 0.25em 0.1em rgba(179, 174, 164, 0.5);
+    font-size: .7em;
+    font-weight: bold;
+    margin-right: .5em;
+    padding: .75em 1.5em;
+    position: relative;
+    z-index: 1;
+  }
+  .navigation li a {
+    border: solid #ffffff 0.25em;
+  }
+  .navigation .current {
+    background: url(https://alums.vassar.edu/assets/images/oaad/tab-pattern-active.gif) 0 0 repeat;
+    z-index: 1;
+    border-bottom: 0;
+    color: #4f7491;
+    -webkit-box-shadow: 0.25em 0.25em 0.25em -0.25em rgba(179, 174, 164, 0.5);
+    -moz-box-shadow: 0 0 0.25em 0.1em rgba(179, 174, 164, 0.5);
+    box-shadow: 0 0 0.25em 0.1em rgba(179, 174, 164, 0.5);
+  }
+  .postcards img {
+    position: relative;
+    top: -1.25em;
+    left: 0;
+  }
+  .postcards-heading {
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    color: #9c9279;
+    font-size: .8em;
+    background: url(https://alums.vassar.edu/assets/images/oaad/postcard-header-border.gif) 0 0.5em repeat-x;
+  }
+  .postcards-heading b {
+    background: url(https://alums.vassar.edu/assets/images/oaad/background.png) 0 0 repeat;
+    padding-right: 1em;
+    font-weight: bold;
+  }
+  .postcards-caption {
+    color: #626054;
+    font-size: .8em;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    width: 80%;
+    margin-top: -3em;
+  }
+  .template-content {
+    width: 35%;
+    margin-right: 2%;
+  }
+  #tableDirectory {
+    margin: 0;
+  }
+  #tableDirectory h3 {
+    margin-bottom: 0;
+  }
+  #tableDirectory tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  #tableDirectory {
+    position: relative;
+    z-index: 1;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .footer-columns > li:nth-child(1),
+  .footer-columns > li:nth-child(3) {
+    background-image: url(../images/oaad/border-vertical.png);
+  }
+}
+@media only screen and (min-width: 520px) {
+  html {
+    border-color: #a0928f;
+  }
+  body {
+    background-image: url(../images/oaad/photobar.jpg);
+  }
+  .aside,
+  .header h1 {
+    width: 42%;
+  }
+  .content-body {
+    margin-top: -25%;
+    width: 50%;
+  }
+  .content-container {
+    /* background: transparent url(https://alums.vassar.edu/assets/images/oaad/hatched-border.gif) 0 top repeat-x; */
+  
+  }
+  .header {
+    padding-top: 1.5em;
+  }
+  .header h1 {
+    margin-top: 3em;
+    overflow: visible;
+    padding: 0em 0 .7em;
+    width: 42%;
+  }
+  .header h1 img {
+    margin-left: 0.75em;
+  }
+  .content-container {
+    overflow: visible;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .footer-columns > li:nth-child(2) {
+    background: 0;
+  }
+  .footer-columns > li:nth-child(4) {
+    background-image: url(../images/oaad/border-vertical.png);
+  }
+}
+@media only screen and (min-width: 700px) {
+  .content-body {
+    margin-top: -175px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .aside {
+    width: 32%;
+  }
+  .content-body {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  tr {
+    border: 1px solid #ccc;
+  }
+  td {
+    /* Behave  like a "row" */
+  
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+  }
+  td:first-child {
+    width: auto;
+  }
+}
+/************* COLOR ******************/
+html {
+  background-image: url(../images/oaad/background.png);
+}
+b.degree {
+  text-shadow: none;
+  color: #c3876a;
+  color: rgba(233, 180, 153, 0.4);
+}
+.aside p {
+  color: #6a6552;
+}
+.footer {
+  color: #e9b499;
+  text-shadow: 0 -1px 1px #663520;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+}
+.footer a {
+  color: #eaf79d;
+}
+.footer a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.footer h3 {
+  color: #e9b499;
+  text-shadow: 0 1px 1px #663520;
+}
+.navigation a {
+  color: #7e99ac;
+}
+.navigation .highlight {
+  color: #b94400;
+  margin-top: -0.5em;
+}
+.meta-nav a {
+  color: #000;
+  background-image: url(../images/oaad/background.png);
+}
+.meta-nav a:hover {
+  background: #efe7d9;
+}
+.meta-nav a.highlight {
+  border-color: #000;
+  color: #000;
+}
+.meta-nav li a.highlight {
+  background: #000;
+  border-bottom-color: transparent;
+  color: #fff;
+  text-shadow: none;
+}
+.temperature,
+.degree {
+  text-shadow: 0 1px 1px #663520;
+}
+
+.header-container {
+    height: 230px;
+}

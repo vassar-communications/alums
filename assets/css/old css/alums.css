@@ -1,0 +1,1200 @@
+      
+          
+          /*
+ *************** TYPOGRAPHY **********/
+ */
+ input {
+  font-family: proxima-nova;
+}
+.account-panel {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.4;
+  text-align: left;
+}
+.account-panel li:last-child a {
+  font-size: .8em;
+  font-weight: bold;
+}
+.button, input.button {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+}
+.button-login,
+.button-directory,
+.button-account {
+  font: 100 12px/1.6 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.button-login-submit {
+  line-height: 1;
+}
+.calendar-event-register {
+  font: bold 0.75em/1.6 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.content .figcaption {
+  font: 100 0.75em/1.6 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.forgot-password {
+  font: 100 0.75em/1.6 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.login-form input {
+  font-size: .9em;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.login-panel h3 {
+  font-family: proxima-nova;
+}
+.login-panel p {
+  font-size: 1.2em;
+  font-weight: 100;
+  line-height: 1.6;
+}
+.login-panel .new-user {
+  /* .login-panel p:last-child */
+
+  font-size: 1.1em;
+  text-shadow: 0 1px 0 #fff;
+  text-align: center;
+}
+.login-panel .hr {
+  font-size: .75em;
+  line-height: .1;
+  text-align: center;
+}
+.regional-event h1 {
+    border-bottom: 1px dashed #ccc;
+    font-family: adelle,serif;
+    font-size: 1.1em;
+    padding-bottom: 6px;
+}
+.sidebar .sidebar-enews h3 { font-size: 24px }
+.sidebar .sidebar-enews li {
+    list-style-type: none;
+    list-style-image: none;
+}
+th,
+th a {
+  font-weight: 700;
+}
+.travel-date {
+  font-weight: 700;
+}
+.travel-cancelled,
+.travel-sold-out,
+.travel-waitlist {
+  font-weight: 700;
+}
+.travel-more a {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/********** LAYOUT **********/
+@media screen {
+abbr {
+    border: none !important;
+}
+b.separator { display: none }
+  input[type="text"],
+  input[type="password"],
+  textarea {
+    padding: 6px;
+  }
+  .button,
+  input[type="submit"],
+  input[type="button"]
+  {
+    border-radius: 4px;
+    padding: 6px 10px;
+  }
+  .account-container {
+    float: right;
+  }
+  .account-panel {
+    background: #fff;
+    border-top: solid 1px #000;
+    border-left: solid 1px #aaa;
+    border-right: solid 1px #aaa;
+    border-bottom: solid 1px #aaa;
+    -webkit-box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    right: 0;
+    top: -999em;
+    width: 11em;
+    z-index: 1;
+  }
+  .account-panel a {
+    border-bottom: 0;
+    display: block;
+    padding: 0 .75em;
+  }
+  .account-panel a:hover {
+    background: #e0f0fd;
+  }
+  .account-panel li:first-child a {
+    padding-top: 0.6em;
+  }
+  .account-panel li:last-child {
+    border-top: solid 1px #c3d7e5;
+  }
+  .account-panel li:last-child a {
+    padding-bottom: .6em;
+    padding-top: .75em;
+  }
+  .account-panel li:nth-child(3) a {
+    padding-bottom: 0.6em;
+  }
+  .account-panel ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .aside img {
+    margin: 0 0 10px 0;
+  }
+  .aside ul {
+    padding: 0 0 0 16px;
+  }
+  .board-listing,
+  .board-member-info {
+    margin: 0;
+    padding: 0; 
+  }
+  .button-directory {
+    float:right;
+     margin-bottom:.25em;
+  }
+  .content-body .board-member-info {
+      padding-left:0;
+  }
+  .content-body .board-member-info li {
+       list-style-image:none;
+       list-style-type:none;
+  }
+    .content-body  .board-listing {
+        padding-left:0;
+    }
+    .board-listing img {
+    float: left;
+    margin-right: 1em;
+     margin-left:0;
+    opacity: .9;
+  }
+  .board-member-info {
+    margin-bottom: 2em;
+    margin-top: 1em;
+  }
+  .board-member-info img {
+    float: left;
+    margin-right: 1em;
+     margin-left:0;
+  }
+  .board-listing a {
+    border-bottom: 0;
+    display: block;
+    padding: .5em;
+    overflow: hidden;
+  }
+  .board-listing a:hover {
+    background-color: #e6eef2;
+  }
+  .board-listing a:hover img {
+    opacity: 1;
+  }
+  .board-listing li,
+  .board-member-info li {
+    list-style-type: none;
+  }
+  .board-listing p {
+    font-size: .9em;
+    line-height: 1.4;
+    margin-left: 115px;
+  }
+  .board-name {
+    font-size: 1.2em;
+  }
+  .board-term {
+    font-style: italic;
+  }
+  .button,
+  .olc-formButton,
+  input[type="button"],
+  input[type="submit"],
+  .button-account,
+  .button-directory,
+  .button-login,
+  #btnFindRecord,
+  #btnRegAcct {
+    background-color: #2489CF;
+    background-position: 7px 50%;
+    background-repeat: no-repeat;
+    border-bottom: 0;
+    -webkit-border-radius: .25em;
+    -moz-border-radius: .25em;
+    border-radius: .25em;
+    color: #F2F2F2;
+    font-weight: 500;
+  font-size: 16px;
+    line-height: 1;
+    margin-left: .1em;
+    /*    padding: .75em .6em .75em 25px; */
+  
+/*    padding: 10px; */
+  }
+  
+    .olc-formButton,
+  input[type="button"],
+  input[type="submit"],
+  .button-account,
+  .button-directory,
+  .button-login,
+  #btnFindRecord,
+  #btnRegAcct {
+    float: right;
+}
+  
+    /* new account buton */
+    .button-account,
+    .button-login {
+        float:none;
+    }
+    /* new account buton */
+    
+  input[type="submit"] {
+    margin-left: 0;
+  }
+  .button-account,
+  .button-login {
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAXUlEQVR42qWQwQkAIRADben6sRcLsZktxD5c8GDNI6/ACuLAIAQDmhIRV2rwQYNOjVlaMKjYqeBQ8WOBJ2F2+6SnTz/P2uCAPx2wZYUOVwjMuhYqnJEzeaek62RrbYh66MSUm73lAAAAAElFTkSuQmCC);
+/*icon-profile.png*/
+  }
+  .button-directory {
+background-image:  url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAcElEQVR42pWQwQmAMAxFu07OnvXiQm5SV3GZrOAEPVVII3zho1ZJ4V1+/oM0ycxOFkedChRZunOViz1fYYkFRSE7AjIyfRMqhkIDQVbDQnil0KdRGlnonhX5DnlmocfgHBAgQfhgoqOsJPxKG68UogE1IeBdIm2spgAAAABJRU5ErkJggg==);
+/*icon-search.png*/
+  }
+  .button-account,
+  .button-login,
+  .button-directory {
+    padding: 0.5em 0.6em 0.5em 25px;
+    font-size: 12px;
+  }
+  .button-directory {
+    width:8em;
+  }
+  .button-login, .button-account {
+      width:3em;
+  }
+  .button-myAccount {
+  	width: 6em;
+  }
+.calendar-event-register {
+    float: left;
+    margin-top: 4px;
+}
+.calendar-dates,
+.calendar-hours,
+.calendar-event-map,
+.location {
+    display: inline;
+    float: left;
+    margin-left: 4px;
+    font: 100 .75em/1.6 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    padding-bottom: 4px;
+} 
+.dtstart:before,
+.calendar-event-map:before,
+.calendar-hours:before,
+.location:before {
+    content: "\B7";
+    padding-right: 4px;
+}
+ .cca-volunteer ul,
+  .cca-memoriam ul,
+  .cca-lost ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    width: 21em;
+  }
+  .cca-memoriam ul {
+    width: 25em;
+  }
+  .cca-volunteer .cca-name {
+    float: right;
+  }
+  .cca-volunteer li,
+  .cca-memoriam li,
+  .cca-lost li {
+    overflow: hidden;
+  }
+  span.cca-memoriam {
+    float: right;
+    font-size: .9em;
+    font-style: italic;
+    line-height: 150%;
+    margin-right: .1em;
+  }
+  .cca-title {
+    font-style: italic;
+    font-size: .9em;
+  }
+  .col1 {
+    float: left;
+    width: 45%;
+    margin-right: 8%;
+  }
+  .col2 {
+    width: 45%;
+    float: left;
+  }
+  .content .figure {
+    display: inline;
+    overflow: hidden;
+  }
+  .content .figure-right {
+    float: right;
+  }
+  .content .figcaption {
+    clear: both;
+    padding-top: 4px;
+    text-align: center;
+  }
+  
+  .content-container {
+      position:relative;
+      z-index:0;
+  }
+  
+  .directory-container {
+    float: right;
+  }
+  .fb_button { margin-top: 20px; }
+  .featured-blog a.discuss-link b.discuss {
+    padding-left: 20px;
+  }
+  .figure-full img {
+    width: 98%;
+    margin: 0 auto 1em auto;
+  }
+  .figure-left.half,
+  .figure-left-half,
+  .figure-right.half,
+  .figure-right-half {
+    width: 50%;
+    margin-bottom: 2%;
+     margin-top:0;
+  }
+  .figure-left.half,
+  .figure-left-half {
+     float: left;
+    margin-left: 0;
+     margin-right:5%;
+  }
+  .figure-right.half,
+  .figure-right-half {
+      float: right;
+        margin-right: 0;
+         margin-left:5%;
+  }
+  .figure-right.third,
+  .figure-right-third,
+  .figure-left.third,
+  .figure-left-third {
+    width: 30%;
+    margin-bottom: 2%;
+  }
+  .figure-left.third,
+  .figure-left-third {
+        float:left;
+        margin-left: 0;
+        margin-right:5%;
+  }
+  .figure-right.third,
+  .figure-right-third {
+    float: right;
+        margin-right: 0;
+        margin-left:5%;
+  }
+  .figure-publications .figcaption {
+    margin: 5% 0 0 0;
+    float: left;
+    font-style: normal;
+  }
+  .figure-publications img {
+    margin: 0;
+    float: left;
+    width: 100%;
+  }
+  .fluid-width-video-wrapper {
+    /* class from http://fitvidsjs.com/ */
+  
+    margin-bottom: 1.5em;
+  }
+  .forgot-password {
+    margin: 1em 1.75em;
+    display: block;
+    clear: both;
+  }
+  .forgot-password:hover {
+    background: none;
+  }
+  .hr b {
+    background: #fff;
+    padding: 0 1em;
+  }
+  .login-container {
+        position: absolute;
+        right: 0;
+        width:8em;
+  }
+  .login-hover {
+    float: right;
+  }
+  .login-hover:hover .account-panel,
+  .login-hover:hover .login-panel {
+    top: 1.5em;
+    z-index: 99999999999999999999;
+    
+    /* new account buton */
+    /* right:auto; */
+    top:auto;
+    /* new account buton */
+    
+  }
+  
+    .login-hover:hover .account-panel {
+        right:auto;
+    }
+
+ 
+  .login-facebook {
+    text-align: center;
+    display: block;
+    margin-bottom: 1.25em;
+  }
+  #login-facebook-button {
+      text-align:center;
+  }
+  .login-form {
+    padding: 0 1.25em 0.25em;
+  }
+  .login-panel {
+    background: #fff;
+    border-top: solid 1px #000;
+    border-left: solid 1px #aaa;
+    border-right: solid 1px #aaa;
+    border-bottom: solid 1px #aaa;
+    -webkit-box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.25);
+    padding: .5em 0 0 0;
+    position: absolute;
+    right: 0;
+    top: -999em;
+    width: 16.25em;
+    z-index: 1;
+  }
+  .login-panel a {
+    border-bottom: 0;
+  }
+  .login-panel p:first-child {
+    margin-bottom: 0.25em;
+  }
+  .login-panel p,
+  .login-panel h3 {
+    margin-bottom: 0;
+    padding: 0 1em .3em;
+  }
+  .login-panel h3 {
+    margin-top: 0;
+  }
+  .login-panel .new-user {
+    /* .login-panel p:last-child */
+  
+    border-top: solid 2px #ebebeb;
+    margin-top: 20px;
+    padding: 0;
+  }
+  .login-panel .new-user a {
+    padding: .75em 0;
+    display: block;
+  }
+  .login-panel input.button {
+    text-align: center;
+    width: 34%;
+  }
+  .login-panel .hr {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABAQMAAAAhLob3AAAABlBMVEXO2uH///8jvaG8AAAAAnRSTlP/AOW3MEoAAAAKSURBVAiZY0gAAABiAGENRrklAAAAAElFTkSuQmCC) repeat-x;
+/*    background: url(../images/css/alums/winter/topdots.png) repeat-x; */
+    margin: 2em 1.75em;
+  }
+  .login-hover b.button:hover {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .button-login-submit {
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -moz-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+    float: right;
+    height: 2.25em;
+    width: 33%;
+  }
+  .meta-nav li a {
+    border-bottom: 1px dashed #ddd;
+  }
+  .sidebarcontent {
+    margin: -20px 0 25px 0;
+    padding-bottom: 5px;
+  }
+  .sidebar .se-banner { text-align: center }
+.sidebar .sidebar-enews { margin-bottom: 40px;      padding-bottom: 14px;
+ }
+    .sidebar .sidebar-enews h3 {
+        margin: 14px 0 0 14px;
+    }
+  .travel-cancelled,
+  .travel-sold-out,
+  .travel-waitlist {
+    margin: 0;
+  }
+  .travel-date {
+    margin: 0 0 4px 0;
+  }
+  .travel-more {
+    text-align: right;
+    margin: -10px 0 0 0;
+    padding-bottom: 20px;
+  }
+  .travel-more a {
+    display: inline;
+    padding: 4px 14px 4px 6px;
+    line-height: 0;
+  }
+  #password { width: 128px }
+  #username {
+    width: 210px;
+    margin-bottom: .5em;
+  }
+  #form1 .button {
+      float:none;
+  }
+  .login-hover:hover .account-panel,
+  .login-hover:hover .login-panel {
+    /* margin-top: 1.65em; */
+        right:0;
+  }
+  .login-container {
+        bottom: -1em;   
+    }
+}
+
+
+/** Video **/
+.u-VideoGroup {
+    height: 0; 
+    margin: 1.5em 0;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 71.25%;
+    padding-top: 4%;
+}
+ 
+.u-Video,
+.u-VideoGroup iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.button-annual-fund {
+	float:left;
+	line-height:1.25em;
+	margin: 0 28% 5em;
+	text-align:center;
+	width:44%;
+}
+/** Video **/
+
+@media only screen and (min-width: 320px) {
+    .login-container {
+           
+  }
+  
+}
+@media only screen and (min-width: 400px) {
+    .button-directory {
+    float:right;
+  }
+    
+    .main-content {
+        width:94%;
+        overflow:visible;
+        top:-1em;
+    }
+    
+}
+@media only screen and (min-width: 520px) {
+  .login-container {
+        bottom: 2em;    
+    }
+    .button,
+  .olc-formButton,
+  input[type="submit"],
+  input[type="button"],
+  .button-account,
+  .button-directory,
+  .button-login {
+    -webkit-border-radius: .25em;
+    -moz-border-radius: .25em;
+    border-radius: .25em;
+    /* padding: .35em .6em .35em 25px; */
+  }
+  .button-directory {
+    margin-right: auto;
+  }
+  .content-container {
+      padding-top:3em;
+  }
+  .login-container {
+            position:relative;
+        width:6.5em; 
+float:right;
+
+  }
+  .main-content {
+      margin-top:1.5em;
+  }
+  
+}
+@media only screen and (min-width: 680px) {
+  
+  /* new account buton */
+    .button-account,
+    .button-login {
+        display:block;
+    }
+    /* new account buton */
+    
+    .main-content {
+
+        top:auto;
+    }.
+  button-directory {
+    float: right;
+  }
+  .meta-nav li a {
+    border-bottom: none;
+  }
+  .login-container {
+    bottom: .5em;
+    /* width:12.5em;    */
+    position:relative;
+    margin-top:-1.65em;
+    width:auto; 
+    float:none;
+  }
+/*  .header {
+      padding-bottom:1.65em;
+  } */
+  .main-content {
+      margin-top:0;
+  }
+  .login-hover:hover .account-panel,
+  .login-hover:hover .login-panel {
+    margin-top: -2px;
+    right:auto;
+  }
+}
+
+/************* COLOR ******************/
+input[type="text"],
+input[type="password"] {
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
+  border:solid 1px #ccc;
+}
+input[type="text"],
+textarea {
+  background: #f2fafa;
+  -webkit-box-shadow: inset 0 1px 2px #749999;
+  -moz-box-shadow: inset 0 1px 2px #749999;
+  box-shadow: inset 0 1px 2px #749999;
+  border:solid 1px #ccc;
+}
+input.button {
+  background: #2489CF;
+  color: #fff;
+}
+form tr {
+  border-top: 1px solid #e9f4f4;
+}
+textarea {
+  border: none;
+  -webkit-box-shadow: inset 0 1px 2px #749999;
+  -moz-box-shadow: inset 0 1px 2px #749999;
+  box-shadow: inset 0 1px 2px #749999;
+}
+.aside {
+  color: #797c03;
+}
+.aside a {
+  color: #4f3114;
+  border-bottom: 1px dotted #6f7c39;
+}
+.aside a:hover {
+  color: #8d6843;
+  border-bottom: 1px dotted #8d6843;
+}
+.aside h3,
+.aside h4,
+#release-side h4,
+#release-side h5 {
+  color: #656b0d;
+}
+.aside p {
+  color: #6f7c39;
+}
+.aside li {
+  list-style-image: url(/assets/images/css/alums/spring/bullet-sidebar.gif);
+}
+b.degree {
+  color: #fff0f7;
+  /*    text-shadow: none; */
+
+}
+.button,
+.button-login,
+.button-directory,
+.button-account {
+  color: #f2f2f2;
+}
+.button:hover,
+.button:focus,
+.button-login:hover,
+.button-directory:hover,
+.button-login:focus,
+.button-directory:focus,
+.button-login-submit:hover,
+.button-login-submit:focus,
+.button-account:hover,
+.button-account:focus,
+#btnFindRecord:hover, #btnFindRecord:focus,
+#btnRegAcct:hover, #btnRegAcct:focus  {
+  background-color: #000;
+  color: #fff;
+}
+.calendar-event { clear:left; }
+.calendar-event-info { margin-top: -12px }
+.calendar-more-info {
+    border-top: 1px dashed #ccc;
+    clear: both;
+    display: block;
+    padding-top: 16px;
+}
+.calendar-event-register {
+    color: #d00;
+}
+.content-body li {
+  list-style-image: url(../images/css/alums/spring/bullet.gif);
+}
+.content a:hover img {
+  border-color: #88bb55;
+}
+.content img {
+  background: #ffffff;
+}
+.content .figcaption {
+  color: #666666;
+}
+.content li {
+  list-style-image: url(/assets/images/css/alums/spring/bullet.gif);
+}
+.login-panel .hr {
+  color: #999999;
+}
+.login-panel .new-user {
+  /* .login-panel p:last-child */
+
+  background: #f2f2f2;
+  color: #999;
+}
+.button-login-submit { padding: 40px; }
+.login-panel .hr {
+  color: #999999;
+}
+.login-panel .new-user {
+  /* .login-panel p:last-child */
+
+  background: #f2f2f2;
+  color: #999;
+}
+.login-submit {
+  background: #2489cf;
+  color: #f2f2f2;
+}
+.navigation li a:hover {
+  background: #f6e4f0;
+  background: rgba(233, 0, 115, 0.1);
+  color: #7f1722;
+}
+.new-user a {
+  color: #2489CF;
+}
+.new-user:hover {
+  border-top: 2px solid #1479be;
+}
+.login-panel .new-user:hover a {
+  background: #2489CF;
+  color: #fff;
+  text-shadow: 0px -1px 1px #444488;
+}
+th {
+  background: #e7f5fb;
+}
+.sidebar .se-banner { background: #9a0000 }
+.sidebar .sidebar-enews {
+    background: #fff;
+    -moz-box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+}
+    .sidebar .sidebar-enews h3 { border-bottom: none }
+    .sidebar .sidebar-enews a { color: #9a0000 }
+        .sidebar .sidebar-enews a img { /* max-width: 260px */ }
+.sidebarcontent {
+  border-bottom: 1px dotted #d6da9d;
+}
+.travel-broch-error {
+  padding: 14px;
+  background: #ffe8d3;
+  border: 10px solid #fff;
+  -webkit-box-shadow: 0 1px 2px #888;
+  -moz-box-shadow: 0 1px 2px #888;
+  box-shadow: 0 1px 2px #888;
+  margin-bottom: 40px;
+}
+.travel-broch-error p,
+.travel-broch-error li {
+  font-family: Lucida Grande;
+  font-size: 12px;
+  list-style: square;
+  margin-bottom: 2px;
+}
+.travel-broch-error p:first-child {
+  font-family: proxima-nova;
+  font-weight: 700;
+  font-size: 14px;
+}
+.travel-item {
+  border-bottom: 1px dashed #cccccc;
+}
+.travel-item:last-child {
+  border-bottom: none;
+}
+.travel-more a {
+  background: #95b845 url(../images/css/more-bg-white.png) right center no-repeat;
+  color: #fff;
+}
+.travel-more a:hover {
+  background-color: #789a2b;
+}
+.travel-sold-out, .travel-cancelled {
+  color: #cc0000;
+}
+.travel-waitlist {
+    color: #d8a302;
+}
+.offsite::after {
+  content: "";
+  display: inline-block;
+    background: url(data:image/gif;base64,R0lGODlhEAAQAJEDAMzM/2ZmzJmZ/////yH5BAEAAAMALAAAAAAQABAAAAIqnI+py+0BoxICDBHhTHkfLCXCRw2aaAClGXiA5YzwMSOjJ1K67vT+rygAADs=) 0 50%;
+/*  background: url(http://collegerelations.vassar.edu/centralincludes/css/icons/sparkcons/links_to_external_site_1.gif) right no-repeat; */
+  height: 12px;
+  width: 14px;
+  margin-left: 4px;
+}
+
+
+
+
+/**
+ *
+ * Summer Theme Begin
+ *
+ */
+
+
+a {
+    color: #5bafe4;
+}
+
+ul.banners {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding-bottom: 2%;
+    width: 100%;
+}
+
+h1 img {
+	margin: .85em 0 1.15em .1em;
+}
+
+.footer {
+    background-image: url("../images/summer/footer-top.png");
+    background-position:center 2px;
+}
+
+    .footer::before {
+        background-image: url("../images/summer/footer-bg.png");
+    }
+    
+.footer,
+.footer h3 {
+    color: #682;
+}
+
+    .footer a { 
+        color: #340;
+    }
+
+        .footer a:hover {
+            background: #f2ffd3;
+            background: rgba(242,255,211,.6);
+            color: #340;
+        }
+        
+.hub-tooltip {
+    border-color: #fa0;
+}
+
+.meta-nav a {
+    color: #5a6212;
+}
+    .meta-nav a:hover,
+    .meta-nav a.highlight {
+        background: #e8f098;
+        border-color: #c8d35f;
+        color: #5a6212;     
+    }
+    
+.navigation a {
+    color: #414909;
+    font-weight: 100;
+}
+
+.navigation li a:hover,
+.navigation .sub-menu a:hover {
+    background: #e8f098;
+    color: #5a6212; 
+}
+
+.navigation .highlight {
+  /* (entire selector) Spring-specific - Chris */
+    background: #f6e4f0;
+    background: rgba(233, 0, 115, 0.1);
+    color: #7f1722;
+}
+
+.navigation .sub-menu {
+    border-left: 1px solid #dae55a;
+}
+
+    .navigation .sub-menu a {
+        color: #8fa700;
+    }
+
+.weather-updated-label,
+.weather-updated-data {
+    color:#80994d;
+}
+
+@media only screen and (min-width: 520px) {
+
+    html {
+        border-top: 45px solid #4d6200;
+    }
+    
+    body {
+        /* top photobar */
+        background: url("../images/summer/photobar-5.jpg") center top no-repeat;
+    }
+    
+}
+
+    
+ /**
+ *
+ * Summer Theme End
+ *
+ */
+ 
+ td.table-algin-top { vertical-align: top; }
+ td.table-column-width { width: 405px; }
+  td.table-column-width-half { width: 50%; }
+
+
+
+
+
+/* CLASS PAGES */
+
+
+ul.cca-jumplinks { 
+    border: 1px solid #eee;
+    border-right: none;
+    border-left: none;  
+    margin: 0 0 1em 0;
+    padding: .4em 0;
+}
+    .cca-jumplinks li {
+        display: inline;
+        margin-right: .5em;
+    }
+        .cca-jumplinks li:after {
+            color: #888;
+            content: "\00b7";
+            margin-left: .5em;
+        }
+        .cca-jumplinks li:last-child:after {
+            content: "";
+        }
+        .cca-jumplinks li a {
+            font-weight: bold;
+        }  
+
+
+
+
+.cca-volunteer ul, .cca-memoriam ul, .cca-lost ul {
+    width: auto;
+}
+.cca-title {
+    font-style: normal;
+    font-weight: bold;
+}
+    .cca-title:after {
+        content: ":";
+        margin-right: .25em;
+    }
+.cca-volunteer .cca-name {
+    float: none;
+}
+span.cca-memoriam {
+    float: none;
+}
+    span.cca-memoriam:before {
+        content: "\2014";
+    }
+.cca-jumplinks+a {
+    border: 1px solid #f00;
+}
+
+
+
+
+
+
+
+    
+    
+/*  SUMMER STYLES
+    -------------
+
+    Ideally, these styles will have their own stylesheet.
+    Comment out a theme block to disable it.
+*/  
+
+.navigation .opened {
+    background: #fef5df !important;
+    color: #5a6212 !important;
+}
+.navigation .highlight {
+    background: #eaf18b !important;
+    color: #5a6212 !important;
+}
+.navigation .sub-menu a.highlight {
+    color: #5a6212 !important;
+}
+b.degree {
+    color: #efa;
+    opacity: .8;
+}
+
+
+.sidebar .sidebar-enews {
+    display:block !important;
+}
+.sidebar .sidebar-enews .se-banner .figcaption {
+    display:none;
+}
+
+
+
+        .sidebarcontent form {
+            overflow: hidden;
+            border-top: 3px double rgba(0,0,0,.075);
+            padding: 1em 0;
+        }
+/*        .sidebarcontent form {
+        	background: #fff;
+        	padding: 4%;
+        	box-shadow: 0 1px 1px rgba(0,0,0,.2);
+        	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.2);
+        	-moz-box-shadow: 0 1px 1px rgba(0,0,0,.2);
+        } */
+        .sidebarcontent {
+        	border: none;
+        }
+        .vassar-events-signup input {
+	        -moz-box-sizing: border-box;
+	        -webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+		}
+        .vassar-events-signup input[type="text"] {
+			background: #ecefcb;
+			box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+			-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+			-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+        }
+
+        .vassar-events-signup .email {
+        	width: 100%;
+        }
+        
+        .vassar-events-signup .button.subscribe-btn {
+        	background: #969d34;
+        	margin-top: .5em;
+        }
+	        .vassar-events-signup .button.subscribe-btn:hover {
+				background: #6d731c;
+	        }
+
+
+
+.call-to-action {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2%;
+    font-size: 18px;    
+}

@@ -1,0 +1,25 @@
+/* Vassar Alumni CSS Overwrite */
+
+/*FORM STYLES*/
+
+/*this style prevents any boxed category using iMods classes from smacking into the right sidebar of our wrapper, with v_step class applied to Step Settings */ 
+.v_step .imod_categoryWrapper.borderWrap,
+.v_step .imod_categoryWrapper.backgroundWrap { 
+   width: 94%;
+   }
+
+/*these styles allow us to individually split fields left and right on the same line on just one step of form, where the v_step class is applied to the Step Settings, and v_split50 class (with floatLeft or floatRight) is used on the fields instead of just split50 */
+.v_step .v_split50 { 
+    box-sizing: border-box;
+    }
+.v_step .imod_fieldWrapper.v_split50 {
+    width: 50%;
+	padding: 10px 0 5px;
+    }
+.v_step .imod_fieldWrapper.v_split50.floatLeft {
+    clear: left;
+    float: left;
+    }
+.v_step .imod_fieldWrapper.v_split50.floatRight {
+    float: right;
+    }

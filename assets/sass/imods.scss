@@ -1,0 +1,114 @@
+a {
+    color: #CC2249;
+    border-bottom: 1px solid
+;
+}
+
+#ContentMiddle .imod-profile-step-header {
+    background: #d8c5d1;
+}
+
+#ContentMiddle .imod-profile-step-opened .imod-profile-step-header {
+    background: #380C2A;
+}
+
+.content-body {
+    float: left;
+    margin-left: 0;
+    padding: 2%;
+    width: 96%;
+}
+
+.content-body-aside {
+    width: 100%;
+}
+
+.content-container {
+    max-width: inherit;
+}
+
+.content-container:after {
+    border-right: 0;
+}
+
+.content-container:before {
+    background: none;
+    border-left: 0px dashed #b3c51d;
+    border-right: 0px solid #b3c51d;
+}
+
+.imod-profile-left-nav ul li {
+    border-bottom: 1px solid #d8c5d1;
+    color: #904e7b;
+}
+
+.nav, .aside {
+    display: none;
+}
+
+body {
+    color: #380C2A;
+}
+
+/*
+Violet #380C2A
+Pink #CC2249
+Orange #FF4D38
+Yellow #FEE293
+Green #37C78F
+*/
+
+div.imod-profile-fields ul li div.imod-profile-field-label {
+    color: #904E77;
+}
+
+div.imod-profile-fields ul li:nth-child(2n), div.imod-profile-fields ul li {
+    background: #f9f0f5;
+    border-bottom: 1px solid #d8c5d1;
+}
+
+#ContentMiddle .imod-profile-form-buttons input.imod-profile-button, #ContentMiddle .imod-profile-form-buttons button.imod-profile-button {
+    background: #380c2a;
+}
+
+#ContentMiddle .imod-profile-step-opened .imod-profile-form-buttons input.imod-profile-button, #ContentMiddle .imod-profile-step-opened .imod-profile-form-buttons button.imod-profile-button {
+    color: #380c2a;
+    background: #f9f0f5;
+}
+
+#ContentMiddle .imod-toggle-switch input.selected, #ContentMiddle .imod-toggle-switch button.selected, #ContentMiddle .imod-toggle-switch a.selected {
+    background: #380c2a;
+}
+
+#ContentMiddle .imod-toggle-switch input, #ContentMiddle .imod-toggle-switch button, #ContentMiddle .imod-toggle-switch a, #contentMiddle .imod-toggle-switch a:visited {
+    background: #d8c5d1;
+}
+
+.imod-profile-image {
+    border: 2px solid #d8c5d1;
+    padding-bottom: .5em;
+}
+
+.imod-profile-summary-member-name {
+    text-transform: uppercase;
+}
+
+div.imod-light-switch-off {
+    background: #d8c5d1;
+    color: #fff;
+}
+
+#ContentMiddle div.imod-light-switch-on {
+    background: #380c2a;
+}
+
+#ContentMiddle div.imod-profile-mode-edit div.imod-profile-edit-form-buttons {
+    background: transparent;
+}
+
+#ContentMiddle div.imod-profile-edit-form-buttons input, #ContentMiddle div.imod-profile-edit-form-buttons button {
+    background: #cc2249;
+    border-radius: 0;
+    font-size: 100%;
+}
+

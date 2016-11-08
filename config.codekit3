@@ -7,7 +7,7 @@
 		"uuidString": "3377E184-020C-42E3-91E9-FA4307A87FCB"
 		}
 	],
-"creatorBuild": "25428",
+"creatorBuild": "25444",
 "files": {
 	"\/.htaccess": {
 		"ft": 8192,
@@ -323,6 +323,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/alums-inner.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/alums-inner.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/imods.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/imods.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/local-group.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -336,8 +362,21 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/assets\/sass\/overwrite_alumni.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/overwrite_alumni.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/config.rb": {
-		"ft": 8192,
+		"ft": 131072,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0

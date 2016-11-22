@@ -23,3 +23,175 @@
 .v_step .imod_fieldWrapper.v_split50.floatRight {
     float: right;
     }
+
+
+
+/* Jeff Macaluso styles added from inspector stylesheet */
+
+html {
+    background: #fff url() repeat;
+    border-top: 0px solid;
+}
+
+body {
+    background: url();
+    padding-top: 0;
+    margin: 0;
+}
+
+.make-a-gift-button, .meta-nav {
+    display: none;
+    visibility: hidden;
+}
+
+.login-container {
+    bottom: 0;
+    float: none;
+    position: absolute;
+    top: 8em;
+    right: 2em;
+}
+
+.button, .olc-formButton, input[type="button"], input[type="submit"], .button-account, .button-directory, .button-login, #btnFindRecord, #btnRegAcct {
+    background-color: #CC2249;
+    border-radius: 0;
+}
+
+#Logout {
+    margin-top: 6em;
+    display: block;
+}
+
+#Logout > span {
+    background-color: #CC2249;
+    border: none;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 0;
+    margin-left: 0;
+    width: inherit;
+}
+
+.header-container {
+    margin: 1.5em 0 0;
+    padding: 0;
+}
+
+.header {
+    padding: 0 0 0 1em;
+    margin: 0;
+    max-width: 100%;
+    position: relative;
+    background-color: #380C2A;
+    border-bottom: 0.25em solid #CC2249;
+}
+
+header:before {
+    content: "Vassar";
+    position: absolute;
+    top: 3em;
+    left: 1em;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #CC2249;
+}
+
+.main-content {
+    margin: 0;
+    width: 100%;
+}
+
+.content-container {
+    padding-top: 0;
+    max-width: 100%;
+    -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    border-top: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: solid 0 transparent;
+}
+
+.content-container:after {
+    border-right: 0 dashed transparent;
+}
+
+.content-container:before {
+    background: transparent;
+    border-left: 0 dashed transparent;
+    border-right: 0 solid transparent;
+}
+
+.navigation {
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 0;
+    float: none;
+}
+
+#nav1 {
+    visibility: hidden;
+    position: relative;
+}
+
+#nav2 {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    background-color: #CC2249;
+}
+
+#nav2 li {
+    display: inline-block;
+}
+
+#nav2 li a {
+    color: #fff;
+}
+
+.footer {
+    background-image: url();
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer h3 {
+    color: #915d7f;
+    text-shadow: none;
+}
+
+.footer img {
+    display: none;
+}
+
+.footer:before {
+    background: transparent url() center 0 repeat;
+    background-color: #380C2A;
+    border-top: 0.25em solid #CC2249;
+}
+
+.footer-just-for-alums, .footer-explore-vassar {
+    display: none;
+    visibility: hidden;
+}
+
+.footer-columns {
+    text-align: center;
+    max-width: 100%;
+}
+
+.footer-columns>li {
+    width: 100%;
+    margin: 0;
+}
+
+.footer-columns>li:nth-child(1), .footer-columns>li:nth-child(3) {
+    background: transparent url() 100% repeat-y;
+}
+
+
+

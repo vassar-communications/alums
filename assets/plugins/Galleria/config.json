@@ -1,0 +1,15 @@
+
+
+[{
+ "galleryHome" : "",
+"id" : "homepage",
+"idleMode" : false,
+"imageCrop" : false,
+"modal" : false,
+"thumbnails" : false,
+"showImagenav" : true,
+"showCounter" : true,
+"showInfo" : true,
+"slidesLocation" : "",
+"height" : "1\/1.6","theme" : "blank","showinfo" : false,"autoplay" : "5000","transition" : "fade","showImagenav" : false,"showCounter" : false,"transitionSpeed" : "5000","imageCrop" : "landscape",
+"slides" : [{"description" : "<b class=\"u-Figure__caption--descriptionTitle\">Bringing the Farm to the City<\/b><b class=\"u-Figure__caption--descriptionDesc\">Seven years ago, Gwen Schantz &#8217;03 and Anastasia Cole Plakias &#8217;05 began their journey to become farmers in New York City. Now Brooklyn Grange has 2.5 acres of rooftop farms, complete with greenhouses, beehives, chicken coops &#8230; and stunning views of Manhattan.<\/b><a class=\"externalLink u-Figure__caption--descriptionExternalLink\" href=\"#\">Read More at stories.vassar.edu<\/a>", "title" : "", "url" : "/assets/images/slideshows/homepage/_MG_2129.jpg"}]}]

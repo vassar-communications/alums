@@ -277,11 +277,45 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/assets\/images\/slideshows.zip": {
+	"\/assets\/css\/overwrite_alumni.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/assets\/css\/overwrite_alumni-ck.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/images\/icons.zip": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/images\/slideshows.zip",
+		"oAP": "\/assets\/images\/icons.zip",
 		"oF": 0
+		},
+	"\/assets\/images\/icons\/externalLink.png": {
+		"ft": 32768,
+		"iS": 1221,
+		"oA": 0,
+		"oAP": "\/assets\/images\/icons\/externalLink.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/images\/icons\/externalLinkActive.png": {
+		"ft": 32768,
+		"iS": 1311,
+		"oA": 0,
+		"oAP": "\/assets\/images\/icons\/externalLinkActive.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/images\/icons\/externalLinkHoverFocus.png": {
+		"ft": 32768,
+		"iS": 1311,
+		"oA": 0,
+		"oAP": "\/assets\/images\/icons\/externalLinkHoverFocus.png",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/assets\/images\/slideshows\/homepage\/_MG_2129.jpg": {
 		"ft": 16384,
@@ -296,6 +330,53 @@
 		"oA": 0,
 		"oAP": "\/assets\/nav.html",
 		"oF": 0
+		},
+	"\/assets\/plugins\/extendedFooter.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/extendedFooter.zip",
+		"oF": 0
+		},
+	"\/assets\/plugins\/extendedFooter\/config.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/extendedFooter\/config.php",
+		"oF": 0
+		},
+	"\/assets\/plugins\/Galleria\/config.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/Galleria\/config-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/assets\/plugins\/hours\/config.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/hours\/config.php",
+		"oF": 0
+		},
+	"\/assets\/plugins\/lists\/config.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/lists\/config-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/assets\/sass\/1st-overwrite-alumni.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/1st-overwrite-alumni.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/assets\/sass\/_config.scss": {
 		"aP": 0,
@@ -376,16 +457,352 @@
 		"uL": 1
 		},
 	"\/config.rb": {
-		"ft": 131072,
+		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
 		},
-	"\/extended-fotter.html": {
+	"\/design-files\/alumnaei-hub-form-page-00-interim.ai": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/extended-fotter.html",
+		"oA": 2,
+		"oAP": "\/design-files\/alumnaei-hub-form-page-00-interim.ai",
 		"oF": 0
+		},
+	"\/design-files\/alumnaei-hub-form-page-00-interim.jpg": {
+		"ft": 16384,
+		"iS": 118371,
+		"oA": 0,
+		"oAP": "\/design-files\/alumnaei-hub-form-page-00-interim.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/alumnaei-hub-form-page-00-profile.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/alumnaei-hub-form-page-00-profile.ai",
+		"oF": 0
+		},
+	"\/design-files\/alumnaei-hub-form-page-00-profile.jpg": {
+		"ft": 16384,
+		"iS": 254716,
+		"oA": 0,
+		"oAP": "\/design-files\/alumnaei-hub-form-page-00-profile.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/alumnaei-hub-form-page-00.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/alumnaei-hub-form-page-00.ai",
+		"oF": 0
+		},
+	"\/design-files\/alumnaei-hub-form-page-01d.jpg": {
+		"ft": 16384,
+		"iS": 253446,
+		"oA": 0,
+		"oAP": "\/design-files\/alumnaei-hub-form-page-01d.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/alumnaei-hub-homepage-00.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/alumnaei-hub-homepage-00.ai",
+		"oF": 0
+		},
+	"\/design-files\/alumnaei-hub-homepage-01d.jpg": {
+		"ft": 16384,
+		"iS": 666215,
+		"oA": 0,
+		"oAP": "\/design-files\/alumnaei-hub-homepage-01d.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/alumnaei-hub-homepage-01e.jpg": {
+		"ft": 16384,
+		"iS": 665057,
+		"oA": 0,
+		"oAP": "\/design-files\/alumnaei-hub-homepage-01e.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/alumnaei-hub-innerpage-00.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/alumnaei-hub-innerpage-00.ai",
+		"oF": 0
+		},
+	"\/design-files\/alumnaei-hub-innerpage-01d.jpg": {
+		"ft": 16384,
+		"iS": 563428,
+		"oA": 0,
+		"oAP": "\/design-files\/alumnaei-hub-innerpage-01d.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/alumnaei-hub-landingpage-00.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/alumnaei-hub-landingpage-00.ai",
+		"oF": 0
+		},
+	"\/design-files\/alumnaei-hub-landingpage-01d.jpg": {
+		"ft": 16384,
+		"iS": 483168,
+		"oA": 0,
+		"oAP": "\/design-files\/alumnaei-hub-landingpage-01d.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/docs\/ALUM HUB FOOTER REDO.docx": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/docs\/ALUM HUB FOOTER REDO.docx",
+		"oF": 0
+		},
+	"\/design-files\/docs\/alum-credentials.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/docs\/alum-credentials.txt",
+		"oF": 0
+		},
+	"\/design-files\/imods.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/imods.txt",
+		"oF": 0
+		},
+	"\/design-files\/Links\/28096196716_22d02b4f45_o.jpg": {
+		"ft": 16384,
+		"iS": 1701184,
+		"oA": 0,
+		"oAP": "\/design-files\/Links\/28096196716_22d02b4f45_o.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/Links\/_MG_2129.jpg": {
+		"ft": 16384,
+		"iS": 480232,
+		"oA": 1,
+		"oAP": "\/design-files\/Links\/_MG_2129.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/Links\/Eliot Cowley 1609 RD_54.jpg": {
+		"ft": 16384,
+		"iS": 1630329,
+		"oA": 0,
+		"oAP": "\/design-files\/Links\/Eliot Cowley 1609 RD_54.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/Links\/externalLink.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/design-files\/Links\/externalLink.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/design-files\/Links\/fb.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/design-files\/Links\/fb.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/design-files\/Links\/inst.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/design-files\/Links\/inst.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/design-files\/Links\/tw.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/design-files\/Links\/tw.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/design-files\/Links\/Your-Their_Our-Annual-Fund-logo.png": {
+		"ft": 32768,
+		"iS": 37514,
+		"oA": 0,
+		"oAP": "\/design-files\/Links\/Your-Their_Our-Annual-Fund-logo.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-form-page-01.jpg": {
+		"ft": 16384,
+		"iS": 252406,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-form-page-01.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-form-page-01a.jpg": {
+		"ft": 16384,
+		"iS": 253938,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-form-page-01a.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-form-page-01b.jpg": {
+		"ft": 16384,
+		"iS": 253938,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-form-page-01b.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-form-page-01c.jpg": {
+		"ft": 16384,
+		"iS": 252231,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-form-page-01c.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-homepage-00.jpg": {
+		"ft": 16384,
+		"iS": 642038,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-homepage-00.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-homepage-00a.jpg": {
+		"ft": 16384,
+		"iS": 1076356,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-homepage-00a.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-homepage-01.jpg": {
+		"ft": 16384,
+		"iS": 742111,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-homepage-01.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-homepage-01a.jpg": {
+		"ft": 16384,
+		"iS": 704318,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-homepage-01a.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-homepage-01b.jpg": {
+		"ft": 16384,
+		"iS": 687567,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-homepage-01b.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-homepage-01c.jpg": {
+		"ft": 16384,
+		"iS": 662048,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-homepage-01c.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-innerpage-00.jpg": {
+		"ft": 16384,
+		"iS": 549798,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-innerpage-00.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-innerpage-01.jpg": {
+		"ft": 16384,
+		"iS": 550472,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-innerpage-01.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-innerpage-01a.jpg": {
+		"ft": 16384,
+		"iS": 552204,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-innerpage-01a.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-innerpage-01b.jpg": {
+		"ft": 16384,
+		"iS": 553890,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-innerpage-01b.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-innerpage-01c.jpg": {
+		"ft": 16384,
+		"iS": 553414,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-innerpage-01c.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-landingpage-00.jpg": {
+		"ft": 16384,
+		"iS": 443231,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-landingpage-00.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-landingpage-01.jpg": {
+		"ft": 16384,
+		"iS": 466141,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-landingpage-01.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-landingpage-01a.jpg": {
+		"ft": 16384,
+		"iS": 467767,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-landingpage-01a.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-landingpage-01b.jpg": {
+		"ft": 16384,
+		"iS": 469664,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-landingpage-01b.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/old\/alumnaei-hub-landingpage-01c.jpg": {
+		"ft": 16384,
+		"iS": 469375,
+		"oA": 0,
+		"oAP": "\/design-files\/old\/alumnaei-hub-landingpage-01c.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/index.html": {
 		"ft": 8192,

@@ -10,6 +10,7 @@ $serif: "freight-text-pro", "Georgia";
 $sans-serif: "brandon-grotesque", "Helvetica";
 $fontWeightNormal: 400;
 $fontWeightBold: 700;
+$fontWeightBoldSans: 500;
 
 /*	LAYOUT
 	====== */
@@ -17,8 +18,8 @@ $fontWeightBold: 700;
 /* Site breakpoints */
 
 $tiny: 25em; /* 400px divided by 16px */
-$small: 37.5em; /* 600px divided by 16px */
-$medium: 50em; /* 800px divided by 16px */
+$small: 54.375em; /* 600px divided by 16px */
+$medium: 54.375em; /* 800px divided by 16px */
 $large: 62.5em; /* 1000px divided by 16px */
 
 /* The padding on u-lHeader, u-lMain, u-lFooter, and u-NavSite. */
@@ -85,9 +86,9 @@ $u-VCard__site--labelFont: $fontWeightNormal 1em/1.2 $sans-serif;
 $u-VCard__site--color: inherit;
 $u-VCard__site--labelColor: inherit;
 
-$u-VCard__site--linkColor: $linkColor;
+$u-VCard__site--linkColor: #fff;
 $u-VCard__site--linkColorHoverFocus: $linkColorHoverFocus;
-$u-VCard__site--linkColorVisited: $linkColorVisited;
+$u-VCard__site--linkColorVisited: #fff;
 $u-VCard__site--linkColorActive: $linkColorActive;
 
 $u-VCard__site--border: none;
@@ -120,17 +121,17 @@ $gsPaginationHoverLinkBorder: #ccc;
 $gsPaginationHoverLinkBackground: #ddd;
 
 /* Nav */
-$u-NavSite__level--1--mobileFont: $fontWeightBold 1.95em/1.1 $sans-serif;
+$u-NavSite__level--1--mobileFont: $fontWeightBoldSans 1.95em/1.1 $sans-serif;
 $u-NavSite__level--2--mobileFont: $fontWeightNormal 1.4em/1.1 $sans-serif;
 $u-NavSite__level--3--mobileFont: $fontWeightNormal 1em/1.1 $sans-serif;
 $u-NavSite__item--mobilePadding: .25em 0;
 
 $u-NavSite__level--1--font: $fontWeightNormal 1em/1.1 $sans-serif;
 $u-NavSite__level--2--font: $fontWeightNormal 1em/1.1 $sans-serif;
-$u-NavSite__level--3--font: $fontWeightNormal 1em/1.1 $sans-serif;
+$u-NavSite__level--3--font: $fontWeightNormal .9em/1.1 $sans-serif;
 /* level 3 covers Level 3 and up. */
 
-$u-NavSite__level--borderColor: 1px solid $pink;
+$u-NavSite__level--borderColor: none;
 
 $mobileMenuBackground: $violet;
 
@@ -146,14 +147,14 @@ $menuLinkColorVisited: #fff;
 
 /* LATEST Modules basic */
 
-$sidebarModule__header--font: $fontWeightBold 1.25em/1.1 $sans-serif;
-$sidebarModule--nameFont: $fontWeightNormal .9em/1.1 $sans-serif;
+$sidebarModule__header--font: $fontWeightNormal 1.4em/1.1 $sans-serif;
+$sidebarModule--nameFont: $fontWeightNormal 1.3em/1.1 $sans-serif;
 
 $sidebarModule--font: $fontWeightNormal 1em $sans-serif; /* that shorthand left in for backwards compatibility */
 $sidebarModule--font-weight: inherit;
 $sidebarModule--font-family: inherit;
 
-$sidebarModule--labelFont: $fontWeightBold;
+$sidebarModule--labelFont: $fontWeightBoldSans;
 $sidebarModule--margin: 0 0 1.5em;
 
 /* Use these variables to place a bg color on side news announcement items */
@@ -169,7 +170,7 @@ $sidebarModule__header--linkColorVisited: $linkColorVisited;
 
 /* News  */
 
-$u-ArticleListItem__title--font: $fontWeightBold 1em $sans-serif;
+$u-ArticleListItem__title--font: $fontWeightNormal 1em $sans-serif;
 $u-ArticleListItem__title--linkColor: $linkColor;
 $u-ArticleListItem__title--linkColorHoverFocus: $linkColorHoverFocus;
 $u-ArticleListItem__title--linkColorActive: $linkColorActive;

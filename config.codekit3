@@ -638,12 +638,6 @@
 		"oAP": "\/design-files\/asdf.aco",
 		"oF": 0
 		},
-	"\/design-files\/brkick-envelope.tiff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/design-files\/brkick-envelope.tiff",
-		"oF": 0
-		},
 	"\/design-files\/connect-graphic.psd": {
 		"ft": 8192,
 		"oA": 2,
@@ -662,6 +656,18 @@
 		"oAP": "\/design-files\/docs\/alum-credentials.txt",
 		"oF": 0
 		},
+	"\/design-files\/docs\/Build_Revisions_RD1-2.xlsx": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/docs\/Build_Revisions_RD1-2.xlsx",
+		"oF": 0
+		},
+	"\/design-files\/docs\/Build_Revisions_RD1.xls": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/docs\/Build_Revisions_RD1.xls",
+		"oF": 0
+		},
 	"\/design-files\/externalLink.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -677,6 +683,74 @@
 		"oA": 2,
 		"oAP": "\/design-files\/give-graphic.psd",
 		"oF": 0
+		},
+	"\/design-files\/imods\/class-notes-headers.jpg": {
+		"ft": 16384,
+		"iS": 363372,
+		"oA": 0,
+		"oAP": "\/design-files\/imods\/class-notes-headers.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/imods\/envelope.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/imods\/envelope.ai",
+		"oF": 0
+		},
+	"\/design-files\/imods\/envelope.ai.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/imods\/envelope.ai.zip",
+		"oF": 0
+		},
+	"\/design-files\/imods\/envelope.png": {
+		"ft": 32768,
+		"iS": 8845,
+		"oA": 0,
+		"oAP": "\/design-files\/imods\/envelope.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/imods\/families-myprofile-color.jpg": {
+		"ft": 16384,
+		"iS": 671516,
+		"oA": 0,
+		"oAP": "\/design-files\/imods\/families-myprofile-color.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/imods\/tables-example.jpg": {
+		"ft": 16384,
+		"iS": 90851,
+		"oA": 0,
+		"oAP": "\/design-files\/imods\/tables-example.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/imods\/typography.jpg": {
+		"ft": 16384,
+		"iS": 436462,
+		"oA": 0,
+		"oAP": "\/design-files\/imods\/typography.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/imods\/vassar-fund-2.jpg": {
+		"ft": 16384,
+		"iS": 184953,
+		"oA": 0,
+		"oAP": "\/design-files\/imods\/vassar-fund-2.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/imods\/vassar-fund.jpg": {
+		"ft": 16384,
+		"iS": 169119,
+		"oA": 0,
+		"oAP": "\/design-files\/imods\/vassar-fund.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/design-files\/imodules-Alumnaei-page-template-boilerplate-home.pdf": {
 		"ft": 8192,

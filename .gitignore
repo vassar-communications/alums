@@ -54,3 +54,5 @@ wurfl-php-1.7.1.1/
 
 *.codekit
 config.codekit
+
+.DS_Store

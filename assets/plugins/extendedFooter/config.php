@@ -23,7 +23,7 @@ array(
             <li><a href="" class="u-ExtendedFooter__listItemLink">Alumnae/i Email</a></li>
             <li><a href="" class="u-ExtendedFooter__listItemLink">Request a Transcript</a></li>
             </ul>
-            <h3 class="u-ExtendedFooter__listHeader">Calendars</h3>
+            <h3 class="u-ExtendedFooter__listHeader">Events</h3>
             <ul class="u-ExtendedFooter__list">
             <li><a href="" class="u-ExtendedFooter__listItemLink">Reunion</a></li>
             <li><a href="" class="u-ExtendedFooter__listItemLink">Alumnae/i Events</a></li>
@@ -55,10 +55,10 @@ array(
             <ul class="u-ExtendedFooter__list u-ExtendedFooter__list--services">
             <li><a href="" class="u-ExtendedFooter__listItemLink">Career Center</a></li>
             <li><a href="" class="u-ExtendedFooter__listItemLink">Travel</a></li>
-            <li><a href="" class="u-ExtendedFooter__listItemLink">Alumae House</a></li>
-            <li><a href="" class="u-ExtendedFooter__listItemLink">Alum Benefits</a></li>
+            <li><a href="" class="u-ExtendedFooter__listItemLink">Alumnae/i House</a></li>
+            <li><a href="" class="u-ExtendedFooter__listItemLink">Alumnae/i Benefits</a></li>
             </ul>
-            <h3 class="u-ExtendedFooter__listHeader">Support</h3>
+            <h3 class="u-ExtendedFooter__listHeader">Volunteer</h3>
             <ul class="u-ExtendedFooter__list">
             <li><a href="" class="u-ExtendedFooter__listItemLink">Want to Volunteer?</a></li>
             <li><a href="" class="u-ExtendedFooter__listItemLink">Current Volunteers</a></li>

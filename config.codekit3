@@ -7,8 +7,14 @@
 		"uuidString": "3377E184-020C-42E3-91E9-FA4307A87FCB"
 		}
 	],
-"creatorBuild": "25444",
+"creatorBuild": "25504",
 "files": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/.htaccess": {
 		"ft": 8192,
 		"oA": 2,
@@ -287,11 +293,21 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/assets\/images\/icons.zip": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/images\/icons.zip",
-		"oF": 0
+	"\/assets\/images\/connect-graphic.jpg": {
+		"ft": 16384,
+		"iS": 53992,
+		"oA": 0,
+		"oAP": "\/assets\/images\/connect-graphic.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/images\/give-graphic.jpg": {
+		"ft": 16384,
+		"iS": 49361,
+		"oA": 0,
+		"oAP": "\/assets\/images\/give-graphic.jpg",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/assets\/images\/icons\/externalLink.png": {
 		"ft": 32768,
@@ -317,6 +333,22 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/assets\/images\/icons\/externalLinkVisited.png": {
+		"ft": 32768,
+		"iS": 1359,
+		"oA": 0,
+		"oAP": "\/assets\/images\/icons\/externalLinkVisited.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/assets\/images\/icons\/figure--externalLink.png": {
+		"ft": 32768,
+		"iS": 1167,
+		"oA": 0,
+		"oAP": "\/assets\/images\/icons\/figure--externalLink.png",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/assets\/images\/slideshows\/homepage\/_MG_2129.jpg": {
 		"ft": 16384,
 		"iS": 198777,
@@ -324,6 +356,14 @@
 		"oAP": "\/assets\/images\/slideshows\/homepage\/_MG_2129.jpg",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/assets\/images\/update-graphic.jpg": {
+		"ft": 16384,
+		"iS": 23698,
+		"oA": 0,
+		"oAP": "\/assets\/images\/update-graphic.jpg",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/assets\/nav.html": {
 		"ft": 8192,
@@ -457,9 +497,35 @@
 		"uL": 1
 		},
 	"\/config.rb": {
-		"ft": 8192,
+		"ft": 131072,
 		"oA": 0,
 		"oAP": "\/config.rb",
+		"oF": 0
+		},
+	"\/design-files\/626A1186 copy.jpg": {
+		"ft": 16384,
+		"iS": 11792648,
+		"oA": 0,
+		"oAP": "\/design-files\/626A1186 copy.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/alum-diretory-row-bg.tiff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/alum-diretory-row-bg.tiff",
+		"oF": 0
+		},
+	"\/design-files\/alum-my-account-row-color.tiff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/alum-my-account-row-color.tiff",
+		"oF": 0
+		},
+	"\/design-files\/alum-profile-photo-width-100-percent.tiff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/alum-profile-photo-width-100-percent.tiff",
 		"oF": 0
 		},
 	"\/design-files\/alumnaei-hub-form-page-00-interim.ai": {
@@ -554,6 +620,36 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/design-files\/alumnaei.ase": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/alumnaei.ase",
+		"oF": 0
+		},
+	"\/design-files\/Archive.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/Archive.zip",
+		"oF": 0
+		},
+	"\/design-files\/asdf.aco": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/asdf.aco",
+		"oF": 0
+		},
+	"\/design-files\/brkick-envelope.tiff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/brkick-envelope.tiff",
+		"oF": 0
+		},
+	"\/design-files\/connect-graphic.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/connect-graphic.psd",
+		"oF": 0
+		},
 	"\/design-files\/docs\/ALUM HUB FOOTER REDO.docx": {
 		"ft": 8192,
 		"oA": 2,
@@ -566,11 +662,77 @@
 		"oAP": "\/design-files\/docs\/alum-credentials.txt",
 		"oF": 0
 		},
-	"\/design-files\/imods.txt": {
+	"\/design-files\/externalLink.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/design-files\/externalLink.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/design-files\/give-graphic.psd": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/design-files\/imods.txt",
+		"oAP": "\/design-files\/give-graphic.psd",
 		"oF": 0
+		},
+	"\/design-files\/imodules-Alumnaei-page-template-boilerplate-home.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/imodules-Alumnaei-page-template-boilerplate-home.pdf",
+		"oF": 0
+		},
+	"\/design-files\/imodules-page-template-boilerplate-home-01imod-a-home-1170.jpg": {
+		"ft": 16384,
+		"iS": 782240,
+		"oA": 0,
+		"oAP": "\/design-files\/imodules-page-template-boilerplate-home-01imod-a-home-1170.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/imodules-page-template-boilerplate-home-typography.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/imodules-page-template-boilerplate-home-typography.psd",
+		"oF": 0
+		},
+	"\/design-files\/imodules-page-template-boilerplate-home.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/imodules-page-template-boilerplate-home.psd",
+		"oF": 0
+		},
+	"\/design-files\/imodules-page-template-boilerplate-home.psd.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/imodules-page-template-boilerplate-home.psd.zip",
+		"oF": 0
+		},
+	"\/design-files\/imodules-page-template-boilerplate-homeimod-a-home-1170.jpg": {
+		"ft": 16384,
+		"iS": 556933,
+		"oA": 0,
+		"oAP": "\/design-files\/imodules-page-template-boilerplate-homeimod-a-home-1170.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/imodules-page-template-boilerplate-homeimod-a-home-320.jpg": {
+		"ft": 16384,
+		"iS": 83128,
+		"oA": 0,
+		"oAP": "\/design-files\/imodules-page-template-boilerplate-homeimod-a-home-320.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/imodules-page-template-boilerplate-homeimod-a-home-768.jpg": {
+		"ft": 16384,
+		"iS": 120010,
+		"oA": 0,
+		"oAP": "\/design-files\/imodules-page-template-boilerplate-homeimod-a-home-768.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/design-files\/Links\/28096196716_22d02b4f45_o.jpg": {
 		"ft": 16384,
@@ -801,6 +963,47 @@
 		"iS": 469375,
 		"oA": 0,
 		"oAP": "\/design-files\/old\/alumnaei-hub-landingpage-01c.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/design-files\/typekit.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/design-files\/min\/typekit-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/design-files\/update-graphic.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/update-graphic.psd",
+		"oF": 0
+		},
+	"\/design-files\/vassar-template\/imodules-page-template-boilerplate-home-typography Folder.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/vassar-template\/imodules-page-template-boilerplate-home-typography Folder.zip",
+		"oF": 0
+		},
+	"\/design-files\/vassar-template\/imodules-page-template-boilerplate-home-typography Folder\/imodules-page-template-boilerplate-home-typography.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/vassar-template\/imodules-page-template-boilerplate-home-typography Folder\/imodules-page-template-boilerplate-home-typography.psd",
+		"oF": 0
+		},
+	"\/design-files\/vassar-template\/imodules-page-template-boilerplate-home-typography Folder\/Links\/Vector Smart Object.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/design-files\/vassar-template\/imodules-page-template-boilerplate-home-typography Folder\/Links\/Vector Smart Object.ai",
+		"oF": 0
+		},
+	"\/design-files\/z-imodules-page-template-boilerplate-homeimod-a-home-320.jpg": {
+		"ft": 16384,
+		"iS": 166457,
+		"oA": 0,
+		"oAP": "\/design-files\/z-imodules-page-template-boilerplate-homeimod-a-home-320.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1294,6 +1497,10 @@
 			"active": 0,
 			"optionString": "{'properties': 'always'}"
 			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
 		"class-methods-use-this": {
 			"active": 0,
 			"optionString": "{'exceptMethods': []}"
@@ -1458,6 +1665,10 @@
 			"active": 0,
 			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
 			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
+			},
 		"multiline-ternary": {
 			"active": 0,
 			"optionString": "'always'"
@@ -1487,6 +1698,10 @@
 			"optionString": ""
 			},
 		"no-array-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-await-in-loop": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -1822,6 +2037,10 @@
 			"active": 0,
 			"optionString": "'except-parens'"
 			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-script-url": {
 			"active": 0,
 			"optionString": ""
@@ -2026,6 +2245,10 @@
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
 			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
@@ -2053,6 +2276,10 @@
 		"radix": {
 			"active": 0,
 			"optionString": "'always'"
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
 			},
 		"require-jsdoc": {
 			"active": 0,
@@ -2886,6 +3113,10 @@
 			},
 		"space-colon": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"toplevel": {

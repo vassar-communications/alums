@@ -386,7 +386,7 @@ li {
     }
     .u-lMain {
         width: 80%;
-        margin: 4em auto 5em;
+        margin: 5em auto;
         float: none;
         overflow: hidden;
     }
@@ -396,9 +396,11 @@ li {
     .u-pageHome {
         .u-lMain {
             width: 65%;
+            padding: 0;
         }
         .u-lContent {
             width: 100%;
+            padding-right: 0;
         }
     }
     .u-Search {
@@ -533,29 +535,66 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .galleria-info-description {
     color: #fff;
 }
+.galleria-info-description.u-Figure__caption--description a:active {
+    border-bottom: 1px solid $linkColorActive;
+    color: $linkColorActive;
+}
 .galleria-info-description.u-Figure__caption--description a:link {
     border: none;
 }
-.externalLink {
-    background: url(/assets/images/icons/externalLink.png) no-repeat;
+
+/* external link icon
+
+a:link[href^="http://"]:not([href*="vassar.edu"]), a[href^="https://"]:not([href*="vassar.edu"]), a[href^="//"]:not([href*="vassar.edu"]) {
+    padding-right: 24px;
+    padding-right: 1.5rem;
+    background-image: url(../images/icons/externalLink.png);
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23cc2249%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
+    background-size: 17px;
+    background-size: 1.1rem;
+    background-repeat: no-repeat;
+    background-position: right center;
 }
-.externalLink:hover,
-.externalLink:focus {
-    background: url(/assets/images/icons/externalLinkHoverFocus.png) no-repeat;
+a:visited[href^="http://"]:not([href*="vassar.edu"]), a:visited[href^="https://"]:not([href*="vassar.edu"]), a:visited[href^="//"]:not([href*="vassar.edu"]) {
+    background-image: url(../images/icons/externalLinkVisited.png);
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23380C2A%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
 }
-.externalLink:active {
-    background: url(/assets/images/icons/externalLinkActive.png) no-repeat;
+a:hover[href^="http://"]:not([href*="vassar.edu"]), a:hover[href^="https://"]:not([href*="vassar.edu"]), a:hover[href^="//"]:not([href*="vassar.edu"]), a:focus[href^="http://"]:not([href*="vassar.edu"]), a:focus[href^="https://"]:not([href*="vassar.edu"]), a:focus[href^="//"]:not([href*="vassar.edu"]) {
+    background-image: url(../images/icons/externalLinkHoverFocus.png);
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23ff4d38%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
 }
+a:active[href^="http://"]:not([href*="vassar.edu"]), a:active[href^="https://"]:not([href*="vassar.edu"]), a:active[href^="//"]:not([href*="vassar.edu"]) {
+    background-image: url(../images/icons/externalLinkActive.png);
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23FEE293%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
+}
+a.Module__button[href^="http://"]:not([href*="vassar.edu"]), a.Module__button[href^="https://"]:not([href*="vassar.edu"]), a.Module__button[href^="//"]:not([href*="vassar.edu"]), a.Module__button:visited[href^="http://"]:not([href*="vassar.edu"]), a.Module__button:visited[href^="https://"]:not([href*="vassar.edu"]), a.Module__button:visited[href^="//"]:not([href*="vassar.edu"]), a.Module__button:hover[href^="http://"]:not([href*="vassar.edu"]), a.Module__button:hover[href^="https://"]:not([href*="vassar.edu"]), a.Module__button:hover[href^="//"]:not([href*="vassar.edu"]), a.Module__button:focus[href^="http://"]:not([href*="vassar.edu"]), a.Module__button:focus[href^="https://"]:not([href*="vassar.edu"]), a.Module__button:focus[href^="//"]:not([href*="vassar.edu"])
+a.Module__button:active[href^="http://"]:not([href*="vassar.edu"]), a.Module__button:active[href^="https://"]:not([href*="vassar.edu"]), a.Module__button:active[href^="//"]:not([href*="vassar.edu"]) {
+    background-image: url(../images/icons/figure--externalLink.png);
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23FFFFFF%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
+} 
+.u-Figure__caption--descriptionExternalLink,
+.u-Figure__caption--descriptionExternalLink:visited {
+    padding-right: .9em;
+    background-image: url(../images/icons/figure--externalLink.png);
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23FFFFFF%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
+    background-position: top left;
+    background-size: 28px;
+    background-size: 1.8rem;
+    background-repeat: no-repeat;
+}
+.u-Figure__caption--descriptionExternalLink:hover,
+.u-Figure__caption--descriptionExternalLink:focus {
+    background-image: url(../images/icons/externalLinkHoverFocus.png);
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23FFFFFF%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
+}
+.u-Figure__caption--descriptionExternalLink:active {
+    background-image: url(../images/icons/externalLinkActive.png);
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23FFFFFF%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
+} */
 .galleria-info-text {
     background-color: $fontColor !important;
     background-image: -webkit-linear-gradient(top, rgba(56, 12, 42, 0.75), rgba(204, 34, 73, 0.75)) !important; /* Chrome 10-25, iOS 5+, Safari 5.1+ */
     background-image: linear-gradient(to bottom, rgba(56, 12, 42, 0.75), rgba(204, 34, 73, 0.75)) !important; /* Chrome 26, Firefox 16+, IE 10+, Opera */
-    .u-Figure__caption--descriptionTitle {
-    }
-    .u-Figure__caption--descriptionExternalLink {
-        background-position: center left;
-        background-size: 20%;
-    }
     .u-Figure__caption--descriptionDesc {
         border-bottom: 1px solid #fff;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -659,6 +698,97 @@ tbody tr:nth-child(odd) {
         .u-NavSite__item--isCurrent {
             background-color: #fff;
             color: $pink;
+        }
+    }
+}
+.u-pageHome {
+    @media screen {
+        .modulesArea__row {
+            margin-bottom: 6%;
+            .Module__header {
+                margin-top: 0;
+                color: $pink;
+                font-size: 1.25em;
+                border-bottom: .01em solid $pink;
+            }
+            .Module--fullWidth {
+                padding: 0;
+            }
+            .Module__list {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+            }
+            &:nth-child(1) {
+                overflow: hidden;
+                .Module__listItem {
+                    width: 80%;
+                    text-align: center;
+                    margin: 6%  auto;
+                    border: .01em solid lightgrey;
+                }
+                .Module__link {
+                    display: block;
+                    position: relative;
+                    border: .7em solid white;
+                    @include link-colors(#fff, $yellow, $pink, #fff, $yellow);
+
+                }
+                .Module__title,
+                .Module__desc {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    font-family: $sans-serif;
+                }
+                .Module__title {
+                    text-transform: uppercase;
+                    font-size: 1.5em;
+                    margin-top: .4em;
+                }
+                .Module__desc {
+                    bottom: 0;
+                    font-size: .9em;
+                    line-height: 1.2;
+                    margin-bottom: .9em;
+                }
+                .Module__image img {
+                    width: 100%;
+                }
+            }
+            &:nth-child(2) {
+                padding: 0 6%;
+            }
+            &:nth-child(3) {
+                padding: 0 6%;
+            }
+            &:nth-child(4) {
+                padding: 0 6%;
+            }
+        }
+    }
+    @media all and (min-width: 25em) {
+        .modulesArea__row {
+            &:nth-child(1) {
+                .Module__listItem {
+                    width: 60%;
+                }
+            }
+        }
+    }
+    @media all and (min-width: $small) {
+        .modulesArea__row {
+            &:nth-child(1) {
+                .Module__listItem {
+                    width: 29.33%;
+                    float: left;
+                    margin: 0;
+                }
+                .Module__listItem:nth-child(2) {
+                    margin: 0 6%;
+                }
+            }
         }
     }
 }

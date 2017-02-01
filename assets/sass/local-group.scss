@@ -12,7 +12,6 @@
 
 html {
 	font-family: $serif;
-    background-color: transparent;
 }
 h1, h2, h3, h4, h5, h6, thead td,
 caption, tfoot td {
@@ -702,93 +701,91 @@ tbody tr:nth-child(odd) {
         }
     }
 }
-.u-pageHome {
-    @media screen {
-        .modulesArea__row {
-            margin-bottom: 6%;
-            .Module__header {
-                margin-top: 0;
-                color: $pink;
-                font-size: 1.25em;
-                border-bottom: .01em solid $pink;
-            }
-            .Module--fullWidth {
-                padding: 0;
-            }
-            .Module__list {
-                padding: 0;
-                margin: 0;
-                list-style-type: none;
-            }
-            &:nth-child(1) {
-                overflow: hidden;
-                .Module__listItem {
-                    width: 80%;
-                    text-align: center;
-                    margin: 6%  auto;
-                    border: .01em solid lightgrey;
-                }
-                .Module__link {
-                    display: block;
-                    position: relative;
-                    border: .7em solid white;
-                    @include link-colors(#fff, $yellow, $pink, #fff, $yellow);
+@media screen {
+    .modulesArea__row {
+        margin-bottom: 6%;
+        .Module__header {
+            margin-top: 0;
+            color: $pink;
+            font-size: 1.25em;
+            border-bottom: .01em solid $pink;
+        }
+        .Module--fullWidth {
+            padding: 0;
+        }
+        .Module__list {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        &:nth-child(2) {
+            padding: 0 6%;
+        }
+        &:nth-child(3) {
+            padding: 0 6%;
+        }
+        &:nth-child(4) {
+            padding: 0 6%;
+        }
+    }
+    .list--homePage--listCallToAct {
+        overflow: hidden;
+        .Module__listItem {
+            width: 80%;
+            text-align: center;
+            margin: 6%  auto;
+            border: .01em solid lightgrey;
+        }
+        .Module__link {
+            display: block;
+            position: relative;
+            border: .7em solid white;
+            @include link-colors(#fff, $yellow, $pink, #fff, $yellow);
 
-                }
-                .Module__title,
-                .Module__desc {
-                    display: block;
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    font-family: $sans-serif;
-                }
-                .Module__title {
-                    text-transform: uppercase;
-                    font-size: 1.5em;
-                    margin-top: .4em;
-                }
-                .Module__desc {
-                    bottom: 0;
-                    font-size: .9em;
-                    line-height: 1.2;
-                    margin-bottom: .9em;
-                }
-                .Module__image img {
-                    width: 100%;
-                }
-            }
-            &:nth-child(2) {
-                padding: 0 6%;
-            }
-            &:nth-child(3) {
-                padding: 0 6%;
-            }
-            &:nth-child(4) {
-                padding: 0 6%;
+        }
+        .Module__title,
+        .Module__desc {
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            font-family: $sans-serif;
+        }
+        .Module__title {
+            text-transform: uppercase;
+            font-size: 1.5em;
+            margin-top: .4em;
+        }
+        .Module__desc {
+            bottom: 0;
+            font-size: .9em;
+            line-height: 1.2;
+            margin-bottom: .9em;
+        }
+        .Module__image img {
+            width: 100%;
+        }
+    }
+}
+@media all and (min-width: 25em) {
+    .modulesArea__row {
+        &:nth-child(1) {
+            .Module__listItem {
+                width: 60%;
             }
         }
     }
-    @media all and (min-width: 25em) {
-        .modulesArea__row {
-            &:nth-child(1) {
-                .Module__listItem {
-                    width: 60%;
-                }
+}
+@media all and (min-width: $small) {
+    .modulesArea__row {
+        &:nth-child(1) {
+            .Module__listItem {
+                width: 29.33%;
+                float: left;
+                margin: 0;
             }
-        }
-    }
-    @media all and (min-width: $small) {
-        .modulesArea__row {
-            &:nth-child(1) {
-                .Module__listItem {
-                    width: 29.33%;
-                    float: left;
-                    margin: 0;
-                }
-                .Module__listItem:nth-child(2) {
-                    margin: 0 6%;
-                }
+            .Module__listItem:nth-child(2) {
+                margin: 0 6%;
             }
         }
     }

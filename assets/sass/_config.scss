@@ -124,17 +124,17 @@ $u-NavSite__item--mobilePadding: .25em 0;
 
 $u-NavSite__level--1--font: $fontWeightNormal 1em/1.1 $sans-serif;
 $u-NavSite__level--2--font: $fontWeightNormal 1em/1.1 $sans-serif;
-$u-NavSite__level--3--font: $fontWeightNormal .9em/1.1 $sans-serif;
+$u-NavSite__level--3--font: $fontWeightNormal 1em/1.1 $sans-serif;
 /* level 3 covers Level 3 and up. */
 
 $u-NavSite__level--borderColor: none;
 
 $mobileMenuBackground: $violet;
 
-$mobileMenuLinkColor: $linkColor;
+$mobileMenuLinkColor: #fff;
 $mobileMenuLinkColorHoverFocus: $linkColorHoverFocus;
 $mobileMenuLinkColorActive: $yellow;
-$mobileMenuLinkColorVisited: $linkColor;
+$mobileMenuLinkColorVisited: #fff;
 
 $menuLinkColor: #fff;
 $menuLinkColorHoverFocus: $linkColorHoverFocus;

@@ -19,7 +19,7 @@ caption, tfoot td {
 	margin-bottom: .4em;
 	padding-top: .8em;
 	font-family: $sans-serif;
-    font-weight: $fontWeightNormal;
+    font-weight: $fontWeightBoldSans;
 }
 .u-lContent h1:nth-of-type(1), .u-lAside h1:nth-of-type(1),
 .u-lContent h2:nth-of-type(1), .u-lAside h2:nth-of-type(1),
@@ -40,7 +40,6 @@ h3 {
 }
 h4 {
 	font-size: 1.21em;
-    font-weight: $fontWeightBoldSans;
 }
 h5, thead td, table caption, tfoot td {
 	font-size: 1em;
@@ -85,34 +84,46 @@ li {
 	font-size: 100%;
 }
 .u-pageTitle {
-	margin-top: 0;
+	margin: 0 0 1.5em;
+    text-transform: uppercase;
+    font-size: 1.562em;
+    letter-spacing: .05em;
 }
 
 /* u-lAside sidebar styles */
 
 .u-lAside {
-
-	h1 {
-		font-size: 1.953em;
-	}
-	h2 {
-		font-size: 1.562em;
-	}
-	h3 {
-		font-size: 1.25em;
-	}
-	h4 {
-		font-size: 1.143em;
-	}
-	h5 {
-		font-size: 1.093em;
-	}
+    @include v-pixel-fallback ('font-size', 1.5rem);
+    font-family: $serif;
+    font-weight: $fontWeightNormal;
+    line-height: 1.45;
+    h1 {
+        font-size: 2.44em;
+    }
+    h2 {
+        font-size: 1.95em;
+    }
+    h3 {
+        font-size: 1.43em;
+    }
+    h4 {
+        font-size: 1.21em;
+        font-weight: $fontWeightBoldSans;
+    }
+    h5, thead td, table caption, tfoot td {
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    h6 {
+        font-family: $sans-serif;
+        font-size: 1em;
+    }
 	p,
 	ol,
 	ul {
-		font-size: 1.3em;
-		font-weight: $fontWeightNormal;
-        line-height: 1.4;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
 	}
 	li {
 		margin-bottom: 0.327em;
@@ -123,16 +134,6 @@ li {
 @media all and (min-width: $tiny) {
 	.u-lMain {
 		font-size: 100%;
-	}
-	p {
-		line-height: inherit;
-	}
-	.u-lAside {
-		p,
-		ol,
-		ul {
-			font-size: inherit;
-		}
 	}
 }
 .u-SiteMap__level {
@@ -162,6 +163,10 @@ li {
     margin: 0;
     padding: 1.5em 0 .1em;
     text-align: center;
+}
+.u-Masthead__siteName {
+    padding: 1.5em .25em .1em;
+    text-align: right;
 }
 .u-footMasthead__siteName {
     padding: 0;
@@ -209,31 +214,41 @@ li {
 }
 .galleria-info-text {
     .galleria-info-description {
-        font: normal .7em/1.4 $serif;
+        font: normal 1em/1.4 $serif;
+    }
+    font-style: normal;
+    .u-Figure__caption--descriptionExternalLink {
+        display: block;
     }
     .u-Figure__caption--descriptionTitle {
         display: block;
         font-family: $sans-serif;
         font-weight: $fontWeightBoldSans;
         text-transform: uppercase;
-        font-size: 1.3em;
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.1;
     }
     .u-Figure__caption--descriptionDesc {
         display: none;
+        font-size: 16px;
+        font-size: 1rem;
     }
-    .u-Figure__caption--descriptionExternalLink {
-        display: block;
+    .u-Figure__caption--descriptionStoriesLine {
         font-family: $sans-serif;
         font-weight: $fontWeightNormal;
         text-transform: uppercase;
-        width: 14em;
-        padding-left: 3em;
-        margin-left: auto;
-        font-size: .8em;
+        letter-spacing: .08em;
+        font-size: 13px;
+        font-size: .8rem;
     }
 }
 @media all and (min-width: 25em) {
     .galleria-info-text {
+        .u-Figure__caption--descriptionTitle {
+            font-size: 28px;
+            font-size: 1.8rem;
+        }
         .u-Figure__caption--descriptionDesc {
             display: block;
             padding-bottom: .8em;
@@ -264,11 +279,6 @@ li {
     .u-footMasthead__vassar {
         text-align: left;
     }
-    .galleria-info-text {
-        .galleria-info-description {
-            font: normal .9em/1.4 $serif;
-        }
-    }
 }
 
 /* ==============================
@@ -279,6 +289,45 @@ li {
 @media screen {
     .u-lHeader {
         padding: 4% 0 0;
+    }
+    .u-lHeader {
+        .u-Masthead__vassar {
+            position: absolute;
+            top: 4.1em;
+        }
+    }
+    .u-lMain {
+        margin: 7% auto;
+    }
+    .u-lAside {
+        width: 94%;
+        float: none;
+        margin: 3%;
+        padding: 0 3% 3%;
+        overflow: hidden;
+        border: 1px solid tint($fontColor, 80%);
+        background-color: tint($fontColor, 98%);
+    }
+    .u-ExtendedHeader {
+        position: absolute;
+        top: 0;
+        left: .5em;
+        padding-top: 1.3em;
+        z-index: 11;
+    }
+    .u-ExtendedHeader__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            margin: 0 0 0 .5em;
+            display: inline;
+        }
+    }
+    .u-ExtendedHeader__listItemLink {
+        font-family: $sans-serif;
+        font-size: .9em;
+        font-weight: $fontWeightBold;
     }
     .u-Masthead__siteName--link {
         position: relative;
@@ -297,11 +346,8 @@ li {
         top: inherit;
         width: 100%;
     }
-    .u-pageHome {
-        .u-lAside {
-            display: none;
-            visibility: hidden;
-        }
+    .u-lContent {
+        width: 100%;
     }
     .SocialAccount__iconTarget {
         width: 2em;
@@ -333,7 +379,6 @@ li {
     table {
         width: 100%;
     }
-    .u-NavSite__level--1 > .u-NavSite__itemContainer:first-child,
     .u-BreadCrumbs {
         display: none;
         visibility: hidden;
@@ -363,30 +408,41 @@ li {
     .u-lHeader {
         padding: 0;
         .u-Masthead__vassar {
-            position: absolute;
             top: -2em;
             left: 2.5em;
         }
     }
+    .u-ExtendedHeader {
+        padding-top: .8em;
+        top: -3.25em;
+        left: auto;
+        right: 19.12em;
+    }
+    .u-ExtendedHeader__listItemLink {
+        padding-bottom: .25em;
+        font-size: 1em;
+        font-weight: $fontWeightNormal;
+    }
+    .u-ExtendedHeader__list {
+        li {
+            margin: 0 0 0 1.5em;
+        }
+    }
     .u-lMain {
-        width: 80%;
-        margin: 5em auto;
+        width: 65%;
         float: none;
         overflow: hidden;
+        padding: 0;
     }
-    .u-pageInner .u-lMain {
-        margin: 5em auto 5em;
+    .u-lContent {
+        width: 100%;
+        padding-right: 0;
     }
-    .u-pageHome {
-        .u-lMain {
-            width: 65%;
-            padding: 0;
-        }
-        .u-lContent {
-            width: 100%;
-            padding-right: 0;
-        }
+    .u-lAside {
+        width: 100%;
+        margin: 0;
     }
+
     .u-Search {
         right: 2.5em;
         top: -2.75em;
@@ -478,9 +534,6 @@ a.fn.org.url.u-VCard__fn.u-VCard__item.u-VCard__org.u-VCard__url:link,
 .galleria--homepage {
     border-bottom: .25em solid $pink;
 }
-.u-ExtendedFooter__listItemLink:link {
-    border-bottom: 1px solid;
-}
 .u-pageTitle {
     border-bottom: .01em solid $pink;
 }
@@ -498,6 +551,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .galleria--homepage {
     border-bottom: .25em solid $pink;
 }
+.u-Masthead__vassar {
+    background-color: transparent;
+}
 .galleria-info-description {
     color: #fff;
 }
@@ -508,57 +564,59 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .galleria-info-description.u-Figure__caption--description a:link {
     border: none;
 }
-
-/* external link icon
-
-a:link[href^="http://"]:not([href*="vassar.edu"]), a[href^="https://"]:not([href*="vassar.edu"]), a[href^="//"]:not([href*="vassar.edu"]) {
-    padding-right: 24px;
-    padding-right: 1.5rem;
+.externalLink {
+    @include link-colors($linkColor, $linkColorHoverFocus, $linkColorActive, $linkColor, $linkColorHoverFocus);
+}
+.externalLink:link,
+.externalLink:visited {
+    padding-right: 16px;
+    padding-right: 1rem;
+    background-size: 10px;
+    background-size: .65rem;
+    background-repeat: no-repeat;
+    background-position: right 50%;
+    border-bottom: 1px solid $linkColor;
     background-image: url(../images/icons/externalLink.png);
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23cc2249%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
-    background-size: 17px;
-    background-size: 1.1rem;
-    background-repeat: no-repeat;
-    background-position: right center;
 }
-a:visited[href^="http://"]:not([href*="vassar.edu"]), a:visited[href^="https://"]:not([href*="vassar.edu"]), a:visited[href^="//"]:not([href*="vassar.edu"]) {
-    background-image: url(../images/icons/externalLinkVisited.png);
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23380C2A%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
-}
-a:hover[href^="http://"]:not([href*="vassar.edu"]), a:hover[href^="https://"]:not([href*="vassar.edu"]), a:hover[href^="//"]:not([href*="vassar.edu"]), a:focus[href^="http://"]:not([href*="vassar.edu"]), a:focus[href^="https://"]:not([href*="vassar.edu"]), a:focus[href^="//"]:not([href*="vassar.edu"]) {
+.externalLink:hover,
+.externalLink:focus {
+    border-bottom: 1px solid $linkColorHoverFocus;
     background-image: url(../images/icons/externalLinkHoverFocus.png);
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23ff4d38%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
 }
-a:active[href^="http://"]:not([href*="vassar.edu"]), a:active[href^="https://"]:not([href*="vassar.edu"]), a:active[href^="//"]:not([href*="vassar.edu"]) {
+.externalLink:active {
+    border-bottom: 1px solid $linkColorActive;
     background-image: url(../images/icons/externalLinkActive.png);
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23FEE293%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
 }
-a.Module__button[href^="http://"]:not([href*="vassar.edu"]), a.Module__button[href^="https://"]:not([href*="vassar.edu"]), a.Module__button[href^="//"]:not([href*="vassar.edu"]), a.Module__button:visited[href^="http://"]:not([href*="vassar.edu"]), a.Module__button:visited[href^="https://"]:not([href*="vassar.edu"]), a.Module__button:visited[href^="//"]:not([href*="vassar.edu"]), a.Module__button:hover[href^="http://"]:not([href*="vassar.edu"]), a.Module__button:hover[href^="https://"]:not([href*="vassar.edu"]), a.Module__button:hover[href^="//"]:not([href*="vassar.edu"]), a.Module__button:focus[href^="http://"]:not([href*="vassar.edu"]), a.Module__button:focus[href^="https://"]:not([href*="vassar.edu"]), a.Module__button:focus[href^="//"]:not([href*="vassar.edu"])
-a.Module__button:active[href^="http://"]:not([href*="vassar.edu"]), a.Module__button:active[href^="https://"]:not([href*="vassar.edu"]), a.Module__button:active[href^="//"]:not([href*="vassar.edu"]) {
+.u-lFooter {
+    color: #fff;
+}
+.u-ExtendedFooter__listItemLink,
+.u-footMasthead__siteName--link {
+    border-bottom: none;
+    @include link-colors(#fff, $linkColorHoverFocus, $linkColorActive, #fff, $linkColorHoverFocus);
+}
+.u-ExtendedFooter__listItemLink.externalLink:link,
+.u-ExtendedFooter__listItemLink.externalLink:visited {
+    padding-right: 16px;
+    padding-right: 1rem;
     background-image: url(../images/icons/figure--externalLink.png);
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23FFFFFF%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
-} 
-.u-Figure__caption--descriptionExternalLink,
-.u-Figure__caption--descriptionExternalLink:visited {
-    padding-right: .9em;
-    background-image: url(../images/icons/figure--externalLink.png);
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23FFFFFF%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
-    background-position: top left;
-    background-size: 28px;
-    background-size: 1.8rem;
+    background-size: 10px;
+    background-size: .65rem;
     background-repeat: no-repeat;
+    background-position: right 50%;
+    border-bottom: none;
 }
-.u-Figure__caption--descriptionExternalLink:hover,
-.u-Figure__caption--descriptionExternalLink:focus {
+.u-ExtendedFooter__listItemLink.externalLink:hover,
+.u-ExtendedFooter__listItemLink.externalLink:focus {
     background-image: url(../images/icons/externalLinkHoverFocus.png);
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23FFFFFF%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
+    border-bottom: 1px solid $linkColorHoverFocus;
 }
-.u-Figure__caption--descriptionExternalLink:active {
+.u-ExtendedFooter__listItemLink.externalLink:active {
     background-image: url(../images/icons/externalLinkActive.png);
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cstyle%3E.st0%7Bfill%3A%23FFFFFF%3B%7D%3C/style%3E%3Cg%20id%3D%22external_link%22%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M122.9%2090.7v42.9H26.5V37.2h42.9V15.8H5V155H144.2V90.7h-21.3zM90.7%2026.4l42.9.1v42.9H155V5H90.7v21.4z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M81.4%2093.8L66.3%2078.5c0%20.3%200%200%200%200l60.3-60.3%2015.2%2015.2s-.2.1%200%200L81.4%2093.8z%22/%3E%3C/g%3E%3C/svg%3E');
-} */
+    border-bottom: 1px solid $linkColorActive;
+}
 .galleria-info-text {
-    background-color: $fontColor !important;
+    background-color: transparent !important;
     background-image: -webkit-linear-gradient(top, rgba(56, 12, 42, 0.75), rgba(204, 34, 73, 0.75)) !important; /* Chrome 10-25, iOS 5+, Safari 5.1+ */
     background-image: linear-gradient(to bottom, rgba(56, 12, 42, 0.75), rgba(204, 34, 73, 0.75)) !important; /* Chrome 26, Firefox 16+, IE 10+, Opera */
     .u-Figure__caption--descriptionDesc {
@@ -566,25 +624,29 @@ a.Module__button:active[href^="http://"]:not([href*="vassar.edu"]), a.Module__bu
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
 }
-.u-Masthead__siteName--link {
-    @include link-colors(#fff, $linkColorHoverFocus, $yellow, #fff, $linkColorHoverFocus);
+.u-NavSite__item.icon-external:link svg {
+    fill: #fff !important;
 }
-.u-lFooter {
-    color: #fff;
-    a {
-        @include link-colors(#fff, $linkColorHoverFocus, $linkColorActive, #fff, $linkColorHoverFocus);
-    }
+.u-NavSite__item.icon-external:visited svg {
+    fill: #fff !important;
+}
+.u-NavSite__item.icon-external:hover svg,
+.u-NavSite__item.icon-external:focus svg {
+    fill: $linkColorHoverFocus !important;
+}
+.u-NavSite__item.icon-external:active svg {
+    fill: $linkColorActive !important;
+}
+.u-Masthead__siteName--link {
+    @include link-colors(#fff, $linkColorHoverFocus, $linkColorActive, #fff, $linkColorHoverFocus);
 }
 .u-ExtendedFooter__listGroup {
     border-top: 1px solid $pink;
     border-bottom: 1px solid $pink;
 }
-.u-ExtendedFooter__listItemLink {
-    @include link-colors(#fff, $linkColorHoverFocus, $yellow, #fff, $linkColorHoverFocus);
-}
 h2 a.u-footMasthead__vassar--link,
 .u-VCard__org.u-VCard__url {
-    @include link-colors($pink, $linkColorHoverFocus, $yellow, $pink, $linkColorHoverFocus);
+    @include link-colors($pink, $linkColorHoverFocus, $linkColorActive, $pink, $linkColorHoverFocus);
 }
 h2 a.u-Masthead__vassar--link:visited { 
     color: $pink;
@@ -603,7 +665,6 @@ tbody tr:nth-child(odd) {
         @include link-colors($linkColorHoverFocus, #fff, $linkColorActive, $linkColorHoverFocus, $linkColorHoverFocus);
     }
 }
-
 @media all and (min-width: $small) {
     .u-Search__field {
         border: none;
@@ -612,16 +673,16 @@ tbody tr:nth-child(odd) {
         border-bottom: 1px solid $pink;
     }
     input[type="search"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        color: $pink;
+        color: tint($fontColor, 60%);
     }
     input[type="search"]::-moz-placeholder { /* Firefox 19+ */
-        color: $pink;
+        color: tint($fontColor, 60%);
     }
     input[type="search"]:-ms-input-placeholder { /* IE 10+ */
-        color: $pink;
+        color: tint($fontColor, 60%);
     }
     input[type="search"]:-moz-placeholder { /* Firefox 18- */
-        color: $pink;
+        color: tint($fontColor, 60%);
     }
     .u-NavSite__level--2 {
         background-color: #cc2249;
@@ -638,6 +699,12 @@ tbody tr:nth-child(odd) {
             background-color: $pink;
         }
     }
+    .u-NavSite__level--2 .u-NavSite__item--isOpen .u-NavSite__item,
+    .u-NavSite__item--isOpen .u-NavSite__level--2 .u-NavSite__item--isCurrent {
+         background-color: #fff;
+         color: $pink;
+    }
+    .u-NavSite__level--2 .u-NavSite__item--isOpen,
     .u-NavSite__item--isOpen .u-NavSite__level--2 {
         .u-NavSite__item--isCurrent {
             background-color: #fff;
@@ -655,7 +722,8 @@ tbody tr:nth-child(odd) {
     letter-spacing: .02em;
     margin-bottom: 1em;
 }
-.Module__button {
+.Module__button,
+.call-to-action {
     padding: .35em .25em .25em;
     text-align: center;
     margin-bottom: .3em;
@@ -675,8 +743,17 @@ tbody tr:nth-child(odd) {
         font-size: 1.25em;
     }
 }
+.list--homePage--listPublications,
+.list--homePage--listSpotlight .Module__title {
+    font: 500 1.2em/1.1 $sans-serif;
+    margin-bottom: .8em;
+    display: block;
+}
 @media screen {
     .modulesArea__row {
+        overflow: hidden;
+    }
+    .Module--mainContent {
         margin-bottom: 6%;
         overflow: hidden;
         .Module__header {
@@ -700,6 +777,24 @@ tbody tr:nth-child(odd) {
             padding: 0 6%;
         }
     }
+    .faq__item {
+        .Module--mainContent {
+            margin-bottom: 0;
+        }
+        .Module__title {
+            font-weight: $fontWeightBold;
+            font-family: $sans-serif;
+            display: block;
+        }
+    }
+    .list--homePage--listPublications {
+        overflow: hidden;
+        .Module__listItem {
+            width: 80%;
+            text-align: center;
+            margin: 6%  auto;
+        }
+    }
     .list--homePage--listCallToAct {
         overflow: hidden;
         .Module__listItem {
@@ -712,7 +807,7 @@ tbody tr:nth-child(odd) {
             display: block;
             position: relative;
             border: .7em solid white;
-            @include link-colors(#fff, $yellow, $pink, #fff, $yellow);
+            @include link-colors(#fff, $linkColorHoverFocus, $pink, #fff, $linkColorActive);
 
         }
         .Module__title,
@@ -738,29 +833,57 @@ tbody tr:nth-child(odd) {
             width: 100%;
         }
     }
-    .Module__button {
+    .Module__button,
+    .call-to-action {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         display: inline-block;
         width: 100%;
     }
-    .Module--halfWidth--regLogin {
+    .call-to-action {
+        width: 11em;
+        margin: 0 auto;
+        display: block;
+    }
+    .Module--halfWidth.Module--halfWidth--regLogin {
+        margin: 2em 0 0;
         .Module__header,
-        .Module__button {
+        .Module__button,
+        .call-to-action {
             text-align: center;
             margin-bottom: .9em;
         }
     }
-}
-@media all and (min-width: 25em) {
-    .modulesArea__row {
-        &:nth-child(1) {
-            .Module__listItem {
-                width: 60%;
-            }
+    .co-chair-letter {
+        .Module__listItem:first-child {
+            padding: 1em;
+            border: 1px solid tint($fontColor, 80%);
         }
     }
+    .reg-login-trouble {
+        margin-top: 1em;
+    }
+    .list--homePage--listPublications,
+    .list--homePage--listSpotlight,
+    .list--homePage--listInTheMedia {
+        .Module__image img {
+            width: 100%;
+            margin: 0 auto 1em;
+        }
+    }
+    .list--homePage--listCallToAct {
+        padding: 0 0 2em;
+    }
+    .list--homePage--listInTheMedia {
+        .Module__image img {
+            float: right;
+            clear: right;
+            margin: 0 0 1em 1em;
+        }
+    }
+}
+@media all and (min-width: 25em) {
 }
 @media all and (min-width: $small) {
     .Module--halfWidth {
@@ -776,19 +899,28 @@ tbody tr:nth-child(odd) {
         clear: left;
         padding: 0 5% 2em;
     }
-    .Module--fullWidth strong {
-        display: block;
+    .Module__listItem {
+            width: 100%;
     }
-    .modulesArea__row {
-        &:nth-child(1) {
-            .Module__listItem {
-                width: 29.33%;
-                float: left;
-                margin: 0;
-            }
-            .Module__listItem:nth-child(2) {
-                margin: 0 6%;
-            }
+    .list--homePage--listCallToAct {
+        padding: 0 0 2em;
+        .Module__listItem {
+            width: 29.33%;
+            float: left;
+            margin: 0;
+        }
+        .Module__listItem:nth-child(2) {
+            margin: 0 6%;
+        }
+    }
+    .list--homePage--listPublications {
+        .Module__listItem {
+            width: 47%;
+            float: left;
+            margin: 0;
+        }
+        .Module__listItem:nth-child(2) {
+            margin: 0 0 0 6%;
         }
     }
 }
@@ -806,43 +938,183 @@ tbody tr:nth-child(odd) {
         border-bottom: .01em solid $pink;
     }
 }
+.list--homePage--listInTheMedia {
+    .Module__listItem {
+        margin-bottom: .8em;
+    }
+}
 .list--homePage--listGenericSingle .Module__header {
     border-bottom: none;
 }
 .Module--halfWidth--regLogin {
     .Module__header,
-    .Module__button {
+    .Module__button,
+    .call-to-action {
         border-bottom: none;
     }
 }
-.Module__button {
+.Module__button:link,
+.call-to-action:link,
+.call-to-action.externalLink:link
+.Module__button.externalLink:link {
     color: #fff ;
-    background-color: $pink;
+    background-color: $linkColor;
     border-radius: 3px;
 }
-.Module__button:hover {
+.Module__button:visited,
+.call-to-action:visited,
+.call-to-action.externalLink:visited,
+.Module__button.externalLink:visited {
+    color: #fff;
+    background-color: $linkColor;
+}
+.Module__button:hover,
+.call-to-action:hover,
+.Module__button.externalLink:hover,
+.call-to-action.externalLink:hover,
+.Module__button:focus, 
+.call-to-action:focus,
+.Module__button.externalLink:focus,
+.call-to-action.externalLink:focus {
     color: #fff;
     background-color: $linkColorHoverFocus;
 }
-.Module__button:focus {
-    color: #fff;
-    background-color: $linkColorHoverFocus;
-}
-.Module__button:active {
+.Module__button:active, 
+.call-to-action:active,
+.call-to-action.externalLink:active,
+.Module__button.externalLink:active {
     color: #fff;
     background-color: $linkColorActive;
 }
-.Module__button:link {
+.Module__button:link,
+.call-to-action:link {
     border-bottom: none;
+}
+.call-to-action.externalLink:link,
+.Module__button.externalLink:link,
+.u-Figure__caption--descriptionExternalLink:link,
+.list--homePage--listCallToAct .Module__link--external:link .Module__desc {
+    background-image: url(../images/icons/figure--externalLink.png);
+    background-size: 19px;
+    background-size: 1.2rem;
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+}
+.list--homePage--listCallToAct .Module__link--external:link .Module__desc {
+    padding-bottom: 1em;
+    background-position: center bottom;
+}
+.list--homePage--listCallToAct {
+    .Module__link--external:visited .Module__desc {
+        background-image: url(../images/icons/figure--externalLink.png);
+    }
+    .Module__link--external:hover .Module__desc,
+    .Module__link--external:focus .Module__desc {
+        background-image: url(../images/icons/externalLinkActive.png);
+    }
+    .Module__link--external:active .Module__desc {
+        background-image: url(../images/icons/externalLink.png);
+    }
 }
 .lettertofamilies {
     border: 1px solid tint($fontColor, 80%);
     padding: 1em;
 }
-.Module__link {
+.u-Figure__caption--descriptionExternalLink:link {
+    background-image: url(../images/icons/figure--externalLink.png);
+    background-repeat: no-repeat;
+    background-position: right 97%;
+    background-size: 14px;
+    background-size: .9rem;
+}
+.u-Figure__caption--descriptionExternalLink:visited {
+    background-image: url(../images/icons/figure--externalLink.png);
+}
+.u-Figure__caption--descriptionExternalLink:hover,
+.u-Figure__caption--descriptionExternalLink:focus {
+    background-image: url(../images/icons/externalLinkHoverFocus.png);
+}
+.u-Figure__caption--descriptionExternalLink:active {
+    background-image: url(../images/icons/externalActive.png);
+}
+.list--homePage--listSpotlight .Module__link {
+    @include link-colors($fontColor, $linkColorHoverFocus, $linkColorActive, $fontColor, $linkColorHoverFocus)
 }
 @media all and (min-width: $small) {
     .Module--halfWidth:first-child {
         border-right: 1px solid tint($fontColor, 80%);
     }
+}
+
+/*	FAQS PAGE STYLING
+	----------------- */
+.faq__index {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1em;
+	max-width: none;
+	padding-top: 0;
+	font-size: .9em;
+}
+.faq__index .faq__indexItem {
+	font-family: $sans-serif;
+	font-size: .85em;
+	font-weight: 400;
+	margin-bottom: 0;
+	padding-top: .2em;
+	padding-bottom: .2em;
+	color: #444;
+}
+	.faq__index .faq__indexItem:last-child {
+		border: none;
+	}
+.faq__index:last-of-type {
+	margin-bottom: 3em;
+}
+.faq__header {
+	margin-top: 0;
+	padding-right: 20%;
+}
+.faq__sectionHeader {
+	font-size: 1em;
+	margin-bottom: 2em;
+	padding-top: 2em;
+	text-transform: uppercase;
+	border: none;
+	position: relative;
+	border-bottom: 2px solid #eee;
+}
+.faq__header a {
+	position: relative;
+	display: block;
+	padding-right: 20%;
+}
+	.faq__header a:hover {
+	}
+	.faq__header a:hover:before {
+		font-family: 'icons' !important;	
+		content: "\e60c";
+		background: #fff;
+		padding: .5em;
+		position: absolute;
+		left: -2em;
+		width: 1em;
+		top: -.5em;
+	}
+.faq__item {
+	margin-bottom: 3em;
+	position: relative;
+}
+.faq__item:after {
+}
+h3+.faq__item:after {
+}
+.topLink {
+	font-weight: $fontWeightNormal;
+	font-family: $sans-serif;
+	font-size: .8em;
+	position: absolute;
+	top: 0;
+	right: 0;
 }

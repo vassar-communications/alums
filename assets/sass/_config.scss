@@ -36,9 +36,9 @@ $green: #37C78F;
 /* Basic link colors - these colors also affect the Google Search result link colors */
 
 $linkColor: #cc2249;
-$linkColorHoverFocus: #ff4d38;
+$linkColorHoverFocus: #FEE293;
 $linkColorVisited: #380c2a;
-$linkColorActive: #FEE293; 
+$linkColorActive: #FF4D38; 
 $linkBorderColor: #380c2a; 
 $fontColor: #380c2a;
 
@@ -105,7 +105,6 @@ $figureMargin: 1.25em;
 $gsSearchTermHighlighted: $fontColor;	/* Currently being overridden by something in Google's default CSS */
 
 $gsSearchResultTitle: $fontWeightNormal 1.4em/1.1 $sans-serif;
-
 $gs-visibleUrl-long--font: $fontWeightNormal 9em $sans-serif !important;
 $gs-visibleUrl-long--color: $linkColorVisited !important;
 	
@@ -143,14 +142,14 @@ $menuLinkColorVisited: #fff;
 
 /* LATEST Modules basic */
 
-$sidebarModule__header--font: $fontWeightNormal 1.4em/1.1 $sans-serif;
-$sidebarModule--nameFont: $fontWeightNormal 1.3em/1.1 $sans-serif;
+$sidebarModule__header--font: $fontWeightNormal inherit/1.1 $sans-serif;
+$sidebarModule--nameFont: $fontWeightNormal inherit/1.1 $sans-serif;
 
-$sidebarModule--font: $fontWeightNormal 1em $sans-serif; /* that shorthand left in for backwards compatibility */
+$sidebarModule--font: $fontWeightNormal inherit $sans-serif; /* that shorthand left in for backwards compatibility */
 $sidebarModule--font-weight: inherit;
 $sidebarModule--font-family: inherit;
 
-$sidebarModule--labelFont: $fontWeightBoldSans;
+$sidebarModule--labelFont: $fontWeightBold;
 $sidebarModule--margin: 0 0 1.5em;
 
 /* Use these variables to place a bg color on side news announcement items */
@@ -159,10 +158,10 @@ $sidebarModuleAnnouncements__link--background: transparent;
 $sidebarModuleAnnouncements__link--padding: 0;
 $sidebarModule__listItem--border: 1px solid #eee;
 
-$sidebarModule__header--linkColor: $linkColor;
+$sidebarModule__header--linkColor: $fontColor;
 $sidebarModule__header--linkColorHoverFocus: $linkColorHoverFocus;
 $sidebarModule__header--linkColorActive: $linkColorActive;
-$sidebarModule__header--linkColorVisited: $linkColorVisited;
+$sidebarModule__header--linkColorVisited: $fontColor;
 
 /* News  */
 

@@ -165,12 +165,12 @@ $sidebarModule__header--linkColorVisited: $fontColor;
 
 /* News  */
 
-$u-ArticleListItem__title--font: $fontWeightNormal 1em $sans-serif;
+$u-ArticleListItem__title--font: $fontWeightBoldSans 1.2em/1.1 $sans-serif;
 $u-ArticleListItem__title--linkColor: $linkColor;
 $u-ArticleListItem__title--linkColorHoverFocus: $linkColorHoverFocus;
 $u-ArticleListItem__title--linkColorActive: $linkColorActive;
 $u-ArticleListItem__title--linkColorVisited: $linkColorVisited;
-$u-ArticleListItem__summary--font: $fontWeightNormal 1em $sans-serif;
+$u-ArticleListItem__summary--font: $fontWeightNormal 1em $serif;
 $u-ArticleListItem__label--type--font: $fontWeightNormal .85em $sans-serif;
 $u-ArticleListItem__label--dateline__posted--font: $fontWeightNormal .85em $sans-serif;
 $u-ArticleListItem__label--dateline__postedDate--font: $fontWeightNormal .85em $sans-serif;

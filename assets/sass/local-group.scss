@@ -52,6 +52,12 @@ h6 {
 thead td, table caption, tfoot td {
     font-weight: $fontWeightBoldSans;
 }
+td {
+    font-size: .8em;
+    font-family: $sans-serif;
+    text-align: center;
+    padding: .5em;
+}
 .u-lContent {
 	@include v-pixel-fallback ('font-size', 1.5rem);
 	font-family: $serif;
@@ -277,6 +283,7 @@ li {
         text-align: left;
     }
     .u-Masthead__vassar b {
+        font-size: 1.25em;
         font-weight: $fontWeightBoldSans;
     }
     .u-footMasthead__vassar {
@@ -308,8 +315,8 @@ li {
         margin: 3%;
         padding: 0 3% 3%;
         overflow: hidden;
-        border: 1px solid tint($fontColor, 80%);
-        background-color: tint($fontColor, 98%);
+        /* border: 1px solid tint($fontColor, 80%);
+        background-color: tint($fontColor, 98%); */
     }
     .u-ExtendedHeader {
         position: absolute;
@@ -386,6 +393,34 @@ li {
         display: none;
         visibility: hidden;
     }
+    .u-ArticleListItem {
+        margin-bottom: 0;
+    }
+    .u-ArticleListItem__label--externalLink {
+        display: none;
+    }
+    .Module--listEvents {
+        .Module__header {
+            font-size: 1.43em !important;
+            border-bottom: none !important;
+            text-transform: capitalize !important;
+        } 
+        .Module__list {
+            li {
+                margin-bottom: 6%;
+            }
+            a {
+                border-bottom: none;
+            }
+            span {
+                display: block;
+                margin-right: .5em;
+                float: left;
+                font-style: italic;
+                font-weight: $fontWeightNormal !important;
+            }
+        }
+    }
 }
 @media all and (min-width: 25em) {
     .u-ExtendedFooter__listGroup {
@@ -436,6 +471,7 @@ li {
         float: none;
         overflow: hidden;
         padding: 0;
+        margin: 9.5% auto;
     }
     .u-lContent {
         width: 100%;
@@ -494,6 +530,8 @@ li {
     .SocialAccount__iconList {
         margin: 0 0 .4em auto;
     }
+}
+@media all and (min-width: $large) {
 }
 
 /* ==============================
@@ -724,6 +762,7 @@ tbody tr:nth-child(odd) {
     text-transform: uppercase;
     letter-spacing: .02em;
     margin-bottom: 1em;
+    border: none;
 }
 .Module__button,
 .call-to-action {
@@ -752,6 +791,29 @@ tbody tr:nth-child(odd) {
     margin-bottom: .8em;
     display: block;
 }
+.Module--list--currentBoard {
+    .Module__title {
+        font-weight: $fontWeightBoldSans;
+        font-family: $sans-serif;
+        display: block;
+        line-height: 1.1;
+    }
+    .Module__image {
+        float: left;
+        margin: .5em 1em 1em 0;
+    }
+    .Module__desc--lineOne {
+        display: block;
+    }
+    .Module__link {
+        @include link-colors($fontColor, $linkColorHoverFocus, $linkColorActive, $fontColor, $linkColorHoverFocus);
+    }
+    .Module__listItem {
+        overflow: hidden;
+        margin-bottom: 3%;
+    }
+}
+    
 @media screen {
     .modulesArea__row {
         overflow: hidden;
@@ -785,7 +847,7 @@ tbody tr:nth-child(odd) {
             margin-bottom: 0;
         }
         .Module__title {
-            font-weight: $fontWeightBold;
+            font-weight: $fontWeightBoldSans;
             font-family: $sans-serif;
             display: block;
         }
@@ -880,9 +942,10 @@ tbody tr:nth-child(odd) {
     }
     .list--homePage--listInTheMedia {
         .Module__image img {
-            float: right;
-            clear: right;
-            margin: 0 0 1em 1em;
+            float: left;
+            clear: both;
+            width: 33%;
+            margin: .5em 1em 1em 0;
         }
     }
 }
@@ -1013,10 +1076,10 @@ tbody tr:nth-child(odd) {
     }
     .Module__link--external:hover .Module__desc,
     .Module__link--external:focus .Module__desc {
-        background-image: url(../images/icons/externalLinkActive.png);
+        background-image: url(../images/icons/externalLinkHoverFocus.png);
     }
     .Module__link--external:active .Module__desc {
-        background-image: url(../images/icons/externalLink.png);
+        background-image: url(../images/icons/externalLinkActive.png);
     }
 }
 .lettertofamilies {
@@ -1114,10 +1177,15 @@ tbody tr:nth-child(odd) {
 h3+.faq__item:after {
 }
 .topLink {
-	font-weight: $fontWeightNormal;
+	font-weight: $fontWeightBoldSans;
 	font-family: $sans-serif;
 	font-size: .8em;
 	position: absolute;
 	top: 0;
 	right: 0;
+}
+.moreLink {
+	font-weight: $fontWeightBoldSans;
+	font-family: $sans-serif;
+	font-size: .8em;
 }

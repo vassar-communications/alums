@@ -89,6 +89,12 @@ h6 {
 thead td, table caption, tfoot td {
   font-weight: 500; }
 
+td {
+  font-size: .8em;
+  font-family: "brandon-grotesque", "Helvetica";
+  text-align: center;
+  padding: .5em; }
+
 .u-lContent {
   font-size: 24px;
   font-size: 1.5rem;
@@ -286,6 +292,7 @@ li {
     text-align: left; }
 
   .u-Masthead__vassar b {
+    font-size: 1.25em;
     font-weight: 500; }
 
   .u-footMasthead__vassar {
@@ -311,8 +318,8 @@ li {
     margin: 3%;
     padding: 0 3% 3%;
     overflow: hidden;
-    border: 1px solid #d7ced4;
-    background-color: #fbfafb; }
+    /* border: 1px solid tint($fontColor, 80%);
+    background-color: tint($fontColor, 98%); */ }
 
   .u-ExtendedHeader {
     position: absolute;
@@ -386,7 +393,28 @@ li {
 
   .u-BreadCrumbs {
     display: none;
-    visibility: hidden; } }
+    visibility: hidden; }
+
+  .u-ArticleListItem {
+    margin-bottom: 0; }
+
+  .u-ArticleListItem__label--externalLink {
+    display: none; }
+
+  .Module--listEvents .Module__header {
+    font-size: 1.43em !important;
+    border-bottom: none !important;
+    text-transform: capitalize !important; }
+  .Module--listEvents .Module__list li {
+    margin-bottom: 6%; }
+  .Module--listEvents .Module__list a {
+    border-bottom: none; }
+  .Module--listEvents .Module__list span {
+    display: block;
+    margin-right: .5em;
+    float: left;
+    font-style: italic;
+    font-weight: 400 !important; } }
 @media all and (min-width: 25em) {
   .u-ExtendedFooter__listGroup {
     padding: 5% 5% 5% 12%;
@@ -430,7 +458,8 @@ li {
     width: 65%;
     float: none;
     overflow: hidden;
-    padding: 0; }
+    padding: 0;
+    margin: 9.5% auto; }
 
   .u-lContent {
     width: 100%;
@@ -774,7 +803,8 @@ tbody tr:nth-child(odd) {
   font: 500 0.9em/1.1 "brandon-grotesque", "Helvetica";
   text-transform: uppercase;
   letter-spacing: .02em;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  border: none; }
 
 .Module__button,
 .call-to-action {
@@ -801,6 +831,30 @@ tbody tr:nth-child(odd) {
   margin-bottom: .8em;
   display: block; }
 
+.Module--list--currentBoard .Module__title {
+  font-weight: 500;
+  font-family: "brandon-grotesque", "Helvetica";
+  display: block;
+  line-height: 1.1; }
+.Module--list--currentBoard .Module__image {
+  float: left;
+  margin: .5em 1em 1em 0; }
+.Module--list--currentBoard .Module__desc--lineOne {
+  display: block; }
+.Module--list--currentBoard .Module__link {
+  color: #380c2a; }
+  .Module--list--currentBoard .Module__link:visited {
+    color: #380c2a; }
+  .Module--list--currentBoard .Module__link:focus {
+    color: #FF4D38; }
+  .Module--list--currentBoard .Module__link:hover {
+    color: #FF4D38; }
+  .Module--list--currentBoard .Module__link:active {
+    color: #FEE293; }
+.Module--list--currentBoard .Module__listItem {
+  overflow: hidden;
+  margin-bottom: 3%; }
+
 @media screen {
   .modulesArea__row {
     overflow: hidden; }
@@ -826,7 +880,7 @@ tbody tr:nth-child(odd) {
   .faq__item .Module--mainContent {
     margin-bottom: 0; }
   .faq__item .Module__title {
-    font-weight: 700;
+    font-weight: 500;
     font-family: "brandon-grotesque", "Helvetica";
     display: block; }
 
@@ -914,9 +968,10 @@ tbody tr:nth-child(odd) {
     padding: 0 0 2em; }
 
   .list--homePage--listInTheMedia .Module__image img {
-    float: right;
-    clear: right;
-    margin: 0 0 1em 1em; } }
+    float: left;
+    clear: both;
+    width: 33%;
+    margin: .5em 1em 1em 0; } }
 @media all and (min-width: 54.375em) {
   .Module--halfWidth {
     -moz-box-sizing: border-box;
@@ -1025,9 +1080,9 @@ tbody tr:nth-child(odd) {
   background-image: url(../images/icons/figure--externalLink.png); }
 .list--homePage--listCallToAct .Module__link--external:hover .Module__desc,
 .list--homePage--listCallToAct .Module__link--external:focus .Module__desc {
-  background-image: url(../images/icons/externalLinkActive.png); }
+  background-image: url(../images/icons/externalLinkHoverFocus.png); }
 .list--homePage--listCallToAct .Module__link--external:active .Module__desc {
-  background-image: url(../images/icons/externalLink.png); }
+  background-image: url(../images/icons/externalLinkActive.png); }
 
 .lettertofamilies {
   border: 1px solid #d7ced4;
@@ -1123,9 +1178,14 @@ tbody tr:nth-child(odd) {
   position: relative; }
 
 .topLink {
-  font-weight: 400;
+  font-weight: 500;
   font-family: "brandon-grotesque", "Helvetica";
   font-size: .8em;
   position: absolute;
   top: 0;
   right: 0; }
+
+.moreLink {
+  font-weight: 500;
+  font-family: "brandon-grotesque", "Helvetica";
+  font-size: .8em; }

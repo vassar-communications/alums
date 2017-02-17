@@ -57,6 +57,7 @@ td {
     font-family: $sans-serif;
     text-align: center;
     padding: .5em;
+
 }
 .u-lContent {
 	@include v-pixel-fallback ('font-size', 1.5rem);

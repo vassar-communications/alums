@@ -407,28 +407,6 @@ li {
             text-transform: capitalize !important;
         } 
         .Module__list {
-            li {
-                margin-bottom: 6%;
-            }
-            a {
-                border-bottom: none;
-            }
-            span {
-                display: block;
-                margin-right: .5em;
-                float: left;
-                font-style: italic;
-                font-weight: $fontWeightNormal !important;
-            }
-        }
-    }
-    .Module--listEvents {
-        .Module__header {
-            font-size: 1.43em !important;
-            border-bottom: none !important;
-            text-transform: capitalize !important;
-        } 
-        .Module__list {
             a {
                 border-bottom: none;
             }
@@ -984,6 +962,13 @@ tbody tr:nth-child(odd) {
         .Module__image img {
             width: 100%;
             margin: 0 auto 1em;
+        }
+    }
+    .list--homePage--listSpotlight {
+        .Module__subList {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
         }
     }
     .list--homePage--listCallToAct {

@@ -422,6 +422,45 @@ li {
             }
         }
     }
+    .Module--listEvents {
+        .Module__header {
+            font-size: 1.43em !important;
+            border-bottom: none !important;
+            text-transform: capitalize !important;
+        } 
+        .Module__list {
+            a {
+                border-bottom: none;
+            }
+            li {
+            margin-bottom: 6%;
+                .title {
+                    font: 500 1.2em/1.1 $sans-serif;
+                    display: block;
+                }
+                .date {
+                    font: 500 .8em $sans-serif;
+                    display: block;
+                    &:before {
+                    content: "Date:";
+                    margin-right: .5em;
+                    }
+                } 
+                .time {
+                    font: 500 .8em $sans-serif;
+                    display: block;
+                    margin-bottom: .5em;
+                    &:before {
+                    content: "Time:";
+                    margin-right: .5em;
+                    }
+                }
+                .description {
+                    display:block;
+                }
+            }
+        }
+    } 
 }
 @media all and (min-width: 25em) {
     .u-ExtendedFooter__listGroup {
@@ -843,6 +882,15 @@ tbody tr:nth-child(odd) {
             padding: 0 6%;
         }
     }
+    #cca-volunteer,
+    #cca-memoriam,
+    #cca-lost {
+        .Module__title {
+            font-weight: $fontWeightBoldSans;
+            font-family: $sans-serif;
+            display: block;
+        }
+    }
     .faq__item {
         .Module--mainContent {
             margin-bottom: 0;
@@ -1060,26 +1108,26 @@ tbody tr:nth-child(odd) {
 .call-to-action.externalLink:link,
 .Module__button.externalLink:link,
 .u-Figure__caption--descriptionExternalLink:link,
-.list--homePage--listCallToAct .Module__link--external:link .Module__desc {
+.list--homePage--listCallToAct .Module__link:link .Module__desc {
     background-image: url(../images/icons/figure--externalLink.png);
     background-size: 19px;
     background-size: 1.2rem;
     background-repeat: no-repeat;
     background-position: 96% 50%;
 }
-.list--homePage--listCallToAct .Module__link--external:link .Module__desc {
+.list--homePage--listCallToAct .Module__link:link .Module__desc {
     padding-bottom: 1em;
     background-position: center bottom;
 }
 .list--homePage--listCallToAct {
-    .Module__link--external:visited .Module__desc {
+    .Module__link:visited .Module__desc {
         background-image: url(../images/icons/figure--externalLink.png);
     }
-    .Module__link--external:hover .Module__desc,
-    .Module__link--external:focus .Module__desc {
+    .Module__link:hover .Module__desc,
+    .Module__link:focus .Module__desc {
         background-image: url(../images/icons/externalLinkHoverFocus.png);
     }
-    .Module__link--external:active .Module__desc {
+    .Module__link:active .Module__desc {
         background-image: url(../images/icons/externalLinkActive.png);
     }
 }
@@ -1106,6 +1154,17 @@ tbody tr:nth-child(odd) {
 }
 .list--homePage--listSpotlight .Module__link {
     @include link-colors($fontColor, $linkColorHoverFocus, $linkColorActive, $fontColor, $linkColorHoverFocus)
+}
+.Module--listEvents {
+    .Module__list {
+        li {
+            .date,
+            .time,
+            .description {
+                color: $fontColor;
+            }
+        }
+    }
 }
 @media all and (min-width: $small) {
     .Module--halfWidth:first-child {

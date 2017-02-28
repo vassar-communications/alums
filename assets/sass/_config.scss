@@ -37,7 +37,7 @@ $green: #37C78F;
 /* Basic link colors - these colors also affect the Google Search result link colors */
 
 $linkColor: #cc2249;
-$linkColorHoverFocus: #FF4D38;
+$linkColorHoverFocus: #9c8695;
 $linkColorVisited: #380c2a;
 $linkColorActive: #FEE293; 
 $linkBorderColor: #380c2a; 
@@ -226,11 +226,11 @@ $u-ArticleList__systemMessage--color: #400;
 	-------------------- */
 
 $u-Search__submit--mobileIconColor: $pink;
-$u-Search__submit--mobileIconColorHoverFocus: $orange;
+$u-Search__submit--mobileIconColorHoverFocus: $linkColorHoverFocus;
 $u-Search__submit--mobileIconColorActivated: $yellow;
 
 $u-Search__submit--iconColor: $pink;
-$u-Search__submit--iconColorHoverFocus: $orange;
+$u-Search__submit--iconColorHoverFocus: $linkColorHoverFocus;
 $u-Search__submit--iconColorActivated: $violet;
 
 $u-Search__submit--mobileBgColor: $violet;
@@ -255,15 +255,15 @@ $pointAtWhichSearchMovesToRight: 0px;
 /*	Mobile search and menu colors
 	----------------------------- */
 $u-Masthead__vassar--mobileLinkColor: $pink;
-$u-Masthead__vassar--mobileLinkColorHoverFocus: $orange;
+$u-Masthead__vassar--mobileLinkColorHoverFocus: $linkColorHoverFocus;
 $u-Masthead__vassar--mobileLinkColorActive: $yellow;
 
 $u-Masthead__vassar--linkColor: $pink;
-$u-Masthead__vassar--linkColorHoverFocus: $orange;
+$u-Masthead__vassar--linkColorHoverFocus: $linkColorHoverFocus;
 $u-Masthead__vassar--linkColorActive: $violet;
 
 $ac-NavAnchor--menuColor: $pink;
-$ac-NavAnchor--menuColorHoverFocus: $orange;
+$ac-NavAnchor--menuColorHoverFocus: $linkColorHoverFocus;
 $ac-NavAnchor--menuColorActive: $yellow;
 
 $searchAndMenuBtnColor: $pink; /* Sets link color for mobile nav close button, that's it */

@@ -616,11 +616,18 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .galleria-info-description {
     color: #fff;
 }
-.galleria-info-description.u-Figure__caption--description a:active {
-    border-bottom: 1px solid $linkColorActive;
-    color: $linkColorActive;
+.galleria-info-description.u-Figure__caption--description a,
+.galleria-info-description.u-Figure__caption--description a:visited {
+    color: #fff;
+    border: none;
 }
-.galleria-info-description.u-Figure__caption--description a:link {
+.galleria-info-description.u-Figure__caption--description a:hover,
+.galleria-info-description.u-Figure__caption--description a:focus {
+    color: $linkColorHoverFocus;
+    border: none;
+}
+.galleria-info-description.u-Figure__caption--description a:active {
+    color: $linkColorActive;
     border: none;
 }
 .externalLink {
@@ -804,6 +811,7 @@ tbody tr:nth-child(odd) {
     }
 }
 .list--homePage--listPublications,
+.list--homePage--listInTheMedia .Module__title,
 .list--homePage--listSpotlight .Module__title {
     font: 500 1.2em/1.1 $sans-serif;
     margin-bottom: .8em;
@@ -964,6 +972,7 @@ tbody tr:nth-child(odd) {
             margin: 0 auto 1em;
         }
     }
+    .list--homePage--listInTheMedia,
     .list--homePage--listSpotlight {
         .Module__subList {
             list-style-type: none;

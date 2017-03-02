@@ -3,7 +3,6 @@
 
 $iconFont: "icons" !important;
 
-
 $serif: "freight-text-pro", "Georgia";
 $sans-serif: "brandon-grotesque", "Helvetica";
 $fontWeightNormal: 400;
@@ -103,18 +102,18 @@ $figureMargin: 1.25em;
 
 /*	Google search results  */
 
-$gsSearchTermHighlighted: $fontColor;	/* Currently being overridden by something in Google's default CSS */
+$gsSearchTermHighlighted: $linkColor;	/* Currently being overridden by something in Google's default CSS */
 
-$gsSearchResultTitle: $fontWeightNormal 1.4em/1.1 $sans-serif;
-$gs-visibleUrl-long--font: $fontWeightNormal 9em $sans-serif !important;
+$gsSearchResultTitle: $fontWeightBoldSans 1.5rem/1.1 $sans-serif !important;
+$gs-visibleUrl-long--font: $fontWeightNormal 1.25rem $sans-serif !important;
 $gs-visibleUrl-long--color: $linkColorVisited !important;
 	
 /* The numbers that represent pages of search results */
-$gsPaginationNumberBorderColor: #eee;
-$gsPaginationCurrentLinkBorder: #ccc;
-$gsPaginationCurrentLinkBackground: #eee;
-$gsPaginationHoverLinkBorder: #ccc;
-$gsPaginationHoverLinkBackground: #ddd;
+$gsPaginationNumberBorderColor: $fontColor;
+$gsPaginationCurrentLinkBorder: $linkColor;
+$gsPaginationCurrentLinkBackground: transparent;
+$gsPaginationHoverLinkBorder: $linkColorHoverFocus;
+$gsPaginationHoverLinkBackground: transparent;
 
 /* Nav */
 $u-NavSite__level--1--mobileFont: $fontWeightBoldSans 1.95em/1.1 $sans-serif;

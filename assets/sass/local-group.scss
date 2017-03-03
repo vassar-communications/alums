@@ -622,12 +622,27 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 .galleria-info-description.u-Figure__caption--description a:hover,
 .galleria-info-description.u-Figure__caption--description a:focus {
-    color: $linkColorHoverFocus;
+    color: #fff;
     border: none;
 }
 .galleria-info-description.u-Figure__caption--description a:active {
-    color: $linkColorActive;
+    color: #fff;
     border: none;
+}
+.galleria-info {
+}
+.galleria-info:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.galleria-info:hover:before,
+.galleria-info:focus:before {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.35);
 }
 .externalLink {
     @include link-colors($linkColor, $linkColorHoverFocus, $linkColorActive, $linkColor, $linkColorHoverFocus);
@@ -906,8 +921,23 @@ tbody tr:nth-child(odd) {
             display: block;
             position: relative;
             border: .7em solid white;
-            @include link-colors(#fff, $linkColorHoverFocus, $pink, #fff, $linkColorActive);
-
+            @include link-colors(#fff, #fff, #fff, #fff, #fff);
+        }
+        .Module__link:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .Module__link:hover:before,
+        .Module__link:focus:before {
+            background-color: #000;
+            background-color: rgba(0, 0, 0, 0.35);
+        }
+        .Module__link:active:before {
+            background-color: rgba(0, 0, 0, 0);
         }
         .Module__title,
         .Module__desc {
@@ -1118,10 +1148,10 @@ tbody tr:nth-child(odd) {
     }
     .Module__link:hover .Module__desc,
     .Module__link:focus .Module__desc {
-        background-image: url(../images/icons/externalLinkHoverFocus.png);
+        background-image: url(../images/icons/figure--externalLink.png);
     }
     .Module__link:active .Module__desc {
-        background-image: url(../images/icons/externalLinkActive.png);
+        background-image: url(../images/icons/figure--externalLink.png);
     }
 }
 .lettertofamilies {
@@ -1140,10 +1170,10 @@ tbody tr:nth-child(odd) {
 }
 .u-Figure__caption--descriptionExternalLink:hover,
 .u-Figure__caption--descriptionExternalLink:focus {
-    background-image: url(../images/icons/externalLinkHoverFocus.png);
+    background-image: url(../images/icons/figure--externalLink.png);
 }
 .u-Figure__caption--descriptionExternalLink:active {
-    background-image: url(../images/icons/externalActive.png);
+    background-image: url(../images/icons/figure--externalLink.png);
 }
 .list--homePage--listSpotlight .Module__link {
     @include link-colors($fontColor, $linkColorHoverFocus, $linkColorActive, $fontColor, $linkColorHoverFocus)
@@ -1243,25 +1273,10 @@ h3+.faq__item:after {
 	font-size: .8em;
 }
 /* Google search results */
-.gsc-tabsAreaInvisible,
-.gsc-tabsArea,
-.gsc-above-wrapper-area,
-.gsc-thumbnail-inside,
-.gsc-url-top,
-.gs-watermark,
-.gs-visibleUrl-short,
-.gs-fileFormatType,
-.gs-fileFormat {
-    display: none;
-}
 .gsc-table-result {
     td {
         text-align: left !important;
     }
-}
-.gs-image-box {
-    margin: 0.2em 0.5em 0 0;
-    margin: 0.2rem 0.5rem 0 0;
 }
 .gs-snippet, .gsc-above-wrapper-area-container {
     font-size: 20px;
@@ -1272,5 +1287,8 @@ h3+.faq__item:after {
 .gs-bidi-start-align.gs-visibleUrl.gs-visibleUrl-long {
     font-size: 20px !important;
     font-size: 1.25rem !important;
+}
+.gsc-webResult.gsc-result .gs-title {
+    font: $fontWeightBoldSans 1.5rem/1.1 $sans-serif !important;
 }
 

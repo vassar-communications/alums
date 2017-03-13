@@ -249,6 +249,17 @@ li {
         font-size: .8rem;
     }
 }
+.cca-jumplinks {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 5%;
+    text-align: center;
+    li {
+        margin-right: 1em;
+        font-weight: 500;
+        font-family: "brandon-grotesque","Helvetica";
+    }
+}
 @media all and (min-width: 25em) {
     .galleria-info-text {
         .u-Figure__caption--descriptionTitle {
@@ -288,6 +299,11 @@ li {
     }
     .u-footMasthead__vassar {
         text-align: left;
+    }
+    .cca-jumplinks {
+        li {
+            display: inline-block;
+        }
     }
 }
 
@@ -883,6 +899,9 @@ tbody tr:nth-child(odd) {
         }
     }
     #cca-volunteer,
+    .listTrips--Upcoming,
+    .listTrips--Waitlist,
+    .listTrips--Cancelled,
     #cca-memoriam,
     #cca-lost {
         .Module__title {
@@ -890,6 +909,15 @@ tbody tr:nth-child(odd) {
             font-family: $sans-serif;
             display: block;
         }
+    }
+    .faq__item.travel-item {
+        overflow: hidden;
+    }
+    .travel-tripCategories {
+        padding-bottom: 8%;
+    }
+    .travel-waitlist {
+        font-weight: $fontWeightBold;
     }
     .faq__item {
         .Module--mainContent {

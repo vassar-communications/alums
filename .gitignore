@@ -59,3 +59,5 @@ config.codekit3
 config.rb
 
 .DS_Store
+
+assets/.DS_Store

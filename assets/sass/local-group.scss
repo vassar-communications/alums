@@ -137,11 +137,6 @@ li {
 	}
 }
 
-@media all and (min-width: $tiny) {
-	.u-lMain {
-		font-size: 100%;
-	}
-}
 .u-SiteMap__level {
 	 margin: .5em 0;
 }
@@ -154,11 +149,21 @@ li {
     text-transform: uppercase;
     letter-spacing: .2em;
 }
+.u-Masthead__vassar,
 .u-footMasthead__vassar {
-    font-size: 16px;
-    font-size: 1rem;
+    font-family: "goudy-old-style", serif;
+    font-weight: $fontWeightNormal;
+    letter-spacing: 0;
+    text-transform: none;
+}
+.u-Masthead__vassar  {
+    font-size: 2.2em;
+}
+.u-footMasthead__vassar {
+    font-size: 28px;
+    font-size: 1.75rem;
     text-align: center;
-    margin-top: -4em;
+    margin-top: -2.75em;
 }
 .u-Masthead__siteName,
 .u-footMasthead__siteName {
@@ -260,6 +265,11 @@ li {
         font-family: "brandon-grotesque","Helvetica";
     }
 }
+@media all and (min-width: $tiny) {
+	.u-lMain {
+		font-size: 100%;
+	}
+}
 @media all and (min-width: 25em) {
     .galleria-info-text {
         .u-Figure__caption--descriptionTitle {
@@ -293,10 +303,6 @@ li {
     .u-footMasthead__siteName {
         text-align: left;
     }
-    .u-Masthead__vassar b {
-        font-size: 1.25em;
-        font-weight: $fontWeightBoldSans;
-    }
     .u-footMasthead__vassar {
         text-align: left;
     }
@@ -319,7 +325,7 @@ li {
     .u-lHeader {
         .u-Masthead__vassar {
             position: absolute;
-            top: 4.1em;
+            top: 2em;
         }
     }
     .u-lMain {
@@ -479,8 +485,8 @@ li {
     .u-lHeader {
         padding: 0;
         .u-Masthead__vassar {
-            top: -2em;
-            left: 2.5em;
+            top: -1.2em;
+            left: 1.2em;
         }
     }
     .u-ExtendedHeader {
@@ -742,10 +748,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 h2 a.u-footMasthead__vassar--link,
 .u-VCard__org.u-VCard__url {
-    @include link-colors($pink, $linkColorHoverFocus, $linkColorActive, $pink, $linkColorHoverFocus);
-}
-h2 a.u-Masthead__vassar--link:visited { 
-    color: $pink;
+    @include link-colors(#fff, $linkColorHoverFocus, $linkColorActive, #fff, $linkColorHoverFocus);
 }
 .u-ExtendedFooter__listHeader {
     color: tint($fontColor, 50%);
@@ -762,6 +765,9 @@ tbody tr:nth-child(odd) {
     }
 }
 @media all and (min-width: $small) {
+    .u-Masthead__vassar--link {
+        @include link-colors(#861F41, $linkColorHoverFocus, $linkColorActive, #861F41, $linkColorHoverFocus);
+    }
     .u-Search__field {
         border: none;
     }

@@ -79,10 +79,14 @@ th {
 td {
 	font-weight: $fontWeightNormal;
 }
-
+h4.departmenttitle + table.Module__table--directory {
+    width: 95%;
+    margin-left: 5%;
+}
 li {
 	margin: 0 0 0.327em;
 }
+
 
 /* Main page content */
 
@@ -264,6 +268,10 @@ li {
         font-weight: 500;
         font-family: "brandon-grotesque","Helvetica";
     }
+}
+h4.departmenttitle {
+    font-size: 1.1em;
+    margin-left: 5%;
 }
 @media all and (min-width: $tiny) {
 	.u-lMain {

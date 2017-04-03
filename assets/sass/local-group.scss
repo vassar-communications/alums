@@ -344,7 +344,7 @@ li {
         position: absolute;
         top: 0;
         left: .5em;
-        padding-top: 1.3em;
+        padding-top: .5em;
         z-index: 11;
     }
     .u-ExtendedHeader__list {
@@ -353,7 +353,6 @@ li {
         margin: 0;
         li {
             margin: 0 0 0 .5em;
-            display: inline;
         }
     }
     .u-ExtendedHeader__listItemLink {
@@ -468,9 +467,17 @@ li {
         -moz-column-count: 2;
         -webkit-column-count: 2;
     }
+    .u-ExtendedHeader__list {
+        li {
+            display: inline;
+        }
+    }
     .u-ExtendedFooter__listHeader,
     .u-ExtendedFooter__list {
         text-align: left;
+    }
+    .u-ExtendedHeader {
+        padding-top: 1.3em;
     }
 }
 @media all and (min-width: $small) {

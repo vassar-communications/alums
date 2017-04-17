@@ -837,7 +837,7 @@ tbody tr:nth-child(odd) {
     font: $fontWeightBoldSans .9em/1.1 $sans-serif;
     text-transform: uppercase;
     letter-spacing: .02em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     border: none;
 }
 .Module__button,
@@ -875,22 +875,17 @@ tbody tr:nth-child(odd) {
         display: block;
         line-height: 1.1;
     }
-    .Module__image {
-        float: left;
-        margin: .5em 1em 1em 0;
+    .Module__desc {
+        font-size: .9em;
     }
     .Module__desc--lineOne {
-        display: block;
+        font-weight: $fontWeightBold;
     }
-    .Module__link {
-        @include link-colors($fontColor, $linkColorHoverFocus, $linkColorActive, $fontColor, $linkColorHoverFocus);
-    }
-    .Module__listItem {
-        overflow: hidden;
-        margin-bottom: 3%;
+    .Module__desc--lineTwo {
+        font-family: $sans-serif;
+        font-weight: $fontWeightNormal;
     }
 }
-    
 @media screen {
     .modulesArea__row {
         overflow: hidden;
@@ -1069,8 +1064,37 @@ tbody tr:nth-child(odd) {
             margin: .5em 1em 1em 0;
         }
     }
+    .Module--list--currentBoard {
+        .Module__image {
+            display: block;
+            margin: .5em 0;
+            img {
+                width: 100%;
+            }
+        }
+        .Module__desc--lineOne {
+            display: block;
+        }
+        .Module__listItem {
+            overflow: hidden;
+            margin: 0 5% 10% 0;
+            width: 100%;
+            display: inline-block;
+        }
+    }
 }
-@media all and (min-width: 25em) {
+@media all and (min-width: 37.5em) {
+    .Module--list--currentBoard {
+        .Module__desc--lineOne {
+            display: block;
+        }
+        .Module__listItem {
+            width: 47%;
+            &:nth-of-type(even) {
+                margin-right:  0;
+            }
+        }
+    }
 }
 @media all and (min-width: $small) {
     .Module--halfWidth {
@@ -1084,7 +1108,7 @@ tbody tr:nth-child(odd) {
     }
     .Module--fullWidth {
         clear: left;
-        padding: 0 5% 2em;
+        padding: 0 0 2em;
     }
     .Module__listItem {
             width: 100%;
@@ -1201,6 +1225,11 @@ tbody tr:nth-child(odd) {
     }
     .Module__link:active .Module__desc {
         background-image: url(../images/icons/figure--externalLink.png);
+    }
+}
+.Module--list--currentBoard {
+    .Module__link {
+        @include link-colors($fontColor, $linkColorHoverFocus, $linkColorActive, $fontColor, $linkColorHoverFocus);
     }
 }
 .lettertofamilies {

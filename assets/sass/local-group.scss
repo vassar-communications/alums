@@ -3,6 +3,7 @@
 @import "_config";
 
 
+
 /* ==============================
  *	TYPOGRAPHY
  * ==============================
@@ -265,13 +266,30 @@ li {
     text-align: center;
     li {
         margin-right: 1em;
-        font-weight: 500;
-        font-family: "brandon-grotesque","Helvetica";
+        font-weight: $fontWeightBoldSans;
+        font-family: $sans-serif;
     }
 }
 h4.departmenttitle {
     font-size: 1.1em;
     margin-left: 5%;
+}
+.boardSlatePosition {
+    margin-bottom: .3em;
+    clear: both;
+    padding-top: 2em;
+}
+.u-lContent h3.boardSlatePosition:nth-of-type(1) {
+    border: none;
+    padding-top: 0;
+}
+.boardSlateCandidate {
+    margin: 0 0 1em;
+    padding-top: 0;
+}
+.boardSlateCandidateExperience {
+    font-family: $sans-serif;
+    font-weight: $fontWeightBoldSans;
 }
 @media all and (min-width: $tiny) {
 	.u-lMain {
@@ -467,6 +485,10 @@ h4.departmenttitle {
             }
         }
     } 
+    .boardSlateCandidatePhoto {
+        float: none;
+        width: 100%;
+    }
 }
 @media all and (min-width: 25em) {
     .u-ExtendedFooter__listGroup {
@@ -486,6 +508,10 @@ h4.departmenttitle {
     }
     .u-ExtendedHeader {
         padding-top: 1.3em;
+    }
+    .boardSlateCandidatePhoto {
+        float: left;
+        width: 30.83%;
     }
 }
 @media all and (min-width: $small) {
@@ -1266,6 +1292,9 @@ tbody tr:nth-child(odd) {
             }
         }
     }
+}
+.boardSlatePosition {
+    border-top: 1px solid tint($fontColor, 80%);
 }
 @media all and (min-width: $small) {
     .Module--halfWidth:first-child {

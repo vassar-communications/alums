@@ -291,6 +291,28 @@ h4.departmenttitle {
     font-family: $sans-serif;
     font-weight: $fontWeightBoldSans;
 }
+.modulesArea__row .listAwardRecipients .Module__header {
+    border: none;
+}
+.listAwardRecipients {
+    .Module__list {
+        .Module__title {
+            font-family: $sans-serif;
+            font-weight: $fontWeightBoldSans;
+            display: block;
+        }
+        .Module__desc {
+            font-weight: $fontWeightBold;
+        }
+    }
+    .Module__subList {
+        .Module__title,
+        .Module__desc {
+            font-family: $serif;
+            font-weight: $fontWeightNormal;
+        }
+    }
+}
 @media all and (min-width: $tiny) {
 	.u-lMain {
 		font-size: 100%;

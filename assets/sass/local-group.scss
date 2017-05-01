@@ -2,8 +2,6 @@
 @import "compass";
 @import "_config";
 
-
-
 /* ==============================
  *	TYPOGRAPHY
  * ==============================
@@ -259,6 +257,11 @@ li {
         font-size: .8rem;
     }
 }
+.u-Article .galleria-info-text {
+    .galleria-info-description {
+        font: normal 1.3em/1.4 $sans-serif;
+    }
+}
 .cca-jumplinks {
     list-style: none;
     padding: 0;
@@ -425,6 +428,10 @@ h4.departmenttitle {
         top: inherit;
         width: 100%;
     }
+	.u-Article .galleria-info {
+		width: 100%;
+		top: auto;
+	}
     .u-lContent {
         width: 100%;
     }
@@ -788,6 +795,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
         border-bottom: 1px solid #fff;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
+}
+.u-Article .galleria-info-text {
+    background-color: inherit !important;
+	background-image: url() !important;
 }
 .u-NavSite__item.icon-external:link svg {
     fill: #fff !important;

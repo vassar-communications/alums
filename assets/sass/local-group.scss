@@ -1193,13 +1193,13 @@ tbody tr:nth-child(odd) {
             float: left;
             margin-right: 5%;
             margin-bottom: 0;
+			height: 30em;
             &:nth-of-type(2n) {
                 margin-right:  0;
             }
         }
         .Module__desc {
             display: block;
-            height: 11em;
         }
     }
 }
@@ -1220,6 +1220,11 @@ tbody tr:nth-child(odd) {
         .Module__title {
             font-size: 1.5em;
         }
+    }
+}
+@media all and (min-width: 118.75em) {
+    .Module--list--currentBoard .Module__listItem {
+		height: 38em;
     }
 }
 .modulesArea__row {

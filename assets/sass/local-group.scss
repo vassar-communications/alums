@@ -160,7 +160,7 @@ li {
     text-transform: none;
 }
 .u-Masthead__vassar  {
-    font-size: 2.2em;
+    font-size: 2.5em;
 }
 .u-footMasthead__vassar {
     font-size: 28px;
@@ -179,8 +179,7 @@ li {
     text-align: center;
 }
 .u-Masthead__siteName {
-    padding: 1.5em .25em .1em;
-    text-align: right;
+    padding: 2.99em .25em .1em;
 }
 .u-footMasthead__siteName {
     padding: 0;
@@ -375,9 +374,17 @@ h4.departmenttitle {
     }
     .u-lHeader {
         .u-Masthead__vassar {
-            position: absolute;
-            top: 2em;
+            position: relative;
+			margin: -2.25em 0 1em;
         }
+		.u-Masthead__vassar--link {
+			position: relative;
+    		height: auto;
+    		line-height: inherit;
+    		padding: 0;
+    		text-align: center;
+    		display: block;
+		}
     }
     .u-lMain {
         margin: 7% auto;
@@ -555,9 +562,14 @@ h4.departmenttitle {
     .u-lHeader {
         padding: 0;
         .u-Masthead__vassar {
-            top: -1.2em;
-            left: 1.2em;
+			position: absolute;
+            top: -1.1em;
+            left: 1em;
+			margin: 0;
         }
+		.u-Masthead__vassar--link {
+    		text-align: left;
+		}
     }
     .u-ExtendedHeader {
         padding-top: .8em;

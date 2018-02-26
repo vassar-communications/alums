@@ -21,91 +21,139 @@
   float: right; }
 
 /* Jeff Macaluso styles added from inspector stylesheet */
-a {
-  color: #CC2249;
-  border-bottom: 1px solid; }
+html {
+  background: #fff url() repeat;
+  border-top: 0px solid; }
 
-#ContentMiddle .imod-profile-step-header {
-  background: #d8c5d1; }
+body {
+  background: url();
+  padding-top: 0;
+  margin: 0; }
 
-#ContentMiddle .imod-profile-step-opened .imod-profile-step-header {
-  background: #380C2A; }
+.make-a-gift-button, .meta-nav {
+  display: none;
+  visibility: hidden; }
 
-.content-body {
-  float: left;
+.login-container {
+  bottom: 0;
+  float: none;
+  position: absolute;
+  top: 8em;
+  right: 2em; }
+
+.button, .olc-formButton, input[type="button"], input[type="submit"], .button-account, .button-directory, .button-login, #btnFindRecord, #btnRegAcct {
+  background-color: #CC2249;
+  border-radius: 0; }
+
+#Logout {
+  margin-top: 6em;
+  display: block; }
+
+#Logout > span {
+  background-color: #CC2249;
+  border: none;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 0;
   margin-left: 0;
-  padding: 2%;
-  width: 96%; }
+  width: inherit; }
 
-.content-body-aside {
+.header-container {
+  margin: 1.5em 0 0;
+  padding: 0; }
+
+.header {
+  padding: 0 0 0 1em;
+  margin: 0;
+  max-width: 100%;
+  position: relative;
+  background-color: #380C2A;
+  border-bottom: 0.25em solid #CC2249; }
+
+header:before {
+  content: "Vassar";
+  position: absolute;
+  top: 3em;
+  left: 1em;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #CC2249; }
+
+.main-content {
+  margin: 0;
   width: 100%; }
 
 .content-container {
-  max-width: inherit; overflow: visible }
+  padding-top: 0;
+  max-width: 100%;
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  border-top: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: solid 0 transparent; }
 
 .content-container:after {
-  border-right: 0; }
+  border-right: 0 dashed transparent; }
 
 .content-container:before {
-  background: none;
-  border-left: 0px dashed #b3c51d;
-  border-right: 0px solid #b3c51d; }
+  background: transparent;
+  border-left: 0 dashed transparent;
+  border-right: 0 solid transparent; }
 
-.imod-profile-left-nav ul li {
-  border-bottom: 1px solid #d8c5d1;
-  color: #904e7b; }
+.navigation {
+  max-width: 100%;
+  width: 100%;
+  padding-bottom: 0;
+  float: none; }
 
-.nav, .aside {
-  display: none; }
+#nav1 {
+  visibility: hidden;
+  position: relative; }
 
-body {
-  color: #380C2A; }
+#nav2 {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  background-color: #CC2249; }
 
-/*
-Violet #380C2A
-Pink #CC2249
-Orange #FF4D38
-Yellow #FEE293
-Green #37C78F
-*/
-div.imod-profile-fields ul li div.imod-profile-field-label {
-  color: #904E77; }
+#nav2 li {
+  display: inline-block; }
 
-div.imod-profile-fields ul li:nth-child(2n), div.imod-profile-fields ul li {
-  background: #f9f0f5;
-  border-bottom: 1px solid #d8c5d1; }
-
-#ContentMiddle .imod-profile-form-buttons input.imod-profile-button, #ContentMiddle .imod-profile-form-buttons button.imod-profile-button {
-  background: #380c2a; }
-
-#ContentMiddle .imod-profile-step-opened .imod-profile-form-buttons input.imod-profile-button, #ContentMiddle .imod-profile-step-opened .imod-profile-form-buttons button.imod-profile-button {
-  color: #380c2a;
-  background: #f9f0f5; }
-
-#ContentMiddle .imod-toggle-switch input.selected, #ContentMiddle .imod-toggle-switch button.selected, #ContentMiddle .imod-toggle-switch a.selected {
-  background: #380c2a; }
-
-#ContentMiddle .imod-toggle-switch input, #ContentMiddle .imod-toggle-switch button, #ContentMiddle .imod-toggle-switch a, #contentMiddle .imod-toggle-switch a:visited {
-  background: #d8c5d1; }
-
-.imod-profile-image {
-  border: 2px solid #d8c5d1;
-  padding-bottom: .5em; }
-
-.imod-profile-summary-member-name {
-  text-transform: uppercase; }
-
-div.imod-light-switch-off {
-  background: #d8c5d1;
+#nav2 li a {
   color: #fff; }
 
-#ContentMiddle div.imod-light-switch-on {
-  background: #380c2a; }
+.footer {
+  background-image: url();
+  color: #fff; }
 
-#ContentMiddle div.imod-profile-mode-edit div.imod-profile-edit-form-buttons {
-  background: transparent; }
+.footer a {
+  color: #fff; }
 
-#ContentMiddle div.imod-profile-edit-form-buttons input, #ContentMiddle div.imod-profile-edit-form-buttons button {
-  background: #cc2249;
-  border-radius: 0;
-  font-size: 100%; }
+.footer h3 {
+  color: #915d7f;
+  text-shadow: none; }
+
+.footer img {
+  display: none; }
+
+.footer:before {
+  background: transparent url() center 0 repeat;
+  background-color: #380C2A;
+  border-top: 0.25em solid #CC2249; }
+
+.footer-just-for-alums, .footer-explore-vassar {
+  display: none;
+  visibility: hidden; }
+
+.footer-columns {
+  text-align: center;
+  max-width: 100%; }
+
+.footer-columns > li {
+  width: 100%;
+  margin: 0; }
+
+.footer-columns > li:nth-child(1), .footer-columns > li:nth-child(3) {
+  background: transparent url() 100% repeat-y; }

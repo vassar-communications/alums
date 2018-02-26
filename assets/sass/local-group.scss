@@ -160,7 +160,7 @@ li {
     text-transform: none;
 }
 .u-Masthead__vassar  {
-    font-size: 2.5em;
+    font-size: 2.2em;
 }
 .u-footMasthead__vassar {
     font-size: 28px;
@@ -179,7 +179,8 @@ li {
     text-align: center;
 }
 .u-Masthead__siteName {
-    padding: 2.99em .25em .1em;
+    padding: 1.5em .25em .1em;
+    text-align: right;
 }
 .u-footMasthead__siteName {
     padding: 0;
@@ -374,17 +375,9 @@ h4.departmenttitle {
     }
     .u-lHeader {
         .u-Masthead__vassar {
-            position: relative;
-			margin: -2.25em 0 1em;
+            position: absolute;
+            top: 2em;
         }
-		.u-Masthead__vassar--link {
-			position: relative;
-    		height: auto;
-    		line-height: inherit;
-    		padding: 0;
-    		text-align: center;
-    		display: block;
-		}
     }
     .u-lMain {
         margin: 7% auto;
@@ -463,7 +456,7 @@ h4.departmenttitle {
         list-style: none;
         padding-left: 0;
         margin: 4em auto .4em auto;
-        width: 8em;
+        width: 11em;
     }
     .SocialAccount__iconContainer {
         display: inline-block;
@@ -562,14 +555,9 @@ h4.departmenttitle {
     .u-lHeader {
         padding: 0;
         .u-Masthead__vassar {
-			position: absolute;
-            top: -1.1em;
-            left: 1em;
-			margin: 0;
+            top: -1.2em;
+            left: 1.2em;
         }
-		.u-Masthead__vassar--link {
-    		text-align: left;
-		}
     }
     .u-ExtendedHeader {
         padding-top: .8em;
@@ -678,7 +666,6 @@ a:active {
 .u-Figure a:link,
 h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link,
 .Module__headerLink:link,
-.Module__link:link,
 .Module--sidebar a:link,
 a.fn.org.url.u-VCard__fn.u-VCard__item.u-VCard__org.u-VCard__url,
 a.fn.org.url.u-VCard__fn.u-VCard__item.u-VCard__org.u-VCard__url:link,
@@ -812,19 +799,24 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     background-color: inherit !important;
 	background-image: url() !important;
 }
-.u-NavSite__item.icon-external:link svg {
+.u-NavSite__item.icon-external:link svg path {
     fill: #fff !important;
 }
-.u-NavSite__item.icon-external:visited svg {
+.u-NavSite__item.icon-external:visited svg path {
     fill: #fff !important;
 }
-.u-NavSite__item.icon-external:hover svg,
-.u-NavSite__item.icon-external:focus svg {
+.u-NavSite__item.icon-external:hover svg path,
+.u-NavSite__item.icon-external:focus svg path {
     fill: $linkColorHoverFocus !important;
 }
-.u-NavSite__item.icon-external:active svg {
+.u-NavSite__item.icon-external:active svg path {
     fill: $linkColorActive !important;
 }
+.u-NavSite__level [class*=icon-] img,
+.u-NavSite__level [class*=icon-] svg { 
+	float: right !important; margin-left: .33em !important; 
+}
+
 .u-Masthead__siteName--link {
     @include link-colors(#fff, $linkColorHoverFocus, $linkColorActive, #fff, $linkColorHoverFocus);
 }
@@ -1205,13 +1197,13 @@ tbody tr:nth-child(odd) {
             float: left;
             margin-right: 5%;
             margin-bottom: 0;
-			height: 30em;
             &:nth-of-type(2n) {
                 margin-right:  0;
             }
         }
         .Module__desc {
             display: block;
+            height: 11em;
         }
     }
 }
@@ -1232,11 +1224,6 @@ tbody tr:nth-child(odd) {
         .Module__title {
             font-size: 1.5em;
         }
-    }
-}
-@media all and (min-width: 118.75em) {
-    .Module--list--currentBoard .Module__listItem {
-		height: 38em;
     }
 }
 .modulesArea__row {

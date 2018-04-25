@@ -1471,7 +1471,10 @@ h3+.faq__item:after {
     font: $fontWeightBoldSans 1.5rem/1.1 $sans-serif !important;
 }
 .alumAlert {
-     background-color: #cc2249;
-     color: #fff;
-     padding: 2%;
+    background-color: #cc2249;
+    color: #fff;
+    padding: 2%
+}
+body {
+    position: relative;
 }

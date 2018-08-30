@@ -58,10 +58,10 @@ td {
     padding: .5em;
 }
 .u-lContent {
-	@include v-pixel-fallback ('font-size', 1.5rem);
+	@include v-pixel-fallback ('font-size', 1.4rem);
 	font-family: $serif;
 	font-weight: $fontWeightNormal;
-	line-height: 1.45;
+	line-height: 1.6;
 	margin-bottom: 1.25em;
 }
 p {
@@ -102,10 +102,10 @@ li {
 /* u-lAside sidebar styles */
 
 .u-lAside {
-    @include v-pixel-fallback ('font-size', 1.5rem);
+    @include v-pixel-fallback ('font-size', 1.4rem);
     font-family: $serif;
     font-weight: $fontWeightNormal;
-    line-height: 1.45;
+    line-height: 1.5;
     h1 {
         font-size: 2.44em;
     }
@@ -446,7 +446,7 @@ h4.departmenttitle {
         padding: 5%;
     }
     .u-ExtendedFooter__listGroup {
-        margin-bottom: 5em;
+        margin-bottom: 2em;
     }
     .u-ExtendedFooter__listHeader,
     .u-ExtendedFooter__list {
@@ -760,9 +760,16 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 .u-lFooter {
     color: #fff;
+    background: $grey url(../images/footer-bg.jpg) no-repeat;
+    background-size: cover;
+}
+.u-VCard--site {
+    border-top: 1px solid white;
+    padding-top: 2em;
 }
 .u-ExtendedFooter__listItemLink,
-.u-footMasthead__siteName--link {
+.u-footMasthead__siteName--link,
+a.u-VCard__item--contact {
     border-bottom: none;
     @include link-colors(#fff, $linkColorHoverFocus, $linkColorActive, #fff, $linkColorHoverFocus);
 }
@@ -786,10 +793,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     background-image: url(../images/icons/externalLinkActive.png);
     border-bottom: 1px solid $linkColorActive;
 }
+.SocialAccount__iconContainer .SocialAccount__iconTarget:hover path.SocialAccount__iconPath, .SocialAccount__iconContainer .SocialAccount__iconTarget:focus path.SocialAccount__iconPath {
+	fill: $linkColorHoverFocus;
+}
 .galleria-info-text {
-    background-color: transparent !important;
-    background-image: -webkit-linear-gradient(top, rgba(56, 12, 42, 0.75), rgba(204, 34, 73, 0.75)) !important; /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-    background-image: linear-gradient(to bottom, rgba(56, 12, 42, 0.75), rgba(204, 34, 73, 0.75)) !important; /* Chrome 26, Firefox 16+, IE 10+, Opera */
+    background-color: rgba(0, 0, 0, 0.65) !important;
     .u-Figure__caption--descriptionDesc {
         border-bottom: 1px solid #fff;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -821,8 +829,14 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     @include link-colors(#fff, $linkColorHoverFocus, $linkColorActive, #fff, $linkColorHoverFocus);
 }
 .u-ExtendedFooter__listGroup {
-    border-top: 1px solid $pink;
-    border-bottom: 1px solid $pink;
+    /* border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff; */
+    background-color: #000;
+    background-color: rgba(0,0,0,.3);
+}
+.footerExtra {
+    border-bottom: 1px solid white;
+    margin-bottom: 2em;
 }
 h2 a.u-footMasthead__vassar--link,
 .u-VCard__org.u-VCard__url {
@@ -865,7 +879,7 @@ tbody tr:nth-child(odd) {
         color: tint($fontColor, 60%);
     }
     .u-NavSite__level--2 {
-        background-color: #cc2249;
+        background-color: $grey;
         .u-NavSite__item {
             background-color: transparent;
         }
@@ -876,19 +890,19 @@ tbody tr:nth-child(odd) {
     .u-NavSite__level--1 > {
         .u-NavSite__item--isOpen > .u-NavSite__item,
         .u-NavSite__item--isCurrent {
-            background-color: $pink;
+            background-color: $grey;
         }
     }
     .u-NavSite__level--2 .u-NavSite__item--isOpen .u-NavSite__item,
     .u-NavSite__item--isOpen .u-NavSite__level--2 .u-NavSite__item--isCurrent {
          background-color: #fff;
-         color: $pink;
+         color: $grey;
     }
     .u-NavSite__level--2 .u-NavSite__item--isOpen,
     .u-NavSite__item--isOpen .u-NavSite__level--2 {
         .u-NavSite__item--isCurrent {
             background-color: #fff;
-            color: $pink;
+            color: $grey;
         }
     }
     .u-NavSite__level--3 .u-NavSite__item {

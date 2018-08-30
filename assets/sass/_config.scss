@@ -5,9 +5,9 @@
 
 $iconFont: "icons" !important;
 
-$serif: "freight-text-pro", "Georgia";
+$serif: "source-sans-pro";
 $sans-serif: "brandon-grotesque", "Helvetica";
-$fontWeightNormal: 400;
+$fontWeightNormal: 300;
 $fontWeightBold: 700;
 $fontWeightBoldSans: 500;
 
@@ -29,25 +29,26 @@ $layoutContainerPadding--medium: 3%;
 /* COLOR
 	====== */
 
-$violet: #380C2A;
-$pink: #CC2249;
+$violet: #882344;
+$pink: #746661;
 $orange: #FF4D38;
 $yellow: #FEE293;
 $green: #37C78F;
+$grey: #746661;
 
 /* Basic link colors - these colors also affect the Google Search result link colors */
 
-$linkColor: #cc2249;
-$linkColorHoverFocus: #9c8695;
-$linkColorVisited: #380c2a;
-$linkColorActive: #FEE293; 
-$linkBorderColor: #380c2a; 
-$fontColor: #380c2a;
+$linkColor: #882344;
+$linkColorHoverFocus: #BFB9B0;
+$linkColorVisited: #5A5A5A;
+$linkColorActive: #5A5A5A;
+$linkBorderColor: #882344;
+$fontColor: #5A5A5A;
 
 $html--backgroundColor: #fff;
 $body--backgroundColor: #fff;
 $u-lHeader--backgroundColor: $violet;
-$u-lFooter--backgroundColor: $violet;
+$u-lFooter--backgroundColor: $grey;
 
 /* MODULES
 	======== */

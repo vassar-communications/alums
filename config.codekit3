@@ -47,6 +47,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/assets\/css\/_notes\/dwsync.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/css\/_notes\/dwsync.xml",
+		"oF": 0
+		},
 	"\/assets\/css\/alums-inner.css": {
 		"aP": 1,
 		"bl": 0,
@@ -338,6 +345,13 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/images\/_notes\/dwsync.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/images\/_notes\/dwsync.xml",
+		"oF": 0
+		},
 	"\/assets\/images\/connect-graphic.jpg": {
 		"ft": 16384,
 		"iS": 89866,
@@ -360,6 +374,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/images\/footer-bg.jpg": {
+		"ft": 16384,
+		"iS": 116572,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/assets\/images\/footer-bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/assets\/images\/give-graphic.jpg": {
 		"ft": 16384,
 		"iS": 41198,
@@ -368,7 +393,7 @@
 		"oAP": "\/assets\/images\/give-graphic.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/images\/icons\/externalLink.png": {
@@ -384,7 +409,7 @@
 		},
 	"\/assets\/images\/icons\/externalLinkActive.png": {
 		"ft": 32768,
-		"iS": 1104,
+		"iS": 790,
 		"oA": 0,
 		"oAP": "\/assets\/images\/icons\/externalLinkActive.png",
 		"oF": 0,
@@ -399,8 +424,8 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/icons\/externalLinkHoverFocus.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -616,6 +641,13 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/_notes\/dwsync.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/sass\/_notes\/dwsync.xml",
+		"oF": 0
+		},
 	"\/assets\/sass\/alums-inner.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -672,6 +704,13 @@
 		"ft": 131072,
 		"oA": 0,
 		"oAP": "\/config.rb",
+		"oF": 0
+		},
+	"\/design-files\/footer-bg.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/design-files\/footer-bg.psd",
 		"oF": 0
 		},
 	"\/README.md": {

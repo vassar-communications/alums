@@ -28,6 +28,10 @@ caption, tfoot td {
 .u-lContent h6:nth-of-type(1), .u-lAside h6:nth-of-type(1) {
 	padding-top: 0;
 }
+.noTopMarginPadding {
+    margin-top: 0;
+    padding-top: 0;
+}
 h1 {
 	font-size: 2.44em;
 }
@@ -472,6 +476,17 @@ h4.departmenttitle {
     .u-ArticleListItem {
         margin-bottom: 0;
     }
+    .u-ArticleListItem.DonorSoc {
+        margin-bottom: 7%;
+        .u-Figure--left.u-Figure--quarter,
+        .u-Figure--right.u-Figure--third {            
+            float: none;
+            width: 100%;
+        }
+        .u-Figure--right.u-Figure--third {
+            margin: 0.3em 0 1.25em;
+        }
+    }
     .u-ArticleListItem__label--externalLink {
         display: none;
     }
@@ -541,6 +556,21 @@ h4.departmenttitle {
     .boardSlateCandidatePhoto {
         float: left;
         width: 30.83%;
+    }
+}
+@media all and (min-width: 30em) {
+    .u-ArticleListItem.DonorSoc {
+        margin-bottom: 7%;
+        .u-Figure--left.u-Figure--quarter,
+        .u-Figure--right.u-Figure--third {
+            float: left;
+            width: 22.5%;
+        }
+        .u-Figure--right.u-Figure--third {
+            float: right;
+            width: 30.83%;
+            margin: 0.3em 0 1.25em 1.25em;
+        }
     }
 }
 @media all and (min-width: $small) {

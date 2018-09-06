@@ -30,6 +30,20 @@
 		"oAP": "\/404.html",
 		"oF": 0
 		},
+	"\/alums-design-files\/call-to-action-graphics.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/alums-design-files\/call-to-action-graphics.psd",
+		"oF": 0
+		},
+	"\/alums-design-files\/footer-bg.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/alums-design-files\/footer-bg.psd",
+		"oF": 0
+		},
 	"\/assets\/config.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -351,6 +365,17 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/_notes\/dwsync.xml",
 		"oF": 0
+		},
+	"\/assets\/images\/call-to-action-graphic-maroon.jpg": {
+		"ft": 16384,
+		"iS": 10215,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/assets\/images\/call-to-action-graphic-maroon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/assets\/images\/connect-graphic.jpg": {
 		"ft": 16384,
@@ -701,16 +726,10 @@
 		"uL": 1
 		},
 	"\/config.rb": {
-		"ft": 131072,
-		"oA": 0,
-		"oAP": "\/config.rb",
-		"oF": 0
-		},
-	"\/design-files\/footer-bg.psd": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/design-files\/footer-bg.psd",
+		"oAP": "\/config.rb",
 		"oF": 0
 		},
 	"\/README.md": {

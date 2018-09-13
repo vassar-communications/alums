@@ -52,6 +52,9 @@ h6 {
     font-family: $sans-serif;
 	font-size: 1em;
 }
+strong {
+    font-weight: $fontWeightBold;
+}
 thead td, table caption, tfoot td {
     font-weight: $fontWeightBoldSans;
 }
@@ -1069,6 +1072,7 @@ tbody tr:nth-child(odd) {
             text-align: center;
             margin: 6%  auto;
             border: 1px solid lightgrey;
+            background-color: $linkColor;
         }
         .Module__link {
             display: block;
@@ -1095,7 +1099,7 @@ tbody tr:nth-child(odd) {
         .Module__title,
         .Module__desc {
             display: block;
-            position: absolute;
+            /* position: absolute; */
             left: 0;
             right: 0;
             font-family: $sans-serif;

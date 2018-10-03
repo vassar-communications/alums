@@ -70,6 +70,9 @@ td {
 	line-height: 1.6;
 	margin-bottom: 1.25em;
 }
+.u-Figure__caption {
+    font: $fontWeightNormal .85em $sans-serif;
+}
 p {
 	margin-top: 0;
 }
@@ -104,9 +107,6 @@ li {
     font-size: 1.562em;
     letter-spacing: .05em;
 }
-
-/* u-lAside sidebar styles */
-
 .u-lAside {
     @include v-pixel-fallback ('font-size', 1.4rem);
     font-family: $serif;
@@ -144,8 +144,15 @@ li {
 		margin-bottom: 0.327em;
 		line-height: 1.2;
 	}
+    .Share {
+        text-align: center;
+    }
+    .Share li {
+        max-width: 2em;
+        margin: .5em;
+        padding: 0;
+    }
 }
-
 .u-SiteMap__level {
 	 margin: .5em 0;
 }
@@ -387,6 +394,7 @@ h4.departmenttitle {
     }
     .u-lMain {
         margin: 7% auto;
+        max-width: 63em;
     }
     .u-lAside {
         width: 94%;
@@ -439,6 +447,9 @@ h4.departmenttitle {
 		top: auto;
 	}
     .u-lContent {
+        width: 100%;
+    }
+    .u-Figure--half {
         width: 100%;
     }
     .SocialAccount__iconTarget {
@@ -536,7 +547,12 @@ h4.departmenttitle {
         width: 100%;
     }
 }
-@media all and (min-width: 25em) {
+@media (min-width: 700px) {
+    .u-Figure--half {
+        width: 47.25%;
+    }
+}
+@media all and (min-width: $tiny) {
     .u-ExtendedFooter__listGroup {
         padding: 5% 5% 5% 12%;
         column-count: 2;
@@ -1011,9 +1027,13 @@ tbody tr:nth-child(odd) {
             padding: 0;
         }
         .Module__list {
-            padding: 0;
-            margin: 0;
             list-style-type: none;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         &:nth-child(2) {
             padding: 0 6%;
@@ -1188,10 +1208,23 @@ tbody tr:nth-child(odd) {
             display: block;
         }
         .Module__listItem {
-            overflow: hidden;
-            margin: 0 auto 7%;
-            width: 60%;
+            margin-right: 0;
+            padding: 1em;
+            width: 90%;
+            margin: 0;
+            height:auto;
         }
+        .Module__listItem:nth-of-type(2n) {
+            margin-right: 0%;
+        }
+        a.Module__link {
+            border-bottom: none;
+        }
+    }
+}
+@media (min-width: 600px) {
+    .Module--list--currentBoard .Module__listItem {
+        width: 50%;
     }
 }
 @media all and (min-width: $small) {
@@ -1238,45 +1271,24 @@ tbody tr:nth-child(odd) {
     .Module--list--currentBoard {
         .Module__desc--lineOne {
             display: block;
-        }
-        .Module__listItem {
-            width: 47%;
-            float: left;
-            margin-right: 5%;
-            margin-bottom: 0;
-            height: 30em;
-            &:nth-of-type(2n) {
-                margin-right:  0;
-            }
+            font-weight: $fontWeightBoldSans;
+            font-family: $sans-serif;
+            line-height: 1.1em;
         }
         .Module__desc {
             display: block;
         }
     }
 }
-@media all and (min-width: 81.25em) {
-    .Module--list--currentBoard {
-        .Module__listItem {
-            width: 30%;
-            margin-right: 5%;
-            &:nth-of-type(2n) {
-                margin-right: 5%;
-            }
-            &:nth-of-type(3n) {
-                margin-right: 0;
-            }
-        }
+@media (min-width: $large) {
+    .Module--list--currentBoard .Module__listItem {
+        width: 33.3%;
     }
+}
+@media all and (min-width: 81.25em) {
     .list--homePage--listCallToAct {
         .Module__title {
             font-size: 1.5em;
-        }
-    }
-}
-@media all and (min-width: 118.75em) {
-    .Module--list--currentBoard {
-        .Module__listItem {
-            height: 38em;
         }
     }
 }
@@ -1525,3 +1537,69 @@ h3+.faq__item:after {
 body {
     position: relative;
 }
+/* Max Width Setting
+.u-lMain {
+    max-width: 63em;
+} */
+/* AAVC Awards Image styling
+.u-Figure--half {
+    width: 100%;
+}
+@media (min-width: 700px) {
+.u-Figure--half {
+    width: 47.25%;
+}
+} */
+/* .Module--list--currentBoard .Module__desc--lineOne {
+    font-weight: 500;
+    font-family: "brandon-grotesque","Helvetica";
+    line-height: 1.1em;
+}
+.u-Figure__caption {
+    font: 300 .85em brandon-grotesque, Helvetica;
+} */
+/* AAVC Board FLEX Styling
+.Module--mainContent .Module__list {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Module--list--currentBoard .Module__listItem {
+    margin-right: 0;
+    padding: 1em;
+    width: 90%;
+}
+@media (min-width: 600px) {
+    .Module--list--currentBoard .Module__listItem {
+        width: 50%;
+    }
+}
+@media (min-width: $large) {
+    .Module--list--currentBoard .Module__listItem {
+        width: 33.3%;
+    }
+}
+/* .Module--list--currentBoard .Module__listItem {
+    margin: 0;
+    height:auto;
+}
+.Module--list--currentBoard .Module__listItem:nth-of-type(2n) {
+    margin-right: 0%;
+}
+.Module--list--currentBoard a.Module__link {
+    border-bottom: none;
+}
+Share Icons
+.u-lAside .Share {
+    text-align: center;
+}
+.u-lAside .Share li {
+    max-width: 2em;
+    margin: .5em;
+    padding 0;
+}
+ */

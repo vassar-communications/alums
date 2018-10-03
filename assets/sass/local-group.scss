@@ -1221,6 +1221,17 @@ tbody tr:nth-child(odd) {
             border-bottom: none;
         }
     }
+	    .Module--list--currentBoard {
+        .Module__desc--lineOne {
+            display: block;
+            font-weight: $fontWeightBoldSans;
+            font-family: $sans-serif;
+            line-height: 1.1em;
+        }
+        .Module__desc {
+            display: block;
+        }
+    }
 }
 @media (min-width: 600px) {
     .Module--list--currentBoard .Module__listItem {
@@ -1266,17 +1277,6 @@ tbody tr:nth-child(odd) {
         }
         .Module__listItem:nth-child(2) {
             margin: 0 0 0 6%;
-        }
-    }
-    .Module--list--currentBoard {
-        .Module__desc--lineOne {
-            display: block;
-            font-weight: $fontWeightBoldSans;
-            font-family: $sans-serif;
-            line-height: 1.1em;
-        }
-        .Module__desc {
-            display: block;
         }
     }
 }
@@ -1602,4 +1602,4 @@ Share Icons
     margin: .5em;
     padding 0;
 }
- */
+*/ 

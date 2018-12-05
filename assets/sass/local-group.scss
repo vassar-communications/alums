@@ -270,6 +270,9 @@ li {
         font-size: .8rem;
     }
 }
+
+
+
 .u-Article .galleria-info-text {
     .galleria-info-description {
         font: normal 1.3em/1.4 $sans-serif;
@@ -347,6 +350,7 @@ h4.departmenttitle {
         }
     }
 }
+
 @media all and (min-width: $small) {
     .u-NavSite__item {
         margin-left: .5em;
@@ -674,6 +678,17 @@ h4.departmenttitle {
         bottom: 3em;
         right: 3em;
         width: 33%;
+    }
+    .u-pageHome .u-Figure__caption {
+    bottom: 3em;
+    right: 3em;
+    width: 33%;
+    position: absolute;
+    z-index: 10;
+    background: #000;
+    opacity: 0.75;
+    filter: alpha(opacity=70);
+    padding: .75em;
     }
     .u-ExtendedFooter__listGroup {
         padding: 3% 3% 3% 10%;
@@ -1098,6 +1113,7 @@ tbody tr:nth-child(odd) {
             position: relative;
             border: .7em solid white;
             @include link-colors(#fff, #fff, #fff, #fff, #fff);
+			height: 100%;
         }
         .Module__link:before {
             position: absolute;
@@ -1537,6 +1553,114 @@ h3+.faq__item:after {
 body {
     position: relative;
 }
+
+/* Homepage Hero Image .u-pageHome */
+
+
+.u-pageHome .u-Figure--headerImage {
+    position: relative;
+	
+}
+.u-pageHome .u-Figure--headerImage .u-Figure__caption  {
+
+	background: #000;
+	background:rgba(0,0,0,0.75);
+	padding: 15px 15px 1.5em 15px;
+	margin-top: 0;
+	color: #fff;
+}
+
+.u-pageHome .u-Figure--headerImage .u-Figure__caption  a {
+	display: block;
+    background-image: url(../images/icons/figure--externalLink.png);
+    background-repeat: no-repeat;
+    background-position: right 97%;
+    background-size: 14px;
+    background-size: .9rem;
+		color: #fff;
+    border-bottom: 1px solid #5A5A5A;
+}
+.u-pageHome .u-Figure--headerImage .u-Figure__caption a:hover  {
+
+	color: #c2c2c2;
+}
+
+
+@media all and (min-width: 870px) {
+.u-pageHome .u-Figure--headerImage .u-Figure__caption  {
+	position: absolute;
+    bottom: 3em;
+    right: 3em;
+    width: 33%;
+	
+}	
+}
+
+.u-pageHome .u-Figure--headerImage {
+    .galleria-info-description {
+        font: normal 1em/1.4 $serif;
+    }
+    font-style: normal;
+    .u-Figure__caption--descriptionExternalLink {
+        display: block;
+    }
+    .u-Figure__caption--descriptionTitle {
+        display: block;
+        font-family: $sans-serif;
+        font-weight: $fontWeightBoldSans;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.1;
+    }
+    .u-Figure__caption--descriptionDesc {
+        display: none;
+        font-size: 16px;
+        font-size: 1rem;
+    }
+    .u-Figure__caption--descriptionStoriesLine {
+        font-family: $sans-serif;
+        font-weight: $fontWeightNormal;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        font-size: 13px;
+        font-size: .8rem;
+    }
+}
+@media all and (min-width: 25em) {
+    .u-pageHome .u-Figure--headerImage {
+        .u-Figure__caption--descriptionTitle {
+            font-size: 28px;
+            font-size: 1.8rem;
+        }
+        .u-Figure__caption--descriptionDesc {
+            display: block;
+            padding-bottom: .8em;
+            margin-bottom: .8em;
+        }
+    } 
+}
+.u-pageHome .u-Figure--headerImage .u-Figure__caption--title {
+    font-family: "brandon-grotesque","Helvetica";
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 1.1;
+}
+
+.u-pageHome .u-Figure--headerImage .u-Figure__caption--description {
+	
+	font: normal 1.15em/1.4 "source-sans-pro";
+}
+
+.u-pageHome .u-Figure--headerImage .u-Figure__caption--description p {
+	
+	margin-bottom: .75em;
+}
+
+/* END Homepage Hero Image */
+
+
 /* Max Width Setting
 .u-lMain {
     max-width: 63em;

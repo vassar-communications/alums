@@ -1727,3 +1727,136 @@ Share Icons
     padding 0;
 }
 */ 
+
+/*Begin Susan Brkich code for Reunion landing page CTA buttons; copied all .list--homePage--listCallToAct code, renamed with --reunionPage-- and changed as needed */
+
+@media screen {
+    .list--reunionPage--listCallToAct {
+        overflow: hidden;
+		margin: 0;
+		line-height: 1.2;
+        .Module__listItem {
+            width: 80%;
+            text-align: center;
+            margin: 3% auto;
+            border: 1px solid lightgrey;
+        }
+		.Module__listItem a {
+			border-bottom: none;
+		}
+        .Module__link {
+            display: block;
+            position: relative;
+            @include link-colors($linkColor, #fff, #fff, $linkColor, $linkColor);
+			/*height: 100%;*/
+        }
+        .Module__link:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+			background-color: rgba(255,255,255,.75);
+        }
+        .Module__link:hover:before,
+        .Module__link:focus:before {
+            background-color: #000;
+            background-color: rgba(0, 0, 0, 0.35);
+        }
+        .Module__link:active:before {
+            background-color: rgba(0, 0, 0, 0);
+       }
+        .Module__title,
+        .Module__desc {
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            font-family: $sans-serif;
+        }
+        .Module__title {
+            text-transform: uppercase;
+            font-size: 1.4em;
+            top: 0;
+			margin-top: 2.3em;
+        }
+        .Module__desc {
+            font-size: 1.2em;
+			bottom: 0;
+            margin-bottom: .5em;
+		}
+        .Module__image img {
+            width: 100%;
+        }
+		.u-Figure {
+			margin: 0;
+		}
+    }
+}
+
+@media all and (min-width: $tiny) {
+     .list--reunionPage--listCallToAct {
+        .Module__title {
+            font-size: 1.2em;
+			margin-top: 5em;
+        }
+        .Module__desc {
+            font-size: 1em;
+		}
+     }	
+}
+
+@media all and (min-width: $small) {
+    .list--reunionPage--listCallToAct {
+       padding: 1em 0;
+       .Module__listItem {
+            margin: 0 auto;
+        }
+        .Module__listItem {
+            width: 29.33%;
+            float: left;
+            margin: 0;
+        }
+        .Module__listItem:nth-child(2), .Module__listItem:nth-child(5) {
+           margin: 0 6%;
+        }
+        .Module__title {
+            font-size: .8em;
+			margin-top: 3em;
+        }
+        .Module__desc {
+            font-size: .7em;
+		}
+     }	
+}
+
+@media all and (min-width: $large) {
+    .list--reunionPage--listCallToAct {
+        padding: 1em 0;
+       .Module__listItem {
+            margin: 0 auto;
+        }
+        .Module__title {
+			margin-top: 5em;
+        }
+     }	
+}
+
+@media all and (min-width: 81.25em) {
+        padding: 1em 0;
+        .Module__listItem {
+            margin: 0 auto;
+        }
+    .list--reunionPage--listCallToAct {
+        .Module__title {
+            font-size: 1.23em;
+			margin-top: 3em;
+        }
+        .Module__desc {
+            font-size: 1em;
+        }
+    }
+}
+
+/*End Susan Brkich new code for Reunion landing page CTA buttons*/

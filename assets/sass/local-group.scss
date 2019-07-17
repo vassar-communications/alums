@@ -1860,3 +1860,42 @@ Share Icons
 }
 
 /*End Susan Brkich new code for Reunion landing page CTA buttons*/
+
+/*Begin Susan Brkich new styles for Time Out Grant page slideshow*/
+
+
+@media all and (min-width: $tiny) {
+	.galleria--timeout-grant {	
+		.galleria-info {
+        	bottom: 0;
+        	right: 0;
+        	width: 100%;
+   		}
+		.galleria-info-text {
+    		.u-Figure__caption--descriptionDesc {
+       	 		border-bottom: none;
+				margin-bottom: 0;
+				padding-bottom: 0;
+    		}
+		}			
+	}
+}
+
+@media all and (max-width: 25.875em) {
+	.galleria--timeout-grant {	
+		.galleria-info-text {
+    		.u-Figure__caption--descriptionDesc {
+       	 		border-bottom: none;
+				padding-bottom: 0;
+				display: none;
+    		}
+			.u-Figure__caption--descriptionTitle {
+				font-size: 1rem;
+				line-height: 1.1;
+				font-weight: 500;
+			}
+		}				
+	}	
+}
+
+/*End Susan Brkich new styles for Time Out Grant page slideshow*/

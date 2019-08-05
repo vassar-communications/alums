@@ -1837,6 +1837,9 @@ Share Icons
        .Module__listItem {
             margin: 0 auto;
         }
+        .Module__listItem:nth-child(2), .Module__listItem:nth-child(5) {
+           margin: 0 auto;
+        }
         .Module__title {
 			margin-top: 5em;
         }

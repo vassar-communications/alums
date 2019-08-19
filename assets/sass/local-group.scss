@@ -1867,6 +1867,17 @@ Share Icons
 /*Begin Susan Brkich new styles for Time Out Grant page slideshow*/
 
 
+.galleria--timeout-grant {
+	.galleria-info-text {
+		background-color: rgba(0,0,0,0.85)!important;
+		display: inherit;
+		.u-Figure__caption--descriptionDesc {
+			font-size: 1rem;
+		}
+	}
+}
+
+
 @media all and (min-width: $tiny) {
 	.galleria--timeout-grant {	
 		.galleria-info {
@@ -1879,26 +1890,53 @@ Share Icons
        	 		border-bottom: none;
 				margin-bottom: 0;
 				padding-bottom: 0;
+				font-size: 1rem;
     		}
 		}			
 	}
 }
 
-@media all and (max-width: 25.875em) {
+@media all and (max-width: 25.875em) { /*414px divided by 16*/
 	.galleria--timeout-grant {	
 		.galleria-info-text {
+			.galleria-info-description {
+				font: normal 1em/1.4 "source-sans-pro";
+			}
     		.u-Figure__caption--descriptionDesc {
        	 		border-bottom: none;
 				padding-bottom: 0;
-				display: none;
+				font-size: 1rem;
+				display: inherit;
+				/*display: none; testing with descriptions visible, no title to be used 8-19*/
     		}
 			.u-Figure__caption--descriptionTitle {
-				font-size: 1rem;
+				/*font-size: 1rem;
 				line-height: 1.1;
-				font-weight: 500;
+				font-weight: 500;*/
+				display: none;
 			}
 		}				
 	}	
+}
+
+@media all and (min-width: $small) {
+	.galleria--timeout-grant {
+		.galleria-info-text {
+			.u-Figure__caption--descriptionDesc {
+				font-size: 1.25rem;
+			}
+		}
+	}
+}
+
+@media all and (min-width: $large) {
+	.galleria--timeout-grant {
+		.galleria-info-text {
+			.u-Figure__caption--descriptionDesc {
+				font-size: 1.4rem;
+			}
+		}
+	}
 }
 
 /*End Susan Brkich new styles for Time Out Grant page slideshow*/

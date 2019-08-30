@@ -1874,6 +1874,9 @@ Share Icons
 		.u-Figure__caption--descriptionDesc {
 			font-size: 1rem;
 		}
+		.u-Figure__caption--descriptionTitle {
+			display: none;
+		}
 	}
 }
 
@@ -1915,7 +1918,11 @@ Share Icons
 				display: inherit;
     		}
 			.u-Figure__caption--descriptionTitle {
-				display: none;
+				display: inherit;
+				margin: 1em auto;
+				line-height: 1.5em;
+				font-size: 1.6rem;
+				text-transform: none;
 			}
 		}				
 	}	

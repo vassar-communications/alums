@@ -1878,6 +1878,7 @@ Share Icons
 			display: none;
 		}
 	}
+	/*this is for the nav arrows*/
 	.galleria-image-nav-right {
 		background-position: -254px 46px;
 	}
@@ -1887,7 +1888,6 @@ Share Icons
 	.galleria-container.notouch:hover .galleria-image-nav-right, .galleria-container.touch:active .galleria-image-nav-right {
   		background-position: -254px 46px;
 	}
-
 }
 
 

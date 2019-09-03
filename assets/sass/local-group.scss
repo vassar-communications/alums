@@ -1878,6 +1878,16 @@ Share Icons
 			display: none;
 		}
 	}
+	.galleria-image-nav-right {
+		background-position: -254px 46px;
+	}
+	.galleria-container.notouch:hover .galleria-image-nav-left, .galleria-container.touch:active .galleria-image-nav-left {
+		background-position: 0 36px;
+	}
+	.galleria-container.notouch:hover .galleria-image-nav-right, .galleria-container.touch:active .galleria-image-nav-right {
+  		background-position: -254px 46px;
+	}
+
 }
 
 

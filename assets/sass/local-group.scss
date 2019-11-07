@@ -350,7 +350,6 @@ h4.departmenttitle {
         }
     }
 }
-
 @media all and (min-width: $small) {
     .u-NavSite__item {
         margin-left: .5em;
@@ -366,7 +365,7 @@ h4.departmenttitle {
     }
     .u-Masthead__siteName {
         text-align: left;
-        padding: .75em 1em .1em;
+        padding: .1em 1em .75em;
     }
     .u-footMasthead__siteName {
         text-align: left;

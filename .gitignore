@@ -57,3 +57,5 @@ assets/.DS_Store
 css/
 *.css
 *.codekit3
+config.codekit3
+*.codekit3

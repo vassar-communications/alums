@@ -64,10 +64,10 @@ td {
     padding: .5em;
 }
 .u-lContent {
-	@include v-pixel-fallback ('font-size', 1.4rem);
+	@include v-pixel-fallback ('font-size', 1.2rem);
 	font-family: $serif;
 	font-weight: $fontWeightNormal;
-	line-height: 1.6;
+	line-height: 1.4;
 	margin-bottom: 1.25em;
 }
 .u-Figure__caption {
@@ -746,7 +746,7 @@ a.fn.org.url.u-VCard__fn.u-VCard__item.u-VCard__org.u-VCard__url:link,
     border-bottom: .25em solid $pink;
 }
 .u-pageTitle {
-    border-bottom: .01em solid $pink;
+    border-bottom: .01em solid $grey;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     @include link-colors($fontColor, $linkColorHoverFocus, $linkColorActive, $fontColor, $linkColorHoverFocus);
@@ -973,7 +973,7 @@ tbody tr:nth-child(odd) {
 }
 /* modules */
 .u-lContent .Module__header {
-    font: $fontWeightBoldSans .9em/1.1 $sans-serif;
+    font: $fontWeightBold .9em/1.1 $sans-serif;
     text-transform: uppercase;
     letter-spacing: .02em;
     margin-bottom: 2em;
@@ -1640,7 +1640,7 @@ body {
     } 
 }
 .u-pageHome .u-Figure--headerImage .u-Figure__caption--title {
-    font-family: "brandon-grotesque","Helvetica";
+    font-family: $sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     font-size: 1.8rem;
@@ -1977,3 +1977,49 @@ Share Icons
 }
 
 /*End Susan Brkich new style for AAVC Board Slate page, numbered/lettered lists spacing*/
+
+@media (min-width: 54.375em) {
+    /* 
+    body {
+        margin-top: 0;
+	}
+	.BannerCOVID19 + div {
+	    margin-top: 4em;
+	}
+    */
+    .BannerCOVID19
+    {
+        display: none;
+        visibility: hidden;
+    }
+}
+.list--homePage--listPublications .Module__list {
+    list-style-type: none;
+    justify-content: space-between;
+}
+.list--homePage--listPublications .Module__desc {
+    font-size: 1.25rem;
+}
+.list--homePage--listPublications .Module__link:link {
+    border: 0px solid transparent;
+}
+@media (min-width: 54.375em) {
+    .list--homePage--listPublications .Module__list {
+        flex-wrap: nowrap;
+    }
+    .list--homePage--listPublications .Module__listItem {
+        width: 30%;
+        float: none;
+    }
+    .list--homePage--listPublications .Module__listItem:nth-child(2) {
+        margin: 0;
+    }
+}
+.u-Masthead__vassar--link svg,
+.u-footMasthead__vassar--link svg {
+    display: block;
+    margin-top: 0.125em;
+    width: 4em;
+}
+
+

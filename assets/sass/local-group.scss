@@ -396,7 +396,7 @@ h4.departmenttitle {
         }
     }
     .u-lMain {
-        margin: 7% auto;
+        margin: 7% auto 2%;
         max-width: 63em;
     }
     .u-lAside {
@@ -631,7 +631,7 @@ h4.departmenttitle {
         float: none;
         overflow: hidden;
         padding: 0;
-        margin: 9.5% auto;
+        margin: 9.5% auto 2%;
     }
     .u-lContent {
         width: 100%;
@@ -685,8 +685,8 @@ h4.departmenttitle {
     position: absolute;
     z-index: 10;
     background: #000;
-    opacity: 0.75;
-    filter: alpha(opacity=70);
+    /* opacity: 0.75;
+    filter: alpha(opacity=70); */
     padding: .75em;
     }
     .u-ExtendedFooter__listGroup {
@@ -743,7 +743,7 @@ a.fn.org.url.u-VCard__fn.u-VCard__item.u-VCard__org.u-VCard__url:link,
 }
 .u-Masthead,
 .galleria--homepage {
-    border-bottom: .25em solid $pink;
+    border-bottom: .25em solid $grey;
 }
 .u-pageTitle {
     border-bottom: .01em solid $grey;
@@ -760,7 +760,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 .u-Masthead,
 .galleria--homepage {
-    border-bottom: .25em solid $pink;
+    border-bottom: .25em solid $grey;
 }
 .u-Masthead__vassar {
     background-color: transparent;
@@ -947,7 +947,7 @@ tbody tr:nth-child(odd) {
         }
     }
     .u-NavSite__item {
-        background-color: $violet;
+        background-color: $pink;
     }
     .u-NavSite__level--1 > {
         .u-NavSite__item--isOpen > .u-NavSite__item,

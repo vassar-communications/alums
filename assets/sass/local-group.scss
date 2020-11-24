@@ -2022,4 +2022,31 @@ Share Icons
     width: 4em;
 }
 
+/*Begin Susan Brkich new styles for right-side callout box for Vassar Fund Kumar layout*/
 
+.calloutRight {
+	overflow: auto;
+	margin-left: .5em;
+	width: 40%;
+	float: right;
+}
+.calloutRight .background {
+	background-color: #fff8ef;
+	padding: 5%;
+	border: 1px solid #c1c1c1;
+	margin-bottom: 1em;
+}
+
+@media all and (max-width: 25.875em) { /*414px divided by 16*/
+	.calloutRight {
+		width: 100%;
+		float: none;
+		margin-left: 0;
+	}
+}
+
+.clear {
+	clear: both;
+}
+
+/*End Susan Brkich new styles for right-side callout box for Vassar Fund Kumar layout*/

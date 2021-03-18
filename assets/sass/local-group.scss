@@ -1746,7 +1746,7 @@ Share Icons
         .Module__link {
             display: block;
             position: relative;
-            @include link-colors($linkColor, #fff, #fff, $linkColor, $linkColor);
+            @include link-colors(#fff, $linkColor, $linkColor, #fff, $linkColor);
 			/*height: 100%;*/
         }
         .Module__link:before {
@@ -1756,15 +1756,15 @@ Share Icons
             left: 0;
             right: 0;
             bottom: 0;
-			background-color: rgba(255,255,255,.75);
+			background-color: rgba(0, 0, 0, 0.35);
         }
         .Module__link:hover:before,
         .Module__link:focus:before {
-            background-color: #000;
-            background-color: rgba(0, 0, 0, 0.35);
+            background-color: #fff;
+            background-color: rgba(255,255,255,.75);
         }
         .Module__link:active:before {
-            background-color: rgba(0, 0, 0, 0);
+            background-color: rgba(255,255,255,.85);
        }
         .Module__title,
         .Module__desc {
@@ -2050,3 +2050,153 @@ Share Icons
 }
 
 /*End Susan Brkich new styles for right-side callout box for Vassar Fund Kumar layout*/
+
+/*Begin Susan Brkich 2021 styles for Reunion website*/
+
+
+.schedule--reunion, .alumcollege--reunion {
+	details > summary {
+		font-size: 1.43em;
+		font-family: covik-sans,sans-serif;
+		font-weight: 500;
+		padding: 10px 0;
+		color: #641A2B;
+		cursor: pointer;
+		border-bottom: 1px solid #D0D0CE;
+	}
+	summary {
+		list-style: none;
+	}
+	summary::-webkit-details-marker { /*this is for Chrome*/
+		display: none;
+	}
+	details[open] summary {
+		border: none;
+	}
+	details summary::before { /*this sets the new bullet styles*/
+  		font-size: 1em;
+		font-weight: 900;
+		content: "∨"; 
+ 		color: #641A2B;
+		padding-right: 15px;
+	}
+	details[open] summary::before { 
+		content: "∧"; 
+	}
+}
+
+.schedule--reunion {
+	details .event:last-child { 
+		border-bottom: 1px solid #D0D0CE;
+		padding-bottom: .5em;
+	}
+    .event__title {
+        grid-area: title;
+		padding-bottom: .5em;
+    }
+	.event__time {
+		grid-area: time;
+	}	
+}
+
+.alumcollege--reunion {
+	details > summary {
+		font-size: 1.15em;
+	}
+	.event { 
+		padding-bottom: 1em;
+		border-bottom: 1px solid #D0D0CE;
+	}
+	.event__photo {
+		grid-area: photo;
+		padding: 10px;
+		border: 1px solid $yellow;
+		background-color: #FFF8EF;
+		margin-bottom: 1em;
+	}
+	.event__photo > .u-Figure {
+		margin: 0;
+	}
+	.event__subtitle {
+		grid-area: subtitle;
+		font-weight: 500;
+		padding-bottom: .5em;
+	}
+	.event__description {
+		grid-area: description;
+	}
+}
+
+#reunion .boxedContent {
+	color: #641A2b;
+    background-color: #FFF8EF;
+	border: 1px solid #D0D0CE;
+   	padding: .5em 1em 1em 1em;
+	margin-bottom: 2em;
+}
+#reunion .boxedContent h3 {
+		margin-top: .4em;
+	}
+#reunion h4 {
+		padding-top: .4em;
+		margin-top: .1em;
+	}
+#reunion img {
+	border: 2px solid #D0D0CE;
+}
+
+@media screen and (min-width: 37.5em) {
+	.schedule--reunion {
+        .event { 
+            -webkit-column-gap: 1em;
+            -moz-column-gap: 1em;
+            column-gap: .5em;
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "time title";
+            padding: 0;
+        }
+	}
+	.alumcollege--reunion {
+		.event {
+            -webkit-column-gap: 1em;
+            -moz-column-gap: 1em;
+            column-gap: 1em;
+            display: grid;
+            grid-template-columns: .5fr 1.5fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas: 
+				"photo subtitle"
+				"photo description";
+		}
+		.event__photo {
+			margin: 0;
+		}
+	}
+}
+
+/*fix for two rows of tiles stacking directly on top of one another*/
+#reunion .Module--mainContent:nth-child(3) { padding: 3% 6%}
+
+/*End Susan Brkich 2021 styles for Reunion website*/
+
+/*Begin Susan Brkich styles for volunteer toolkit webpage in volunteer section of site*/
+
+#volunteer-toolkit .logoGrid > div > h4 {
+		text-align: center;
+}
+@media screen and (min-width: 37.5em) {
+	#volunteer-toolkit .logoGrid {
+		-webkit-grid-gap: 1em;
+        -moz-grid-gap: 1em;
+        grid-gap: 1em;
+		display: grid;
+		grid: auto/ .5fr .5fr;
+		padding: 0;
+		margin: auto .5em;
+	}
+}
+
+
+/*End Susan Brkich styles for volunteer toolkit webpage in volunteer section of site*/

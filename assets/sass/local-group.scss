@@ -2107,6 +2107,9 @@ Share Icons
 		padding-bottom: 1em;
 		border-bottom: 1px solid #D0D0CE;
 	}
+	.eventAnchor {
+		margin-bottom: .5em;
+	}
 	.event__photo {
 		grid-area: photo;
 		padding: 10px;
@@ -2124,6 +2127,17 @@ Share Icons
 	}
 	.event__description {
 		grid-area: description;
+	}
+	.event__time {
+		grid-area: time;
+	}
+	.event__title {
+		grid-area: title;
+	}
+	.eventAnchor .event__photo {
+		padding: 0;
+		border: none;
+		background-color: transparent;
 	}
 }
 
@@ -2173,7 +2187,14 @@ Share Icons
 		.event__photo {
 			margin: 0;
 		}
+		.eventAnchor {
+            grid-template-columns: .75fr 1.25fr;
+			grid-template-areas: 
+				"time title"
+				"photo description";			
+		}
 	}
+
 }
 
 /*fix for two rows of tiles stacking directly on top of one another*/

@@ -2109,6 +2109,7 @@ Share Icons
 	}
 	.eventAnchor {
 		margin-bottom: .5em;
+		border: none;
 	}
 	.event__photo {
 		grid-area: photo;
@@ -2128,11 +2129,8 @@ Share Icons
 	.event__description {
 		grid-area: description;
 	}
-	.event__time {
-		grid-area: time;
-	}
-	.event__title {
-		grid-area: title;
+	.event__date {
+		grid-area: date;
 	}
 	.eventAnchor .event__photo {
 		padding: 0;
@@ -2188,10 +2186,10 @@ Share Icons
 			margin: 0;
 		}
 		.eventAnchor {
-            grid-template-columns: .75fr 1.25fr;
+            grid-template-columns: 1.4fr .6fr;
 			grid-template-areas: 
-				"time title"
-				"photo description";			
+				"date photo"
+				"description photo";			
 		}
 	}
 

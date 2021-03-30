@@ -1730,6 +1730,7 @@ Share Icons
 /*Begin Susan Brkich code for Reunion landing page CTA buttons; copied all .list--homePage--listCallToAct code, renamed with --reunionPage-- and changed as needed */
 
 @media screen {
+	#reunion .Module--mainContent:nth-child(5), { padding: 0 6%}
     .list--reunionPage--listCallToAct {
         overflow: hidden;
 		margin: 0;
@@ -1817,7 +1818,7 @@ Share Icons
             float: left;
             margin: 0;
         }
-        .Module__listItem:nth-child(2), .Module__listItem:nth-child(5) {
+        .Module__listItem:nth-child(2), .Module__listItem:nth-child(5), .Module__listItem:nth-child(8) {
            margin: 0 6%;
         }
         .Module__title {
@@ -1831,12 +1832,13 @@ Share Icons
 }
 
 @media all and (min-width: $large) {
-    .list--reunionPage--listCallToAct {
+    #reunion .Module--mainContent:nth-child(3), #reunion .Module--mainContent:nth-child(5), { padding: 3% 6%}
+	.list--reunionPage--listCallToAct {
         padding: 1em 0;
        .Module__listItem {
             margin: 0 auto;
         }
-        .Module__listItem:nth-child(2), .Module__listItem:nth-child(5) {
+        .Module__listItem:nth-child(2), .Module__listItem:nth-child(5), .Module__listItem:nth-child(8) {
            margin: 0 auto;
         }
         .Module__title {
@@ -1844,6 +1846,7 @@ Share Icons
         }
      }	
 }
+
 
 @media all and (min-width: 81.25em) {
         padding: 1em 0;
@@ -2156,12 +2159,16 @@ Share Icons
 #reunion img {
 	border: 2px solid #D0D0CE;
 }
+#reunion .call-to-action {
+	    padding: .65em .55em .55em;
+	    font-size: 1em;
+}
 
 @media screen and (min-width: 37.5em) {
 	.schedule--reunion {
         .event { 
-            -webkit-column-gap: 1em;
-            -moz-column-gap: 1em;
+            -webkit-column-gap: .5em;
+            -moz-column-gap: .5em;
             column-gap: .5em;
             display: grid;
             grid-template-columns: 150px 1fr;
@@ -2192,11 +2199,15 @@ Share Icons
 				"description photo";			
 		}
 	}
-
+	.twoButtons {
+         	-webkit-column-gap: 0;
+            -moz-column-gap: 0;
+            column-gap: 0;
+            display: grid;
+            grid-template-columns: auto auto;
+			padding: 0;
+	}
 }
-
-/*fix for two rows of tiles stacking directly on top of one another*/
-#reunion .Module--mainContent:nth-child(3) { padding: 3% 6%}
 
 /*End Susan Brkich 2021 styles for Reunion website*/
 

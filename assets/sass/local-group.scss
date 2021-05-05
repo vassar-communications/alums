@@ -2201,6 +2201,16 @@ Share Icons
 	}
 }
 
+@media screen and (min-width: $small) {
+	/*for smaller centered reunion torch map image on larger screens*/
+	#reunion .small-centered-image {
+		width: 75%;
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}	
+}
+
 /*End Susan Brkich 2021 styles for Reunion website*/
 
 /*Begin Susan Brkich styles for volunteer toolkit webpage in volunteer section of site*/

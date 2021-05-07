@@ -2209,6 +2209,14 @@ Share Icons
 		text-align: center;
 		margin: 0 auto;
 	}	
+	/*for grid of half-size past videos on reunion torch page*/
+	#reunion .outer-container {
+		-webkit-column-gap: .5em;
+		-moz-column-gap: .5em;
+		column-gap: .5em;
+		display: grid;
+		grid-template-columns: auto auto;
+	}
 }
 
 /*End Susan Brkich 2021 styles for Reunion website*/

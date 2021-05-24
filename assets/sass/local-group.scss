@@ -2240,3 +2240,41 @@ Share Icons
 
 
 /*End Susan Brkich styles for volunteer toolkit webpage in volunteer section of site*/
+
+/*Begin Susan Brkich styles for special-dr-event page (top level of website, access via link only for June 23, 2021 evnt)*/
+
+@media screen and (min-width: 37.5em) {
+	.eventDonorRelations {
+     	-webkit-column-gap: 1em;
+     	-moz-column-gap: 1em;
+     	column-gap: 1em;
+    	display: grid;
+		grid-template-columns: .6fr 1.4fr;
+		grid-template-rows: auto auto;
+		padding-top: 1em;
+		border-top: 1px solid #D0D0CE;
+	}
+}
+h4.dr-event {
+	margin-top: 0;
+	margin-bottom: 1em;
+	font-size: 1.35rem;
+}
+/*End Susan Brkich styles for special-dr-event page (top level of website, access via link only for June 23, 2021 evnt)*/
+
+/*Begin Susan Brkich new styles for time-out grant page*/
+
+@media screen and (min-width: 37.5em) {
+	.small-centered-logo-image {
+		width: 50%;
+		display: block;
+		text-align: center;
+		margin: 0 auto;	
+	}	
+}
+
+/*End Susan Brkich new styles for time-out grant page*/
+
+
+
+

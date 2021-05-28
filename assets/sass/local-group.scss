@@ -1730,7 +1730,7 @@ Share Icons
 /*Begin Susan Brkich code for Reunion landing page CTA buttons; copied all .list--homePage--listCallToAct code, renamed with --reunionPage-- and changed as needed */
 
 @media screen {
-	#reunion .Module--mainContent:nth-child(5), { padding: 0 6%}
+	#reunion .Module--mainContent:nth-child(5), #reunion .Module--mainContent:nth-child(6) { padding: 0 6%}
     .list--reunionPage--listCallToAct {
         overflow: hidden;
 		margin: 0;
@@ -1832,7 +1832,8 @@ Share Icons
 }
 
 @media all and (min-width: $large) {
-    #reunion .Module--mainContent:nth-child(3), #reunion .Module--mainContent:nth-child(5), { padding: 3% 6%}
+    #reunion .Module--mainContent:nth-child(3), #reunion .Module--mainContent:nth-child(5) { padding: 3% 6%}
+	#reunion .Module--mainContent:nth-child(6) { padding: 0% 6% 3% 6%}
 	.list--reunionPage--listCallToAct {
         padding: 1em 0;
        .Module__listItem {
@@ -2147,7 +2148,8 @@ Share Icons
     background-color: #FFF8EF;
 	border: 1px solid #D0D0CE;
    	padding: .5em 1em 1em 1em;
-	margin-bottom: 2em;
+	margin-bottom: 1.5em;
+	margin-top: 1.5em;
 }
 #reunion .boxedContent h3 {
 		margin-top: .4em;
